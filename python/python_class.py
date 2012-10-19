@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #To launch: python fileName.py
 
+# Define class here
 class Server(object):
     def __init__(self, ip, hostname):
         self.ip = ip
