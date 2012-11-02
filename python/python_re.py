@@ -6,7 +6,7 @@
 # First import the regular expressions module
 import re
 
-# Create a string representing a pattern to look for
+# Create a string representing a pattern to look for. The .*? command matches anything, including whitespace.
 reString = "{{(.*?)}}"
 
 # Create some string
