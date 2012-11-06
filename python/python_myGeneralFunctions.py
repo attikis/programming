@@ -8,8 +8,11 @@ class GeneralFunctions:
     def __init__(self):
         self.counter = 0
 
-    # Function to display match objects
+
     def DisplayMatchObject(self, match):
+        ''' DisplayMatchObject(self, match):
+        A function to display match objects
+        '''
         if match is None:
             return None
         print "match.group() = %r, match.groups() = %r>" % (match.group(), match.groups())
@@ -19,8 +22,27 @@ class GeneralFunctions:
             print 'groupdict(%r) = ' % (match.groupdict(iMatch))
         return 0
         
-    # Function to cout each time with an extra "+" symbol
     def Cout(self, text):
+        ''' sortedDictKeys(dict):
+        A function to cout each time with an extra "+" symbol
+        '''
         self.counter = self.counter+1
         print "%s %s" % ("+"*self.counter, text)        
         return 0
+    
+    def sortedDictKeys(dict):
+        ''' sortedDictKeys(dict):
+        A function to sort keys of a dictionary. A mapping (such as a "dictionary) has NO order, thus it cannot be sorted. Still, its keys can be extracted as a list, which can then be sorted.
+        '''
+        keys = dict.keys()
+        keys.sort()
+        return [key for key in keys]
+
+    def sortedDictValues(dict):
+        ''' sortedDictKeys(dict):
+        A function to sort values of a dictionary, according to sorted keys. A mapping (such as a "dictionary) has NO order, thus it cannot be sorted. Still, its keys can be extracted as a list, which can then be sorted.
+        '''
+        
+        keys = dict.keys()
+        keys.sort()
+        return [dict[key] for key in keys]

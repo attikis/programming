@@ -1,0 +1,70 @@
+#!/usr/bin/env python
+# Permissions : chmod +x fileName.py
+# To launch   : python fileName.py    OR    ./fileName.py 
+# Definition  : Example of how to parse a logfile
+
+''' 
+Usage:
+python_logFileParser.py someLogFile
+
+Description:
+This script takes one command line argument (name of log-file to parse) and it parses it
+ to generate a report which associates remote hosts with number of bytes transferred to them.
+''' 
+
+# Import all modules here
+import sys
+import python_myGeneralFunctions as myGFs
+
+# Declarations here
+gf = myGFs.GeneralFunctions()
+
+# Function-definition here
+def DictifyLine(line):
+    '''
+    Return a dictionary of the relevant pieces of a log-file
+    '''
+
+    splitLine = line.split()
+    return {'remote_host': splitLine[0],
+            'status': splitLine[1],
+            'bytesSent': splitLine[2],
+            }
+
+def GenerateLogReport(logFile):
+    '''
+    Return a dictionary of format remote_host=>[list of bytes sent]
+    
+    This function takes a file object, iterates through all the lines in the file, and generates 
+    a report of the number of bytes transferred to each remote host for each hit on the webserver.
+    '''
+    reportDict = {}
+    for line in logFile:
+        lineDict = DictifyLine(line)
+        print lineDict
+        try:
+            bytesSent = int(lineDict['bytesSent'])
+        except ValueError:
+            # Totally disregard anything we don't understand
+            continue
+        reportDic.setdefault(lineDict['remote_host'], []).append(bytesSent)
+    return reportDict
+
+# Main function here
+if __name__ == "__main__":
+    if not len(sys.argv) > 1:
+        print __doc__
+        sys.exit(1)
+    inFileName = sys.argv[1]
+    try:
+        inFile = open(inFileName, "r")
+        
+    except IOError:
+        gf.Cout("Please specify a valid file to parse")
+        print __doc__
+        sys.exit(1)
+    logReport = GenerateLogReport(inFile)
+    gf.Cout(logReport)
+    inFile.close()
+            
+
