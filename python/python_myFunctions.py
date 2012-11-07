@@ -5,18 +5,16 @@
  
 ''' 
 Usage:
-import python_GeneralFunctions as myGFs
+import python_myFunctions as myFs
 
 Description:
 In this python module I define some generic functions that can be used in many executable scripts. 
 The list of functions defined here will grow significantly over time, at which stage I should perhaps
 consider its further break-down to more classes and functions.
 ''' 
-
-# All module imports here
 import string
-        
-class GeneralFunctions:
+
+class CreateObject:
     
     def __init__(self):
         self.counter = 0
@@ -42,7 +40,7 @@ class GeneralFunctions:
         print "%s %s" % ("+"*self.counter, text)        
         return 0
     
-    def sortedDictKeys(dict):
+    def sortedDictKeys(self, dict):
         ''' sortedDictKeys(dict):
         A function to sort keys of a dictionary. A mapping (such as a "dictionary) has NO order, thus it cannot be sorted. Still, its keys can be extracted as a list, which can then be sorted.
         '''
@@ -50,7 +48,7 @@ class GeneralFunctions:
         keys.sort()
         return [key for key in keys]
 
-    def sortedDictValues(dict):
+    def sortedDictValues(self, dict):
         ''' sortedDictKeys(dict):
         A function to sort values of a dictionary, according to sorted keys. A mapping (such as a "dictionary) has NO order, thus it cannot be sorted. Still, its keys can be extracted as a list, which can then be sorted.
         '''
@@ -58,20 +56,20 @@ class GeneralFunctions:
         keys = dict.keys()
         keys.sort()
         return [dict[key] for key in keys]
-
-    def obscureString(string):
+    
+    def obscureString(self, inputString):
         ''' obscureString(dict):
         A function to obscure a string by replacing all ascii printable characters with asterisks (*). This is mainly used in cases when you want to print a password without revealing its meaning, but just the number of characters.
         '''
+        outputString = inputString
         # Create a characters list
         CharactersList = []
-
+        
         # Fill the list with all printable ascii characters
         for item in string.printable:
             CharactersList.append(item)
-            obscuredString = string
         # Now loop over all readable characters and replace those in the input string with an asterisk
         for char in CharactersList:
-            obscuredString = obscuredString.replace(char, "*")
+            outputString = outputString.replace(char, "*")
         # Return the asterisk-obscured string
-        return obscuredString
+        return outputString
