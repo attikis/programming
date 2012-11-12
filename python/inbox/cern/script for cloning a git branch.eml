@@ -1,0 +1,27 @@
+From: slehti <slehti@mail.cern.ch>
+Subject: script for cloning a git branch
+Content: Dear all,
+The script for cloning a branch is now available in
+http://cmsdoc.cern.ch/~slehti/Higgs
+and should be placed somewhere in path (like $HOME/bin/)
+
+The name is Higgs (short of HiggsAnalysis), but if you come up with a 
+better name let's rename it. There is now a security addition, if no 
+argument is set it will give usage+list of available branches.
+
+I'm going to clean up my public repo a bit, and delete the following 
+branches:
+   CMSSW_342
+   CMSSW_3X
+   cmssw311x
+   hpstanc
+   pattuplev26
+   pattuplev6
+   pattuplev7
+   rework
+   tctau
+   trigger
+Any objections?
+
+Cheers,
+Sami

@@ -1,0 +1,17 @@
+From: slehti <slehti@mail.cern.ch>
+Subject: Re: 53X pattuples and code
+Content: 
+
+
+On Wed, 7 Nov 2012, Matti Kortelainen wrote:
+
+> - Trigger efficiencies have been updated, with the following caveats
+>  * So far only for againstElectronMVA+againstMuonTight+byMediumCombinedIsolationDeltaBetaCorr
+Actually we do have the 2012 ones for the same combinations as for 2011:
+byMediumCombinedIsolationDeltaBetaCorr_againstElectronMedium 
+byMediumCombinedIsolationDeltaBetaCorr_againstElectronMVA 
+byLooseCombinedIsolationDeltaBetaCorr_againstElectronMVA 
+byLooseCombinedIsolationDeltaBetaCorr_againstElectronMedium
+
+Cheers,
+Sami

@@ -1,0 +1,27 @@
+From: slehti <slehti@mail.cern.ch>
+Subject: Top2HPlus recipe
+Content: On Wed, 22 Aug 2012, slehti wrote:
+
+> On Wed, 22 Aug 2012, Alexandros Attikis wrote:
+>
+>> Hi Sami,
+>> I am interested yes. Is it at the same location?
+>> Can you give some pointers / instructions please?
+> I ran FH myself in order to see it works. The result is in a root TTree found 
+> here:
+> http://cmsdoc.cern.ch/~slehti/FH_results_mhmax.root
+>
+> The mass/tanb/whatever points can be easily increased or changed, and the 
+> plot can be made as a function of mH+ or tanb or..
+In case you want to change something, here is the recipe
+git clone http://cmsdoc.cern.ch/~slehti/Top2HPlus.git
+cd Top2HPlus/workspace
+edit ../src/FH_inputMaker.py to select the masses and tanb's
+make FH (runs FH for all the points selected in FH_inputMaker.py)
+make FH_root (creates the root file from FH txt output created in the 
+previous step))
+
+The FH version is controlled by the first line of the Makefile.
+
+Cheers,
+Sami

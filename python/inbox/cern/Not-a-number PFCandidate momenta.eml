@@ -1,0 +1,29 @@
+From: Sue Ann Koay <Sue.Ann.Koay@cern.ch>
+Subject: Not-a-number PFCandidate momenta
+Content: 
+*** Discussion title: Particle Flow 
+
+Hello,
+
+I find some events that contain PFCandidates in the particleFlow
+collection with 4-momentum being "nan". For example the index=13
+particle in run 1, lumi block 39594, event number 11875853 in the
+following MC dataset:
+
+   /TT_CT10_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v2/AODSIM  
+
+Here is a skim of this one event:
+
+   /afs/fnal.gov/files/home/room3/sakoay/public/TT_CT10_TuneZ2star_8TeV-powheg-tauola_1_39594_11875853w.root
+
+I'm not sure if this is to be expected, just that it seems rather odd to
+me and I have to write guards in my code against it. Perhaps some expert
+can comment?
+
+Regards,
+
+Sue Ann Koay sakoay@cern.ch
+
+-------------------------------------------------------------
+Visit this CMS message (to reply or unsubscribe) at: 
+https://hypernews.cern.ch/HyperNews/CMS/get/eflow/887.html
