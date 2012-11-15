@@ -3,7 +3,9 @@
 
 '''
 Usage:
-./python_portChecker.
+./python_portChecker.py
+or
+python python_portChecker.py -a smtp.gmail.com -p 587
 
 Description:
 This is a simple script that makes a socket connection to a web server, to chech that the server is still up and it is still listening on some port.
