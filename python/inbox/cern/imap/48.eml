@@ -1,0 +1,89 @@
+Received: from CERNMX30.cern.ch (137.138.144.177) by CERNFE23.cern.ch
+ (137.138.144.152) with Microsoft SMTP Server (TLS) id 14.2.298.4; Mon, 12 Nov
+ 2012 15:49:28 +0100
+Received: from mail-ee0-f49.google.com (74.125.83.49) by cernmxgwlb2.cern.ch
+ (137.138.144.183) with Microsoft SMTP Server (TLS) id 14.2.318.1; Mon, 12 Nov
+ 2012 15:49:22 +0100
+Received: by mail-ee0-f49.google.com with SMTP id c1so3442498eek.36        for
+ <attikis@cern.ch>; Mon, 12 Nov 2012 06:49:22 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=from:content-type:date:subject:to:message-id:mime-version:x-mailer;
+        bh=76ZAYZ/58OhIgL7xbAp1fXzaJyJthCPuEbS/itJhb4E=;
+        b=myA+49ZxEz41Me4AyOLgb0G8RgTT+1yhO/2Qg2NRWy2+OhXEpB6ZTdgtJZFEIPRAQ9
+         D7+mzeT2eYW34A7DB0zZreHCYVXC9xzppCv+op9XYo6X2uE/NtuC2D7d/hPkVMZK+p8u
+         zoqg9EKszXw9l0hey8xgmhF8Uz0wtBalhgISiZvOk+mlHIMkOmvyFAoEMt3KudAI1ckX
+         pAmpVWDvgTteVOVMSRQ813aCGYxzc2sp5P63qaFbZjcnByKixiEoe+IN6Uy8YM0wcfbf
+         x4KWs262g1bGmw4Ws0YhFgVc+TGtUIQ/ncrf2I7zIrGeaU88a30McHwFI/ozQwFWlZE7
+         p9bw==
+Received: by 10.14.205.3 with SMTP id i3mr63689146eeo.18.1352731762513;
+        Mon, 12 Nov 2012 06:49:22 -0800 (PST)
+Return-Path: <alexandros.attikis@googlemail.com>
+Received: from [192.168.1.108] (cpe-105704.ip.primehome.com. [62.12.75.180])
+        by mx.google.com with ESMTPS id g5sm16389266eem.4.2012.11.12.06.49.20
+        (version=TLSv1/SSLv3 cipher=OTHER);        Mon, 12 Nov 2012 06:49:21
+ -0800 (PST)
+From: Alexandros Attikis <alexandros.attikis@googlemail.com>
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_BB2034A1-005F-47D3-B69E-551519760B5E"
+Date: Mon, 12 Nov 2012 16:49:19 +0200
+Subject: testing imap again
+To: Alexandros Attikis <attikis@cern.ch>
+Message-ID: <28328238-5622-4ED8-A103-FEF4FD065C36@gmail.com>
+X-Mailer: Apple Mail (2.1499)
+X-MS-Exchange-Organization-PRD: googlemail.com
+Received-SPF: Pass (CERNMX30.cern.ch: domain of
+ alexandros.attikis@googlemail.com designates 74.125.83.49 as permitted
+ sender) receiver=CERNMX30.cern.ch; client-ip=74.125.83.49;
+ helo=mail-ee0-f49.google.com;
+X-MS-Exchange-Organization-Antispam-Report: v=1.1
+ cv=SBsM7yZNamBESHkdM9ANvLzEoWKVvpACMhlNggACcJs= c=1 sm=1 a=osC80HIQVLkA:10
+ a=8Dmbd3Z3u3u0Y02Qk0B2mA==:17 a=Zotc2dvFRYj_-Mf9IKUA:9 a=CjuIK1q_8ugA:10
+ a=pNyzeriPqa_31uMkYd4A:9 a=_W_S_7VecoQA:10 a=21Z-2xiuDBJ88g1k:21
+ a=i2/DfdqvzD4ZxCtt+ESxjA==:117;OrigIP:74.125.83.49;SCL:0
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-SCL: 0
+X-MS-Exchange-Organization-SenderIdResult: PASS
+X-MS-Exchange-Organization-AuthSource: CERNMX30.cern.ch
+X-MS-Exchange-Organization-AuthAs: Anonymous
+MIME-Version: 1.0
+
+--Apple-Mail=_BB2034A1-005F-47D3-B69E-551519760B5E
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="us-ascii"
+
+
+
+
+Alexandros
+
+
+--Apple-Mail=_BB2034A1-005F-47D3-B69E-551519760B5E
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+></head><body style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; -we=
+bkit-line-break: after-white-space; "><br><div>
+<span class=3D"Apple-style-span" style=3D"border-collapse: separate; color:=
+ rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant: no=
+rmal; font-weight: normal; letter-spacing: normal; line-height: normal; orp=
+hans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; =
+white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizonta=
+l-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorati=
+ons-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-wi=
+dth: 0px; font-size: medium; "><span class=3D"Apple-style-span" style=3D"bo=
+rder-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-=
+style: normal; font-variant: normal; font-weight: normal; letter-spacing: n=
+ormal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: n=
+one; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-hori=
+zontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-dec=
+orations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stro=
+ke-width: 0px; font-size: medium; "><span class=3D"Apple-style-span" style=
+=3D"font-size: 12px; "><div><br class=3D"Apple-interchange-newline"><br></d=
+iv><div>Alexandros</div></span></span></span>
+</div>
+<br></body></html>=
+
+--Apple-Mail=_BB2034A1-005F-47D3-B69E-551519760B5E--

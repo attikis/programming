@@ -1,0 +1,27 @@
+From: Gregory Rakness <Gregory.Rakness@cern.ch>
+Subject: Notes from 8:30 LHC daily meeting Tuesday 13 November 2012
+Content: 
+*** Discussion title: CMS Commissioning
+
+Upshot
+  o A cryo problem at point 4 prevented physics collisions all day yesterday.  It took a little bit of doing to get the cooling flowing again, and they finally got back cryo conditions at about 06h30 this morning.  Presently injecting for physics.
+  o Plan:  physics.  On Monday is planned to be a van der Meer scan for ATLAS and CMS.
+
+Some notes from the meeting follow. For details, please see the slides
+presented at
+http://lhc-commissioning.web.cern.ch/lhc-commissioning/news-2012/LHC-latest-news.html
+
+Yesterday's story
+  o Morning:  Beams were dumped at LHCb on injection.  Taking a look at this in some detail, it turns out there is some population in the bunches (<1%) just after the last bunch in a train, which is then kicked out partially by the injection kicker as it ramps up and causes losses at LHCb.  Thus, they decided to stop satellite enhancement in the PS, which seemed to clean this up.  However, since this affects the luminosity in ALICE, they need to work on this a bit.  
+  o They are finding they need to do more steering in the injection line these days.  The theory is that the optics together with the satellites they are using in the injectors enhances their losses in the LHC, so it is a tricky problem to get lumi for ALICE and not lose the beams. 
+  o Afternoon:  Cryo problem in point 4.  The electronics look as if they experienced an SEU, however, it is not coincident with a large dose of radiation from measurements by the Beam Loss Monitors or vacuum group.  It took a little bit of doing to get the cooling flowing again, and finally got back cryo conditions at about 06h30 this morning.  Presently injecting for physics.
+
+Today's plan
+  o Physics.
+
+Next days' plan
+  o Monday:  likely to have a van der Meer scan for ATLAS and CMS.
+
+-------------------------------------------------------------
+Visit this CMS message (to reply or unsubscribe) at: 
+https://hypernews.cern.ch/HyperNews/CMS/get/commissioning/4702.html

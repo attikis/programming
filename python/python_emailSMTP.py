@@ -24,10 +24,8 @@ import re
 myFunc = myFunctions.CreateObject()
 smtpHost = "smtp.gmail.com"
 smtpPort = 587
-#smtpUsername = raw_input("Username = ") + "@gmail.com"
-#smtpPassword = raw_input("Password = ")
 smtpUsername = "alexandros.attikis@gmail.com"
-smtpPassword = "xKa[99448024]aa569282piasme"
+smtpPassword = raw_input("Password = ")
 sender = smtpUsername
 
 # Function definitions here

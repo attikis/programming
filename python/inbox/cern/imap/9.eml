@@ -1,0 +1,284 @@
+Received: from [10.0.1.3] (194.42.7.163) by smtp.cern.ch (137.138.144.172)
+ with Microsoft SMTP Server (TLS) id 14.2.298.4; Fri, 7 Sep 2012 16:17:02
+ +0200
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_707E90B4-36A4-4418-9DAA-59250782DBA2"
+Subject: Re: Top2HPlus recipe
+From: Alexandros Attikis <attikis@cern.ch>
+In-Reply-To: <613191EE-70C8-44AE-91B9-8A939EDFF5A2@cern.ch>
+Date: Fri, 7 Sep 2012 17:17:00 +0300
+Message-ID: <E46328F4-F510-47A1-95B0-A46C2E0E4885@cern.ch>
+References: <5024A47B.6070000@cern.ch>
+ <B96B46662CA35C4E9C64DAA8EE9A5C54907E1B3A@CERNXCHG02.cern.ch>
+ <78B00A35-74F4-4EEB-BE0F-1E7A44A0F921@cern.ch>
+ <B96B46662CA35C4E9C64DAA8EE9A5C54907E1B52@CERNXCHG02.cern.ch>
+ <50334C24.4000003@cern.ch> <EF676FB3-8971-4FE2-ABB8-71372C98BA9E@cern.ch>
+ <503351AB.6030100@cern.ch> <C1522115-7F7B-4BAF-8EA1-AECCAAB088B4@cern.ch>
+ <alpine.LRH.2.00.1208211155040.18697@lxplus421.cern.ch>
+ <6B5D7B16-C5C3-417C-8A9C-709C2AF8A0C5@cern.ch> <50337D78.9050901@cern.ch>
+ <92214F8C-42A4-455A-AC5C-67A7F8A442FA@cern.ch>
+ <91F0B7AA-12B3-499D-954A-11444BEF364B@cern.ch>
+ <B96B46662CA35C4E9C64DAA8EE9A5C54907E1BCF@CERNXCHG02.cern.ch>
+ <D436CD46-6FD3-42B2-A7E8-5731EB38BF37@cern.ch>
+ <alpine.LRH.2.00.1208221254090.21062@lxplus310.cern.ch>
+ <9631637E-FEAC-4201-BF72-A2E6EFE68C26@cern.ch>
+ <alpine.LRH.2.00.1208221302030.21062@lxplus310.cern.ch>
+ <alpine.LRH.2.00.1208221312430.21062@lxplus310.cern.ch>
+ <790C7FC6-31ED-4199-A00A-EEAD8C7BC300@cern.ch>
+ <alpine.LRH.2.00.1209031617270.7546@lxplus405.cern.ch>
+ <89D633D2-2258-4C2E-AAC1-04FD0D33F0DF@cern.ch>
+ <AD5B6B7F-609B-4D17-92CB-778854A93A8C@cern.ch>
+ <613191EE-70C8-44AE-91B9-8A939EDFF5A2@cern.ch>
+To: slehti <slehti@mail.cern.ch>
+X-Mailer: Apple Mail (2.1486)
+Return-Path: attikis@cern.ch
+X-MS-Exchange-Organization-AuthSource: CERNFE23.cern.ch
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 0a
+X-Originating-IP: [194.42.7.163]
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-Recipient-P2-Type: Bcc
+MIME-Version: 1.0
+
+--Apple-Mail=_707E90B4-36A4-4418-9DAA-59250782DBA2
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="us-ascii"
+
+it must be the neutralino, right?
+
+
+Alexandros
+
+On Sep 7, 2012, at 5:02 PM, Alexandros Attikis <attikis@cern.ch> wrote:
+
+> Hi Sami,=20
+>=20
+> do you by any chance now what particle the
+> Neu1 is?
+> For example, in the decay H0->Neu1 Neu1
+>=20
+> written as HH-Neu1Neu1 in FH.
+>=20
+> Cheers.
+> Alexandros
+>=20
+> On Sep 3, 2012, at 5:41 PM, Alexandros Attikis <attikis@cern.ch> =
+wrote:
+>=20
+>> great, that should do it.
+>> thanx.
+>>=20
+>> Cheers,
+>> Alexandros
+>>=20
+>> On Sep 3, 2012, at 5:29 PM, Alexandros Attikis <attikis@cern.ch> =
+wrote:
+>>=20
+>>> Ok great.
+>>> two things.
+>>> 1) How do I compile the code?
+>>> 2) How do I know the FH variable output to match to the tree?
+>>> 	e.g. if mHc is mapped to MHp, how do i know what to match for =
+mA?
+>>>=20
+>>>=20
+>>> Alexandros
+>>>=20
+>>> On Sep 3, 2012, at 5:23 PM, slehti <slehti@mail.cern.ch> wrote:
+>>>=20
+>>>> On Mon, 3 Sep 2012, Alexandros Attikis wrote:
+>>>>=20
+>>>>> Hi Sami,
+>>>>> I have found some time to get to run this code.
+>>>>> I would like to add to the tree branches of all 5 higgs bosons, =
+not just Hpm.
+>>>>> Could you point me to the way of doing this?
+>>>>> Also, are SUSY decays saved to the tree?
+>>>> Hi,
+>>>> You can add more branches in file (Top2HPlus/src/)mainFH.cpp. No =
+SUSY decays are included. Anything FH produces in the output can be =
+added. Here is an example:
+>>>> BR_Hp_enu =3D sfinder.getValue("FH",*file,"Hp-nu_e-e");
+>>>> Here the string "Hp-nu_e-e" is the same string as in the FH output.
+>>>>=20
+>>>> Cheers,
+>>>> Sami
+>>>>=20
+>>>>> Cheers,
+>>>>> Alexandros
+>>>>> On Aug 22, 2012, at 2:17 PM, slehti <slehti@mail.cern.ch> wrote:
+>>>>>=20
+>>>>>      On Wed, 22 Aug 2012, slehti wrote:
+>>>>>=20
+>>>>>            On Wed, 22 Aug 2012, Alexandros Attikis wrote:
+>>>>>=20
+>>>>>                  Hi Sami,
+>>>>>                  I am interested yes. Is it at the same location?
+>>>>>                  Can you give some pointers / instructions please?
+>>>>>=20
+>>>>>            I ran FH myself in order to see it works. The result is =
+in a root TTree found here:
+>>>>>            http://cmsdoc.cern.ch/~slehti/FH_results_mhmax.root
+>>>>>=20
+>>>>>            The mass/tanb/whatever points can be easily increased =
+or changed, and the plot can be made as a
+>>>>>            function of mH+ or tanb or..
+>>>>>=20
+>>>>>      In case you want to change something, here is the recipe
+>>>>>      git clone http://cmsdoc.cern.ch/~slehti/Top2HPlus.git
+>>>>>      cd Top2HPlus/workspace
+>>>>>      edit ../src/FH_inputMaker.py to select the masses and tanb's
+>>>>>      make FH (runs FH for all the points selected in =
+FH_inputMaker.py)
+>>>>>      make FH_root (creates the root file from FH txt output =
+created in the previous step))
+>>>>>=20
+>>>>>      The FH version is controlled by the first line of the =
+Makefile.
+>>>>>=20
+>>>>>      Cheers,
+>>>>>      Sami
+>>>>>=20
+>>>=20
+>>=20
+>=20
+
+
+--Apple-Mail=_707E90B4-36A4-4418-9DAA-59250782DBA2
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+></head><body style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; -we=
+bkit-line-break: after-white-space; ">it must be the neutralino, right?<br>=
+<div>
+<span class=3D"Apple-style-span" style=3D"border-collapse: separate; color:=
+ rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant: no=
+rmal; font-weight: normal; letter-spacing: normal; line-height: normal; orp=
+hans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; =
+white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizonta=
+l-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorati=
+ons-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-wi=
+dth: 0px; font-size: medium; "><span class=3D"Apple-style-span" style=3D"bo=
+rder-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-=
+style: normal; font-variant: normal; font-weight: normal; letter-spacing: n=
+ormal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: n=
+one; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-hori=
+zontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-dec=
+orations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stro=
+ke-width: 0px; font-size: medium; "><span class=3D"Apple-style-span" style=
+=3D"font-size: 12px; "><div><br class=3D"Apple-interchange-newline"><br></d=
+iv><div>Alexandros</div></span></span></span>
+</div>
+<br><div><div>On Sep 7, 2012, at 5:02 PM, Alexandros Attikis &lt;<a href=3D=
+"mailto:attikis@cern.ch">attikis@cern.ch</a>&gt; wrote:</div><br class=3D"A=
+pple-interchange-newline"><blockquote type=3D"cite">
+<div style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line=
+-break: after-white-space; ">Hi Sami,&nbsp;<div><br></div><div>do you by an=
+y chance now what particle the</div><div>Neu1 is?</div><div>For example, in=
+ the decay&nbsp;H0-&gt;Neu1 Neu1</div><div><br></div><div>written as HH-Neu=
+1Neu1 in FH.<br><div>
+<span class=3D"Apple-style-span" style=3D"border-collapse: separate; border=
+-spacing: 0px; "><span class=3D"Apple-style-span" style=3D"border-collapse:=
+ separate; font-family: Helvetica; font-style: normal; font-variant: normal=
+; font-weight: normal; letter-spacing: normal; line-height: normal; orphans=
+: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2=
+; word-spacing: 0px; border-spacing: 0px; -webkit-text-decorations-in-effec=
+t: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; fo=
+nt-size: medium; "><span class=3D"Apple-style-span" style=3D"font-size: 12p=
+x; "><div><br class=3D"Apple-interchange-newline">Cheers.</div><div>Alexand=
+ros</div></span></span></span>
+</div>
+<br><div><div>On Sep 3, 2012, at 5:41 PM, Alexandros Attikis &lt;<a href=3D=
+"mailto:attikis@cern.ch">attikis@cern.ch</a>&gt; wrote:</div><br class=3D"A=
+pple-interchange-newline"><blockquote type=3D"cite">
+<div style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line=
+-break: after-white-space; "><div><span class=3D"Apple-style-span" style=3D=
+"border-collapse: separate; font-family: Helvetica; font-style: normal; fon=
+t-variant: normal; font-weight: normal; letter-spacing: normal; line-height=
+: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-tran=
+sform: none; white-space: normal; widows: 2; word-spacing: 0px; border-spac=
+ing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjus=
+t: auto; -webkit-text-stroke-width: 0px; font-size: medium; "><span class=
+=3D"Apple-style-span" style=3D"border-collapse: separate; font-family: Helv=
+etica; font-style: normal; font-variant: normal; font-weight: normal; lette=
+r-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-=
+transform: none; white-space: normal; widows: 2; word-spacing: 0px; border-=
+spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-a=
+djust: auto; -webkit-text-stroke-width: 0px; font-size: medium; "><span cla=
+ss=3D"Apple-style-span" style=3D"font-size: 12px; "><div>great, that should=
+ do it.</div><div>thanx.</div><div><br class=3D"Apple-interchange-newline">=
+Cheers,</div><div>Alexandros</div></span></span></span>
+</div>
+<br><div><div>On Sep 3, 2012, at 5:29 PM, Alexandros Attikis &lt;<a href=3D=
+"mailto:attikis@cern.ch">attikis@cern.ch</a>&gt; wrote:</div><br class=3D"A=
+pple-interchange-newline"><blockquote type=3D"cite">
+<div style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line=
+-break: after-white-space; ">Ok great.<div>two things.</div><div>1) How do =
+I compile the code?</div><div>2) How do I know the FH variable output to ma=
+tch to the tree?</div><div><span class=3D"Apple-tab-span" style=3D"white-sp=
+ace:pre">	</span>e.g. if mHc is mapped to MHp, how do i know what to match =
+for mA?</div><div><div>
+<span class=3D"Apple-style-span" style=3D"border-collapse: separate; font-f=
+amily: Helvetica; font-style: normal; font-variant: normal; font-weight: no=
+rmal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: =
+-webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; =
+widows: 2; word-spacing: 0px; border-spacing: 0px; -webkit-text-decorations=
+-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width=
+: 0px; font-size: medium; "><span class=3D"Apple-style-span" style=3D"borde=
+r-collapse: separate; font-family: Helvetica; font-style: normal; font-vari=
+ant: normal; font-weight: normal; letter-spacing: normal; line-height: norm=
+al; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal=
+; widows: 2; word-spacing: 0px; border-spacing: 0px; -webkit-text-decoratio=
+ns-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-wid=
+th: 0px; font-size: medium; "><span class=3D"Apple-style-span" style=3D"fon=
+t-size: 12px; "><div><br class=3D"Apple-interchange-newline"><br></div><div=
+>Alexandros</div></span></span></span>
+</div>
+<br><div><div>On Sep 3, 2012, at 5:23 PM, slehti &lt;<a href=3D"mailto:sleh=
+ti@mail.cern.ch">slehti@mail.cern.ch</a>&gt; wrote:</div><br class=3D"Apple=
+-interchange-newline"><blockquote type=3D"cite">On Mon, 3 Sep 2012, Alexand=
+ros Attikis wrote:<br><br><blockquote type=3D"cite">Hi Sami,<br>I have foun=
+d some time to get to run this code.<br>I would like to add to the tree bra=
+nches of all 5 higgs bosons, not just Hpm.<br>Could you point me to the way=
+ of doing this?<br>Also, are SUSY decays saved to the tree?<br></blockquote=
+>Hi,<br>You can add more branches in file (Top2HPlus/src/)mainFH.cpp. No SU=
+SY decays are included. Anything FH produces in the output can be added. He=
+re is an example:<br> BR_Hp_enu =3D sfinder.getValue(&quot;FH&quot;,*file,&=
+quot;Hp-nu_e-e&quot;);<br>Here the string &quot;Hp-nu_e-e&quot; is the same=
+ string as in the FH output.<br><br>Cheers,<br>Sami<br><br><blockquote type=
+=3D"cite">Cheers,<br>Alexandros<br>On Aug 22, 2012, at 2:17 PM, slehti &lt;=
+<a href=3D"mailto:slehti@mail.cern.ch">slehti@mail.cern.ch</a>&gt; wrote:<b=
+r><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On Wed, 22 Aug 2012, slehti wrote:<br>=
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On W=
+ed, 22 Aug 2012, Alexandros Attikis wrote:<br><br> &nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;Hi Sami,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am interested yes. Is it at th=
+e same location?<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Can you give some pointers =
+/ instructions please?<br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;I ran FH myself in order to see it works. The result =
+is in a root TTree found here:<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D"http://cmsdoc.cern.ch/~slehti/FH_resul=
+ts_mhmax.root">http://cmsdoc.cern.ch/~slehti/FH_results_mhmax.root</a><br><=
+br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The m=
+ass/tanb/whatever points can be easily increased or changed, and the plot c=
+an be made as a<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;function of mH&#43; or tanb or..<br><br> &nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;In case you want to change something, here is the recipe<br> &nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;git clone <a href=3D"http://cmsdoc.cern.ch/~slehti/T=
+op2HPlus.git">http://cmsdoc.cern.ch/~slehti/Top2HPlus.git</a><br> &nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;cd Top2HPlus/workspace<br> &nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;edit ../src/FH_inputMaker.py to select the masses and tanb's<br> &nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;make FH (runs FH for all the points selected in FH_i=
+nputMaker.py)<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make FH_root (creates the r=
+oot file from FH txt output created in the previous step))<br><br> &nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;The FH version is controlled by the first line of the=
+ Makefile.<br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cheers,<br> &nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;Sami<br><br></blockquote></blockquote></div><br></div></div=
+></blockquote></div><br></div></blockquote></div><br></div></div></blockquo=
+te></div><br></body></html>=
+
+--Apple-Mail=_707E90B4-36A4-4418-9DAA-59250782DBA2--

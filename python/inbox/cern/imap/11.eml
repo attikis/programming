@@ -1,0 +1,65 @@
+Received: from CERNMX32.cern.ch (137.138.144.178) by CERNFE21.cern.ch
+ (137.138.144.150) with Microsoft SMTP Server (TLS) id 14.2.298.4; Thu, 18 Oct
+ 2012 17:05:35 +0200
+Received: from smtp-rs1-vallila2.fe.helsinki.fi (128.214.173.75) by
+ cernmxgwlb2.cern.ch (137.138.144.183) with Microsoft SMTP Server (TLS) id
+ 14.2.318.1; Thu, 18 Oct 2012 17:05:34 +0200
+Received: from [128.141.101.88] (pb-d-128-141-101-88.cern.ch [128.141.101.88])
+	(authenticated bits=0)	by smtp-rs1.it.helsinki.fi (8.14.4/8.14.4) with ESMTP
+ id q9IF5Xsn015527	(version=TLSv1/SSLv3 cipher=DHE-RSA-CAMELLIA256-SHA
+ bits=256 verify=NOT);	Thu, 18 Oct 2012 18:05:33 +0300
+Message-ID: <50801AB2.5020909@cern.ch>
+Date: Thu, 18 Oct 2012 18:05:22 +0300
+From: "Lauri A. Wendland" <lauri.wendland@cern.ch>
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:14.0) Gecko/20120714 Thunderbird/14.0
+To: slehti <slehti@mail.cern.ch>
+CC: Ritva Kinnunen <Ritva.Kinnunen@cern.ch>, Matti Kortelainen
+	<Matti.Kortelainen@helsinki.fi>, Alexandros Attikis <attikis@cern.ch>,
+	Cristina Ferro <Cristina.Ferro@cern.ch>
+Subject: Re: script for cloning a git branch
+References: <507FA775.2040502@cern.ch> <alpine.LRH.2.00.1210181123120.24386@lxplus429.cern.ch>
+In-Reply-To: <alpine.LRH.2.00.1210181123120.24386@lxplus429.cern.ch>
+Content-Type: text/plain; charset="ISO-8859-1"; format=flowed
+Content-Transfer-Encoding: 7bit
+Return-Path: lauri.wendland@cern.ch
+X-MS-Exchange-Organization-PRD: cern.ch
+Received-SPF: Neutral (CERNMX32.cern.ch: 128.214.173.75 is neither permitted
+ nor denied by domain of lauri.wendland@cern.ch)
+X-MS-Exchange-Organization-Antispam-Report: v=2.0 cv=LMrRtuq9 c=1 sm=1
+ a=KX5x4S1/pGxY98EFUcCALg==:17 a=aFP-xk0SXQ8A:10 a=qH8cOgq37KAA:10
+ a=8nJEP1OIZ-IA:10 a=HB8hTGW9D-4A:10 a=YghmUxUHcM_mUG1nNTEA:9
+ a=wPNLvfGTeEIA:10 a=KX5x4S1/pGxY98EFUcCALg==:117;OrigIP:128.214.173.75;SCL:0
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-SCL: 0
+X-MS-Exchange-Organization-SenderIdResult: NEUTRAL
+X-MS-Exchange-Organization-AuthSource: CERNMX32.cern.ch
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-Message-Flag: Follow up
+MIME-Version: 1.0
+
+On 10/18/2012 12:32 PM, slehti wrote:
+> I'm going to clean up my public repo a bit, and delete the following
+> branches:
+>    CMSSW_342
+>    CMSSW_3X
+>    cmssw311x
+>    hpstanc
+>    pattuplev26
+>    pattuplev6
+>    pattuplev7
+>    rework
+>    tctau
+>    trigger
+> Any objections?
+
+No objections :)
+
+Cheers,
+Lauri
+
+-- 
+Scientist
+Helsinki Institute of Physics
+P.O. Box 64
+FIN-00014 University of Helsinki
+tel.: +358 9 191 50564 (office)

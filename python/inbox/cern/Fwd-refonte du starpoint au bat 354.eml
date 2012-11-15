@@ -1,0 +1,61 @@
+From: Christophe Delaere <christophe.delaere@cern.ch>
+Subject: Fwd: refonte du starpoint au bat 354
+Content: 
+*** Discussion title: CMS Commissioning
+
+Dear all,
+
+Please note the message below. 
+I don't have more details,  but the CMS center will apparently be affected the 
+whole day on Monday December, 17. 
+
+Cheers,
+Christophe
+
+-- 
+Christophe DELAERE
+UCLouvain - CP3, FNRS research associate
+Tel   : 74739  (from outside: +41 22 76 74739 ) 
+Gsm   : 165667 (from outside: +41 76 487 5667 ) 
+Office: 354-2-003 Mailbox: L06400
+Refonte du starpoint reseau au bat 354
+
+Dear Network user / Service manager,
+
+You are registered as responsible or main user of one or several devices connected to the network in building 354. Our infrastructure team foresees the complete re-installation of the network starpoint of this building on the 17th of December 2012. During this intervention network services in the building including general purpose and technical network will not be available.
+
+Impacted services:
+
+Please take note on this information and take the necessary measures to reduce the impact on your equipment.
+
+Best regards,
+Network Support
+
+Bonjour,
+
+Etant enregistrés comme responsable ou principal utilisateur d'un ou plusieurs devices connectes au starpoint reseau de batiment 354, nous vous informons que l'infrastructure  prévoit la refonte du startpoint du bat 354 pour le Lundi 17 Décembre 2012. Tous les services informatiques (reseaux general et technique) dans la batiment seront totalement arrêtes toute cette journée.
+
+Nous vous demandons de prendre en compte cette information et faire le nécessaire pour limiter son impact sur vos équipements.
+
+Bonne journee
+Network support
+
+)
+
+  *   S354-R-IP1<https://network.cern.ch/sc/fcgi/sc.fcgi?Action=Describe&Service=S354-R-IP1&gt; (Bat 354)
+
+·         S354-R-IP2<https://network.cern.ch/sc/fcgi/sc.fcgi?Action=Describe&Service=S354-R-IP2&gt; (354-R)
+
+  *   S354-R-IP5<https://network.cern.ch/sc/fcgi/sc.fcgi?Action=Describe&Service=S354-R-IP5&gt; (Bat 354)
+  *   S354-R-IP4<https://network.cern.ch/sc/fcgi/sc.fcgi?Action=Describe&Service=S354-R-IP4&gt; TechNet-CSAM (8,15,101,170 ,206,354 ,356,365)
+  *   S354-R-IP6<https://network.cern.ch/sc/fcgi/sc.fcgi?Action=Describe&Service=S354-R-IP6&gt; Video PS Access Control (354-R)
+  *   S354-R-IP7<https://network.cern.ch/sc/fcgi/sc.fcgi?Action=Describe&Service=S354-R-IP7&gt; (Bat 354)
+  *   S354-R-PB1<https://network.cern.ch/sc/fcgi/sc.fcgi?Action=Describe&Service=S354-R-PB1&gt; (Bat 354)
+  *   S354-R-PB2<https://network.cern.ch/sc/fcgi/sc.fcgi?Action=Describe&Service=S354-R-PB2&gt; Wifi 354 (Bat 354)
+  *   S354-R-IP3<https://network.cern.ch/sc/fcgi/sc.fcgi?Action=Describe&Service=S354-R-IP3&gt; (354-R)
+
+ [ MIME part of type text/html without a name stripped ]
+
+-------------------------------------------------------------
+Visit this CMS message (to reply or unsubscribe) at: 
+https://hypernews.cern.ch/HyperNews/CMS/get/commissioning/4701.html

@@ -1,0 +1,133 @@
+Received: from [10.0.1.3] (194.42.7.163) by smtp.cern.ch (137.138.144.172)
+ with Microsoft SMTP Server (TLS) id 14.2.298.4; Mon, 3 Sep 2012 16:14:55
+ +0200
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_D373889E-7B44-400C-B5EE-336C34E8F08A"
+Subject: Re: Top2HPlus recipe
+From: Alexandros Attikis <attikis@cern.ch>
+In-Reply-To: <alpine.LRH.2.00.1208221312430.21062@lxplus310.cern.ch>
+Date: Mon, 3 Sep 2012 17:14:53 +0300
+Message-ID: <790C7FC6-31ED-4199-A00A-EEAD8C7BC300@cern.ch>
+References: <5024A47B.6070000@cern.ch>
+ <B96B46662CA35C4E9C64DAA8EE9A5C54907E1B1B@CERNXCHG02.cern.ch>
+ <F76A3C7B-AC99-4FC8-86AC-6EC91A5CCF35@cern.ch>
+ <B96B46662CA35C4E9C64DAA8EE9A5C54907E1B3A@CERNXCHG02.cern.ch>
+ <78B00A35-74F4-4EEB-BE0F-1E7A44A0F921@cern.ch>
+ <B96B46662CA35C4E9C64DAA8EE9A5C54907E1B52@CERNXCHG02.cern.ch>
+ <50334C24.4000003@cern.ch> <EF676FB3-8971-4FE2-ABB8-71372C98BA9E@cern.ch>
+ <503351AB.6030100@cern.ch> <C1522115-7F7B-4BAF-8EA1-AECCAAB088B4@cern.ch>
+ <alpine.LRH.2.00.1208211155040.18697@lxplus421.cern.ch>
+ <6B5D7B16-C5C3-417C-8A9C-709C2AF8A0C5@cern.ch> <50337D78.9050901@cern.ch>
+ <92214F8C-42A4-455A-AC5C-67A7F8A442FA@cern.ch>
+ <91F0B7AA-12B3-499D-954A-11444BEF364B@cern.ch>
+ <B96B46662CA35C4E9C64DAA8EE9A5C54907E1BCF@CERNXCHG02.cern.ch>
+ <D436CD46-6FD3-42B2-A7E8-5731EB38BF37@cern.ch>
+ <alpine.LRH.2.00.1208221254090.21062@lxplus310.cern.ch>
+ <9631637E-FEAC-4201-BF72-A2E6EFE68C26@cern.ch>
+ <alpine.LRH.2.00.1208221302030.21062@lxplus310.cern.ch>
+ <alpine.LRH.2.00.1208221312430.21062@lxplus310.cern.ch>
+To: slehti <slehti@mail.cern.ch>
+X-Mailer: Apple Mail (2.1486)
+Return-Path: attikis@cern.ch
+X-MS-Exchange-Organization-AuthSource: CERNFE23.cern.ch
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 0a
+X-Originating-IP: [194.42.7.163]
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-Recipient-P2-Type: Bcc
+MIME-Version: 1.0
+
+--Apple-Mail=_D373889E-7B44-400C-B5EE-336C34E8F08A
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="us-ascii"
+
+Hi Sami,
+
+I have found some time to get to run this code.
+I would like to add to the tree branches of all 5 higgs bosons, not just =
+Hpm.
+Could you point me to the way of doing this?
+Also, are SUSY decays saved to the tree?
+
+Cheers,
+Alexandros
+
+On Aug 22, 2012, at 2:17 PM, slehti <slehti@mail.cern.ch> wrote:
+
+> On Wed, 22 Aug 2012, slehti wrote:
+>=20
+>> On Wed, 22 Aug 2012, Alexandros Attikis wrote:
+>>=20
+>>> Hi Sami,
+>>> I am interested yes. Is it at the same location?
+>>> Can you give some pointers / instructions please?
+>> I ran FH myself in order to see it works. The result is in a root =
+TTree found here:
+>> http://cmsdoc.cern.ch/~slehti/FH_results_mhmax.root
+>>=20
+>> The mass/tanb/whatever points can be easily increased or changed, and =
+the plot can be made as a function of mH+ or tanb or..
+> In case you want to change something, here is the recipe
+> git clone http://cmsdoc.cern.ch/~slehti/Top2HPlus.git
+> cd Top2HPlus/workspace
+> edit ../src/FH_inputMaker.py to select the masses and tanb's
+> make FH (runs FH for all the points selected in FH_inputMaker.py)
+> make FH_root (creates the root file from FH txt output created in the =
+previous step))
+>=20
+> The FH version is controlled by the first line of the Makefile.
+>=20
+> Cheers,
+> Sami
+
+
+--Apple-Mail=_D373889E-7B44-400C-B5EE-336C34E8F08A
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+></head><body style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; -we=
+bkit-line-break: after-white-space; ">Hi Sami,<div><br><div>I have found so=
+me time to get to run this code.</div><div>I would like to add to the tree =
+branches of all 5 higgs bosons, not just Hpm.</div><div>Could you point me =
+to the way of doing this?<br><div apple-content-edited=3D"true">
+<span class=3D"Apple-style-span" style=3D"border-collapse: separate; color:=
+ rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant: no=
+rmal; font-weight: normal; letter-spacing: normal; line-height: normal; orp=
+hans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; =
+white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizonta=
+l-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorati=
+ons-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-wi=
+dth: 0px; font-size: medium; "><span class=3D"Apple-style-span" style=3D"bo=
+rder-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-=
+style: normal; font-variant: normal; font-weight: normal; letter-spacing: n=
+ormal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: n=
+one; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-hori=
+zontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-dec=
+orations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stro=
+ke-width: 0px; font-size: medium; "><span class=3D"Apple-style-span" style=
+=3D"font-size: 12px; "><div>Also, are SUSY decays saved to the tree?</div><=
+div><br></div><div>Cheers,</div><div>Alexandros</div></span></span></span>
+</div>
+<br><div><div>On Aug 22, 2012, at 2:17 PM, slehti &lt;<a href=3D"mailto:sle=
+hti@mail.cern.ch">slehti@mail.cern.ch</a>&gt; wrote:</div><br class=3D"Appl=
+e-interchange-newline"><blockquote type=3D"cite">On Wed, 22 Aug 2012, sleht=
+i wrote:<br><br><blockquote type=3D"cite">On Wed, 22 Aug 2012, Alexandros A=
+ttikis wrote:<br><br><blockquote type=3D"cite">Hi Sami,<br>I am interested =
+yes. Is it at the same location?<br>Can you give some pointers / instructio=
+ns please?<br></blockquote>I ran FH myself in order to see it works. The re=
+sult is in a root TTree found here:<br><a href=3D"http://cmsdoc.cern.ch/~sl=
+ehti/FH_results_mhmax.root">http://cmsdoc.cern.ch/~slehti/FH_results_mhmax.=
+root</a><br><br>The mass/tanb/whatever points can be easily increased or ch=
+anged, and the plot can be made as a function of mH&#43; or tanb or..<br></=
+blockquote>In case you want to change something, here is the recipe<br>git =
+clone <a href=3D"http://cmsdoc.cern.ch/~slehti/Top2HPlus.git">http://cmsdoc=
+.cern.ch/~slehti/Top2HPlus.git</a><br>cd Top2HPlus/workspace<br>edit ../src=
+/FH_inputMaker.py to select the masses and tanb's<br>make FH (runs FH for a=
+ll the points selected in FH_inputMaker.py)<br>make FH_root (creates the ro=
+ot file from FH txt output created in the previous step))<br><br>The FH ver=
+sion is controlled by the first line of the Makefile.<br><br>Cheers,<br>Sam=
+i<br></blockquote></div><br></div></div></body></html>=
+
+--Apple-Mail=_D373889E-7B44-400C-B5EE-336C34E8F08A--

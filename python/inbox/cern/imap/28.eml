@@ -1,0 +1,53 @@
+Received: from CERNMX33.cern.ch (137.138.144.181) by CERNFE21.cern.ch
+ (137.138.144.150) with Microsoft SMTP Server (TLS) id 14.2.298.4; Thu, 8 Nov
+ 2012 16:24:10 +0100
+Received: from vocms91.cern.ch (128.142.16.110) by cernmxlb2.cern.ch
+ (137.138.144.184) with Microsoft SMTP Server (TLS) id 14.2.318.1; Thu, 8 Nov
+ 2012 16:23:31 +0100
+Received: from vocms91.cern.ch (localhost.localdomain [127.0.0.1])	by
+ vocms91.cern.ch (8.13.8/8.13.8) with ESMTP id qA8FNVbo007126;	Thu, 8 Nov 2012
+ 16:23:31 +0100
+Received: (from apache@localhost)	by vocms91.cern.ch (8.13.8/8.13.8/Submit) id
+ qA8FNUYA007125;	Thu, 8 Nov 2012 16:23:30 +0100
+Date: Thu, 8 Nov 2012 16:23:30 +0100
+X-Authentication-Warning: vocms91.cern.ch: apache set sender to hn-cms-admin@cern.ch using -f
+To: <hn-cms-commissioning@cern.ch>
+From: Maria Chamizo Llatas <maria.chamizo@cern.ch>
+Errors-To: hn-cms-admin@cern.ch
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: Weekly Run Meeting Monday 12 November at 16:00 40-S2-A01
+Message-ID: <2AE8E417-91ED-4E45-99DA-958606A825C0@cern.ch>
+X-Mailer: CMS 1.11-slac-70b
+X-Hn-Loop: https://hypernews.cern.ch/HyperNews/CMS/get/commissioning/4692.html
+Precedence: list
+X-Hn-Forum: https://hypernews.cern.ch/HyperNews/CMS/get/commissioning.html
+Return-Path: hn-cms-admin@cern.ch
+X-MS-Exchange-Organization-AuthSource: CERNMX33.cern.ch
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 10
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-SCL: -1
+MIME-Version: 1.0
+
+
+*** Discussion title: CMS Commissioning
+
+Dear All, 
+
+We will have our usual Weekly Run Meeting on Monday 12 November at 16:00 in 40-S2-A01. Please send a short description of the sub-detectors reports to us and the RFMs, Christoph Schwick <Christoph.Schwick@cern.ch>, Brian Dorney <brian.l.dorney@cern.ch> and Marina Giunta <Marina.Giunta@cern.ch> before Monday morning at 9:30. 
+
+A preliminary agenda  with the Vidyo details can be found here: 
+
+https://indico.cern.ch/conferenceDisplay.py?confId=216960
+
+Please do not forget to fill the fraction of life channels for each system.
+
+https://twiki.cern.ch/twiki/bin/viewauth/CMS/OnlineWBActiveChannels
+
+Regards,
+
+Maria / Greg / Christophe
+
+-------------------------------------------------------------
+Visit this CMS message (to reply or unsubscribe) at: 
+https://hypernews.cern.ch/HyperNews/CMS/get/commissioning/4692.html

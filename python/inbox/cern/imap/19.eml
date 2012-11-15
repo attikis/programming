@@ -1,0 +1,54 @@
+Received: from CERNMX30.cern.ch (137.138.144.177) by CERNFE21.cern.ch
+ (137.138.144.150) with Microsoft SMTP Server (TLS) id 14.2.298.4; Wed, 7 Nov
+ 2012 13:04:18 +0100
+Received: from smtp-rs1-vallila2.fe.helsinki.fi (128.214.173.75) by
+ cernmxgwlb2.cern.ch (137.138.144.183) with Microsoft SMTP Server (TLS) id
+ 14.2.318.1; Wed, 7 Nov 2012 13:04:10 +0100
+Received: from pc140.localnet (pc140.hip.helsinki.fi [128.214.56.93])	by
+ smtp-rs1.it.helsinki.fi (8.14.4/8.14.4) with ESMTP id qA7C49OZ025525
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT);	Wed, 7
+ Nov 2012 14:04:09 +0200
+From: Matti Kortelainen <matti.kortelainen@helsinki.fi>
+Organization: Helsinki Institute of Physics
+To: slehti <slehti@mail.cern.ch>
+Subject: Re: 53X pattuples and code
+Date: Wed, 7 Nov 2012 14:04:06 +0200
+User-Agent: KMail/1.13.6 (Linux/2.6.38-16-generic; KDE/4.6.5; x86_64; ; )
+CC: "Lauri A. Wendland" <lauri.wendland@cern.ch>, Ritva Kinnunen
+	<Ritva.Kinnunen@cern.ch>, Cristina Ferro <Cristina.Ferro@cern.ch>, Alexandros
+ Attikis <Alexandros.Attikis@cern.ch>
+References: <201211071346.44210.matti.kortelainen@helsinki.fi> <alpine.LRH.2.02.1211071251180.24841@lxplus409.cern.ch>
+In-Reply-To: <alpine.LRH.2.02.1211071251180.24841@lxplus409.cern.ch>
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Message-ID: <201211071404.06646.matti.kortelainen@helsinki.fi>
+Return-Path: matti.kortelainen@helsinki.fi
+X-MS-Exchange-Organization-PRD: helsinki.fi
+Received-SPF: None (CERNMX30.cern.ch: matti.kortelainen@helsinki.fi does not
+ designate permitted sender hosts)
+X-MS-Exchange-Organization-Antispam-Report: v=1.1
+ cv=SBsM7yZNamBESHkdM9ANvLzEoWKVvpACMhlNggACcJs= c=1 sm=1 a=522ZAKym0HcA:10
+ a=kj9zAlcOel0A:10 a=KX5x4S1/pGxY98EFUcCALg==:17 a=wbKsokwnX-1hslIB7ZUA:9
+ a=CjuIK1q_8ugA:10 a=KX5x4S1/pGxY98EFUcCALg==:117;OrigIP:128.214.173.75;SCL:0
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-SCL: 0
+X-MS-Exchange-Organization-SenderIdResult: NONE
+X-MS-Exchange-Organization-AuthSource: CERNMX30.cern.ch
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-Message-Flag: Follow up
+MIME-Version: 1.0
+
+On Wednesday, November 07, 2012 13:55:08 slehti wrote:
+> On Wed, 7 Nov 2012, Matti Kortelainen wrote:
+> > - Trigger efficiencies have been updated, with the following caveats
+> >  * So far only for againstElectronMVA+againstMuonTight+byMediumCombinedIsolationDeltaBetaCorr
+> Actually we do have the 2012 ones for the same combinations as for 2011:
+> byMediumCombinedIsolationDeltaBetaCorr_againstElectronMedium 
+> byMediumCombinedIsolationDeltaBetaCorr_againstElectronMVA 
+> byLooseCombinedIsolationDeltaBetaCorr_againstElectronMVA 
+> byLooseCombinedIsolationDeltaBetaCorr_againstElectronMedium
+
+Right, thanks for the correction.
+
+Cheers,
+Matti

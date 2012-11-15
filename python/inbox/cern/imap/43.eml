@@ -1,0 +1,373 @@
+Received: from CERNMX32.cern.ch (137.138.144.178) by CERNFE20.cern.ch
+ (137.138.144.155) with Microsoft SMTP Server (TLS) id 14.2.298.4; Mon, 12 Nov
+ 2012 13:47:08 +0100
+Received: from mail-la0-f49.google.com (209.85.215.49) by cernmxgwlb2.cern.ch
+ (137.138.144.183) with Microsoft SMTP Server (TLS) id 14.2.318.1; Mon, 12 Nov
+ 2012 13:47:00 +0100
+Received: by mail-la0-f49.google.com with SMTP id z14so4362420lag.36
+        for <attikis@cern.ch>; Mon, 12 Nov 2012 04:47:00 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=message-id:date:from:user-agent:mime-version:to:subject:references
+         :in-reply-to:content-type;
+        bh=jEJNw8CiDlZ2ZeKBFBy8V2vrYuiiGcYOxMuY2wzSWC0=;
+        b=n6sdU6nlAdAtuLyjSSqMOUw728OL0fyBYVEfKZWH/mH/PODpGKtoLk6Rb9uJNTRTfB
+         LQlbucqFCbKbwSrgmdwLrhbeC1BSkdAhUElzEJ8I+yCOm9ejqXdOAvezLSLeC376FwP9
+         YpdsrUyofLY1BPJ+0NdWUhB69mabTggOy54rgnL3auVSRZpUFy/p/spSSBrnRoT9EBWQ
+         YkdHeEFm8jbWGhmpBHy87rshqwVym8aKcjjSL/g8MWJFZM9jy3Zrv1IZWevmp/3qE8hx
+         Iv5y+ALrjU6ZjyfndzHVRf5HmsSpaXxpuohDr/u3sChD+QIDXPD2HnBRbmAUgkC0qg4J
+         /s8g==
+Received: by 10.152.104.107 with SMTP id gd11mr17954472lab.25.1352724420100;
+        Mon, 12 Nov 2012 04:47:00 -0800 (PST)
+Return-Path: <loukas.gouskos@gmail.com>
+Received: from [128.141.37.210] (pb-d-128-141-37-210.cern.ch.
+ [128.141.37.210])        by mx.google.com with ESMTPS id
+ bf3sm2479966lbb.16.2012.11.12.04.46.58        (version=SSLv3 cipher=OTHER);
+        Mon, 12 Nov 2012 04:46:59 -0800 (PST)
+Message-ID: <50A0EFC0.20009@gmail.com>
+Date: Mon, 12 Nov 2012 13:46:56 +0100
+From: Loukas Gouskos <loukas.gouskos@gmail.com>
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:16.0) Gecko/20121028 Thunderbird/16.0.2
+To: Alexandros Attikis <attikis@cern.ch>
+Subject: Re: stationnement sur les parkings du CERN
+References: <B02B046F78C6FB459B7D99629D26D2DB79AAF3C7@PLOXCHG03.cern.ch> <CB1595C0-91FF-4F29-BE02-AD255ED0BB56@cern.ch> <50A0E906.3010404@gmail.com> <291AEF6C-CB2E-4627-99FE-6B1F7EE2134F@cern.ch>
+In-Reply-To: <291AEF6C-CB2E-4627-99FE-6B1F7EE2134F@cern.ch>
+Content-Type: multipart/alternative;
+	boundary="------------010207010102090300010109"
+X-MS-Exchange-Organization-PRD: gmail.com
+Received-SPF: Pass (CERNMX32.cern.ch: domain of loukas.gouskos@gmail.com
+ designates 209.85.215.49 as permitted sender) receiver=CERNMX32.cern.ch;
+ client-ip=209.85.215.49; helo=mail-la0-f49.google.com;
+X-MS-Exchange-Organization-Antispam-Report: v=1.1
+ cv=UiJ+fPXAWREMDQSg5FbFSL9vtKf2r/gh2xHGR+YH7e0= c=1 sm=1 a=Uyy7E1cbcwUA:10
+ a=xFPOEp2K0xkA:10 a=nDghuxUhq_wA:10 a=GzEO2dIQYDeJCfmyt4eCwQ==:17
+ a=pGLkceISAAAA:8 a=EuvBnV-pAAAA:8 a=oR9pVSw_NyAn19x9GUYA:9 a=pILNOxqGKmIA:10
+ a=1QJazM9jLIUA:10 a=MSl-tDqOz04A:10 a=_eZzcMFOkNuevEjRV_8A:9
+ a=_W_S_7VecoQA:10 a=SXVqRnQ668Kwz2pr:21
+ a=2S4x7jgeWdaFbRDsRH9xqw==:117;OrigIP:209.85.215.49;SCL:0
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-SCL: 0
+X-MS-Exchange-Organization-SenderIdResult: PASS
+X-MS-Exchange-Organization-AuthSource: CERNMX32.cern.ch
+X-MS-Exchange-Organization-AuthAs: Anonymous
+MIME-Version: 1.0
+
+--------------010207010102090300010109
+Content-Type: text/plain; charset="windows-1252"; format=flowed
+Content-Transfer-Encoding: 8bit
+
+Na pane ola kala eyxomai! apo kardias!
+On 11/12/2012 01:46 PM, Alexandros Attikis wrote:
+> kai mena.
+> methavrio vgenun ta cern fellowships..
+>
+> On Nov 12, 2012, at 2:18 PM, Loukas Gouskos <loukas.gouskos@gmail.com 
+> <mailto:loukas.gouskos@gmail.com>> wrote:
+>
+>> Entaksei agori mou !! tha to kanw simera.. an den exei pesei apo 
+>> bataria .. :-)
+>> mou leipeis.. [poly ligo omws..]
+>>
+>> On 11/12/2012 01:17 PM, Alexandros Attikis wrote:
+>>> Re agorina mou,
+>>>
+>>> se parakalw metakinise to aftokinito mou.
+>>> sou xrwrstaw 2 filakia
+>>>
+>>>
+>>> On Nov 12, 2012, at 1:58 PM, Claude Ducastel 
+>>> <claude.ducastel@cern.ch <mailto:claude.ducastel@cern.ch>> wrote:
+>>>
+>>>> Madame,
+>>>> Monsieur,
+>>>> Votre véhicule a été vu comme stationnant sur les parkings du CERN 
+>>>> pour une durée de 5 jours ouvrables ou plus.
+>>>> Sachez que ceci n’est pas autorisé par le règlement du CERN relatif 
+>>>> au stationnement.
+>>>> Veuillez prendre toutes les dispositions nécessaires afin que votre 
+>>>> véhicule soit stationné vers votre domicile plutôt que sur les 
+>>>> parkings du CERN, pour, avant tout, libérer des places toujours 
+>>>> nécessaires pour les utilisateurs qui viennent travailler au CERN 
+>>>> chaque jour.
+>>>> En vous remerciant pour votre collaboration.
+>>>> Meilleures salutations,
+>>>> C.Ducastel
+>>>> Une page d’informations pratiques existe sur la page du Admin@guide.
+>>>> (https://admin-eguide.web.cern.ch/admin-eguide/voitures/proc_circulation_fr.asp)
+>>>> Your vehicle was seen as parking on the parking lots of the CERN 
+>>>> for a length of 5 working days or more.
+>>>> Know that this is not authorized by the regulation of the CERN 
+>>>> relating to the parking.
+>>>> Want to take all the necessary disposals so that your vehicle is 
+>>>> parked towards your residence rather than on the parking lots of 
+>>>> the CERN, for, before all, always liberate necessary places for the 
+>>>> users that come to work to the CERN every day.
+>>>> While thanking you for your collaboration.
+>>>> Best regards,
+>>>> C.Ducastel
+>>>> An information page practice exists on the page of the Admin@guide.
+>>>> (https://admin-eguide.web.cern.ch/admin-eguide/voitures/proc_circulation_fr.asp)
+>>>> //
+>>>> //
+>>>> //
+>>>> /Claude DUCASTEL/
+>>>> /Head of CERN Surveillance, Registration service & Locks/Keys service/
+>>>> /Natel :     +41 76 487 33 33 /
+>>>> /Tél :        +41 22 767 33 33/
+>>>> /Fax :        +41 22 766 92 48/
+>>>> /SMS :      41764873333@mail2sms.cern.ch <http://mail2sms.cern.ch/>/
+>>>> /Email : claude.ducastel@cern.ch <mailto:claude.ducastel@cern.ch>/
+>>>
+>>
+>
+
+
+--------------010207010102090300010109
+Content-Type: text/html; charset="windows-1252"
+Content-Transfer-Encoding: 8bit
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+  </head>
+  <body bgcolor="#FFFFFF" text="#000000">
+    Na pane ola kala eyxomai! apo kardias!<br>
+    <div class="moz-cite-prefix">On 11/12/2012 01:46 PM, Alexandros
+      Attikis wrote:<br>
+    </div>
+    <blockquote cite="mid:291AEF6C-CB2E-4627-99FE-6B1F7EE2134F@cern.ch" type="cite">
+      
+      kai mena.
+      <div>methavrio vgenun ta cern fellowships..</div>
+      <div>
+        <div apple-content-edited="true"><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0);
+            font-family: Helvetica; font-style: normal; font-variant:
+            normal; font-weight: normal; letter-spacing: normal;
+            line-height: normal; orphans: 2; text-align: -webkit-auto;
+            text-indent: 0px; text-transform: none; white-space: normal;
+            widows: 2; word-spacing: 0px;
+            -webkit-border-horizontal-spacing: 0px;
+            -webkit-border-vertical-spacing: 0px;
+            -webkit-text-decorations-in-effect: none;
+            -webkit-text-size-adjust: auto; -webkit-text-stroke-width:
+            0px; font-size: medium; "><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0);
+              font-family: Helvetica; font-style: normal; font-variant:
+              normal; font-weight: normal; letter-spacing: normal;
+              line-height: normal; orphans: 2; text-indent: 0px;
+              text-transform: none; white-space: normal; widows: 2;
+              word-spacing: 0px; -webkit-border-horizontal-spacing: 0px;
+              -webkit-border-vertical-spacing: 0px;
+              -webkit-text-decorations-in-effect: none;
+              -webkit-text-size-adjust: auto; -webkit-text-stroke-width:
+              0px; font-size: medium; "><span class="Apple-style-span" style="font-size: 12px; ">
+                <div><br>
+                </div>
+              </span></span></span></div>
+        <div>
+          <div>On Nov 12, 2012, at 2:18 PM, Loukas Gouskos &lt;<a moz-do-not-send="true" href="mailto:loukas.gouskos@gmail.com">loukas.gouskos@gmail.com</a>&gt;
+            wrote:</div>
+          <br class="Apple-interchange-newline">
+          <blockquote type="cite">
+            
+            <div bgcolor="#FFFFFF" text="#000000"> Entaksei agori mou !!
+              tha to kanw simera.. an den exei pesei apo bataria .. :-)<br>
+              mou leipeis.. [poly ligo omws..]<br>
+              <br>
+              <div class="moz-cite-prefix">On 11/12/2012 01:17 PM,
+                Alexandros Attikis wrote:<br>
+              </div>
+              <blockquote cite="mid:CB1595C0-91FF-4F29-BE02-AD255ED0BB56@cern.ch" type="cite"> <base href="x-msg://37/">Re agorina mou,&nbsp;
+                <div><br>
+                </div>
+                <div>se parakalw metakinise to aftokinito mou.</div>
+                <div>sou xrwrstaw 2 filakia<br>
+                  <div apple-content-edited="true"><br>
+                  </div>
+                  <br>
+                  <div>
+                    <div>On Nov 12, 2012, at 1:58 PM, Claude Ducastel
+                      &lt;<a moz-do-not-send="true" href="mailto:claude.ducastel@cern.ch">claude.ducastel@cern.ch</a>&gt;
+
+                      wrote:</div>
+                    <br class="Apple-interchange-newline">
+                    <blockquote type="cite">
+                      <div link="blue" vlink="purple" style="font-family: Helvetica; font-size:
+                        medium; font-style: normal; font-variant:
+                        normal; font-weight: normal; letter-spacing:
+                        normal; line-height: normal; orphans: 2;
+                        text-align: -webkit-auto; text-indent: 0px;
+                        text-transform: none; white-space: normal;
+                        widows: 2; word-spacing: 0px;
+                        -webkit-text-size-adjust: auto;
+                        -webkit-text-stroke-width: 0px; " lang="FR-CH">
+                        <div class="WordSection1" style="page:
+                          WordSection1; ">
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; ">Madame,<o:p></o:p></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; ">Monsieur,<o:p></o:p></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; ">Votre véhicule a été vu comme
+                            stationnant sur les parkings du CERN pour
+                            une durée de 5 jours ouvrables ou plus.<o:p></o:p></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; ">Sachez que ceci n’est pas
+                            autorisé par le règlement du CERN relatif au
+                            stationnement.<o:p></o:p></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; ">Veuillez prendre toutes les
+                            dispositions nécessaires afin que votre
+                            véhicule soit stationné vers votre domicile
+                            plutôt que sur les parkings du CERN, pour,
+                            avant tout, libérer des places toujours
+                            nécessaires pour les utilisateurs qui
+                            viennent travailler au CERN chaque jour.<o:p></o:p></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; ">En vous remerciant pour votre
+                            collaboration.<o:p></o:p></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; ">Meilleures salutations,<o:p></o:p></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; ">C.Ducastel<o:p></o:p></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><o:p>&nbsp;</o:p></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; ">Une page d’informations
+                            pratiques existe sur la page du Admin@guide.<o:p></o:p></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; ">(<a moz-do-not-send="true" href="https://admin-eguide.web.cern.ch/admin-eguide/voitures/proc_circulation_fr.asp" style="color: purple; text-decoration:
+                              underline; ">https://admin-eguide.web.cern.ch/admin-eguide/voitures/proc_circulation_fr.asp</a>)<o:p></o:p></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><o:p>&nbsp;</o:p></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><o:p>&nbsp;</o:p></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><span lang="EN-GB">&nbsp;</span></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><span lang="EN-GB">Your
+                              vehicle was seen as parking on the parking
+                              lots of the CERN for a length of 5 working
+                              days or more.<o:p></o:p></span></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><span lang="EN-GB">Know that
+                              this is not authorized by the regulation
+                              of the CERN relating to the parking.&nbsp;<o:p></o:p></span></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><span lang="EN-GB">Want to
+                              take all the necessary disposals so that
+                              your vehicle is parked towards your
+                              residence rather than on the parking lots
+                              of the CERN, for, before all, always
+                              liberate necessary places for the users
+                              that come to work to the CERN every day.&nbsp;<o:p></o:p></span></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><span lang="EN-GB">While
+                              thanking you for your collaboration.&nbsp;<o:p></o:p></span></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><span lang="EN-GB">Best
+                              regards,<o:p></o:p></span></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><span lang="EN-GB">C.Ducastel<o:p></o:p></span></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><span lang="EN-GB">&nbsp;</span></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><span lang="EN-GB">An
+                              information page practice exists on the
+                              page of the Admin@guide.&nbsp;<o:p></o:p></span></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><span lang="EN-GB">(</span><a moz-do-not-send="true" href="https://admin-eguide.web.cern.ch/admin-eguide/voitures/proc_circulation_fr.asp" style="color: purple; text-decoration:
+                              underline; "><span lang="EN-GB">https://admin-eguide.web.cern.ch/admin-eguide/voitures/proc_circulation_fr.asp</span></a><span lang="EN-GB">)<o:p></o:p></span></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><span lang="EN-GB">&nbsp;</span></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><i><span style="font-size:
+                                12pt; color: rgb(31, 73, 125); " lang="EN-GB">&nbsp;</span></i></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><i><span style="font-size:
+                                12pt; color: rgb(31, 73, 125); " lang="EN-GB">&nbsp;</span></i></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><i><span style="font-size:
+                                12pt; color: rgb(31, 73, 125); " lang="EN-GB">&nbsp;</span></i></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><i><span style="font-size:
+                                12pt; color: rgb(31, 73, 125); " lang="EN-GB">Claude DUCASTEL<o:p></o:p></span></i></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><i><span style="font-size:
+                                12pt; color: rgb(31, 73, 125); " lang="EN-GB">Head of CERN Surveillance,
+                                Registration service &amp; Locks/Keys
+                                service<o:p></o:p></span></i></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><i><span style="font-size:
+                                12pt; color: rgb(31, 73, 125); " lang="EN-GB">Natel :&nbsp;&nbsp;&nbsp;&nbsp; &#43;41 76 487 33
+                                33&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<o:p></o:p></span></i></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><i><span style="font-size:
+                                12pt; color: rgb(31, 73, 125); " lang="EN-GB">Tél :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#43;41 22 767 33
+                                33<o:p></o:p></span></i></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><i><span style="font-size:
+                                12pt; color: rgb(31, 73, 125); " lang="EN-GB">Fax :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#43;41 22 766 92
+                                48<o:p></o:p></span></i></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><i><span style="font-size:
+                                12pt; color: rgb(31, 73, 125); " lang="EN-GB">SMS :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 41764873333@<a moz-do-not-send="true" href="http://mail2sms.cern.ch/" style="color: purple; text-decoration:
+                                  underline; ">mail2sms.cern.ch</a><o:p></o:p></span></i></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><i><span style="font-size:
+                                12pt; color: rgb(31, 73, 125); " lang="EN-GB">Email :&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a moz-do-not-send="true" href="mailto:claude.ducastel@cern.ch" style="color: purple; text-decoration:
+                                  underline; ">claude.ducastel@cern.ch</a><o:p></o:p></span></i></div>
+                          <div style="margin: 0cm 0cm 0.0001pt;
+                            font-size: 11pt; font-family: Calibri,
+                            sans-serif; "><o:p>&nbsp;</o:p></div>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                  <br>
+                </div>
+              </blockquote>
+              <br>
+            </div>
+          </blockquote>
+        </div>
+        <br>
+      </div>
+    </blockquote>
+    <br>
+  </body>
+</html>
+
+--------------010207010102090300010109--

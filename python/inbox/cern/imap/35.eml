@@ -1,0 +1,97 @@
+Received: from CERNMX33.cern.ch (137.138.144.181) by CERNFE22.cern.ch
+ (137.138.144.151) with Microsoft SMTP Server (TLS) id 14.2.298.4; Sun, 11 Nov
+ 2012 17:39:12 +0100
+Received: from vocms91.cern.ch (128.142.16.110) by cernmxlb2.cern.ch
+ (137.138.144.184) with Microsoft SMTP Server (TLS) id 14.2.318.1; Sun, 11 Nov
+ 2012 17:39:11 +0100
+Received: from vocms91.cern.ch (localhost.localdomain [127.0.0.1])	by
+ vocms91.cern.ch (8.13.8/8.13.8) with ESMTP id qABGdBjU028866;	Sun, 11 Nov
+ 2012 17:39:11 +0100
+Received: (from apache@localhost)	by vocms91.cern.ch (8.13.8/8.13.8/Submit) id
+ qABGdAoV028865;	Sun, 11 Nov 2012 17:39:10 +0100
+Date: Sun, 11 Nov 2012 17:39:10 +0100
+X-Authentication-Warning: vocms91.cern.ch: apache set sender to hn-cms-admin@cern.ch using -f
+To: <hn-cms-physics-announcements@cern.ch>
+From: Sudhir Malik <malik@fnal.gov>
+Errors-To: hn-cms-admin@cern.ch
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: PAT Course at CERN, 3 - 7 Dec, 2012
+Message-ID: <F293D4B2-1F5B-48AE-BA55-86EE3A214885@fnal.gov>
+X-Mailer: CMS 1.11-slac-70b
+X-Hn-Loop: https://hypernews.cern.ch/HyperNews/CMS/get/physics-announcements/1998.html
+Precedence: list
+X-Hn-Forum: https://hypernews.cern.ch/HyperNews/CMS/get/physics-announcements.html
+Return-Path: hn-cms-admin@cern.ch
+X-MS-Exchange-Organization-AuthSource: CERNMX33.cern.ch
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 10
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-SCL: -1
+X-Message-Flag: Follow up
+MIME-Version: 1.0
+
+
+*** Discussion title: Physics Announcements
+
+Dear CMS Collaborators,
+
+The registration to the course "Using Physics Analysis Toolkit (PAT)
+in your analysis" is open from today. You can find the registration
+form and course schedule at
+https://indico.cern.ch/conferenceDisplay.py?confId=217169<https://indico.cern.ch/conferenceDisplay.py?confId=187161&gt;
+The course will take place 3 - 7 Dec, 2012 at CERN.
+
+It will consist of an intense period of lectures, exercise sessions,
+one-to-one discussions and examples on the use of PAT in a concrete
+physics analysis. As the name says, the course will give an overview
+of the available physics analysis tools and the skills will be put in
+practice during the exercise sessions for which each
+participant is required to have an analysis project in mind. It is
+very unlikely that you will come out with a completed analysis after a
+one-week course but we consider it important to have a real analysis
+scenario in mind for effective learning.
+
+To make best profit of the course and the tutoring, you should
+reserve a substantial amount of your time for it during the tutorial
+week.
+
+Participants with little or no prior knowledge on CMSSW or
+otherwise are expected to finish a set of pre-requisite exercises
+before starting the PAT tutorial so as to be fully prepared.
+Experience and feedback from the participants has shown that finishing
+pre-requisite exercises helps participants do well in the course. The
+pre-requisite exercise material will be available by 20 Nov, 2012.
+A persistent communication and discussion forum will be associated to
+them as to the whole course. We strongly recommend to every participant
+to do all pre-exercises and to contact the tutors via the discussion forum (or in person)
+in case of problems. The successful completion of the pre-requisite exercises is
+a measure of your own computing abilities and an important ingredient
+to make maximal use of the following PAT tutorial.
+
+To estimate the number of tutors and to organize the course, we
+would like you to register as soon as possible.
+Please note that to assure the successful tutoring during the exercise
+sessions, the number of participants is limited to 25. We would like
+to minimize the number of no-shows and hence expect commitment to
+attend the tutorial, once registered.
+
+regards,
+
+                         Sudhir Malik and Felix Höhle (for PAT Team)
+
+------------------------------------------------
+Sudhir Malik
+Research Assistant Professor
+Department of Physics and Astronomy
+University of Nebraska-Lincoln
+
+CMS Physics Support at  CERN
+& LPC Support Group at FNAL
+Phone: 630-840-6441 (at Fermilab)
+------------------------------------------------
+
+ [ MIME part of type text/html without a name stripped ]
+
+-------------------------------------------------------------
+Visit this CMS message (to reply or unsubscribe) at: 
+https://hypernews.cern.ch/HyperNews/CMS/get/physics-announcements/1998.html

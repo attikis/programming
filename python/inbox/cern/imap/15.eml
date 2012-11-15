@@ -1,0 +1,115 @@
+Received: from CERNMX32.cern.ch (137.138.144.178) by CERNFE20.cern.ch
+ (137.138.144.155) with Microsoft SMTP Server (TLS) id 14.2.298.4; Wed, 24 Oct
+ 2012 22:11:35 +0200
+Received: from garamond.sissa.it (147.123.59.46) by cernmxgwlb2.cern.ch
+ (137.138.144.183) with Microsoft SMTP Server id 14.2.318.1; Wed, 24 Oct 2012
+ 22:11:34 +0200
+Received: from localhost.localdomain (gill.sissa.it [147.123.59.51])	by
+ garamond.sissa.it (Postfix) with ESMTP id 0A322882DA;	Wed, 24 Oct 2012
+ 22:11:34 +0200 (CEST)
+Content-Type: text/plain
+Content-Disposition: inline
+Content-Transfer-Encoding: binary
+X-Mailer: MIME-tools 5.427 (Entity 5.427)
+From: <pos-eo@pos.sissa.it>
+To: <attikis@cern.ch>
+CC: <rikard.enberg@physics.uu.se>, <arnaud.ferrari@physics.uu.se>
+Subject: [PoS] CHARGED 2012: invitation to submit
+Message-ID: <20121024201134.0A322882DA@garamond.sissa.it>
+Date: Wed, 24 Oct 2012 22:11:34 +0200
+Return-Path: pos-eo@pos.sissa.it
+X-MS-Exchange-Organization-PRD: pos.sissa.it
+Received-SPF: None (CERNMX32.cern.ch: pos-eo@pos.sissa.it does not designate
+ permitted sender hosts)
+X-MS-Exchange-Organization-Antispam-Report: v=1.1
+ cv=UiJ+fPXAWREMDQSg5FbFSL9vtKf2r/gh2xHGR+YH7e0= c=1 sm=1 a=7VFB7D9SwSMA:10
+ a=Pt7jBl8oOImrPfQoGR534g==:17 a=-j3oqI0TAAAA:8 a=KLiXpBTq2eEE33E9WWAA:9
+ a=iYVCxkt4uLEA:10 a=GTtKIaExX7oA:10 a=Ftz82VTuA-dwTt-S:21
+ a=8hpImoVfDfdg1h66:21
+ a=Pt7jBl8oOImrPfQoGR534g==:117;OrigIP:147.123.59.46;SCL:0
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-SCL: 0
+X-MS-Exchange-Organization-SenderIdResult: NONE
+X-MS-Exchange-Organization-AuthSource: CERNMX32.cern.ch
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-Message-Flag: Follow up
+MIME-Version: 1.0
+
+
+Dear Alexandros  ATTIKIS,
+
+Following the Charged Higgs 2012 conference, you are invited to submit your contribution for the conference proceedings.
+
+Please login to your author pages at http://pos.sissa.it/ with:
+
+username: attikis
+password: attikis
+
+Your contribution must be typeset in the PoS style and uploaded in the form of a pdf file as specified in the instructions available at
+http://pos.sissa.it/POSauthors.html
+
+As PoS authors, you are requested to submit a PDF file, and are free to produce this in your favourite way. Please note that the paper format must be A4 and not US letter, so that the green PoS logo on the title page does not appear partly cut off.
+
+When you login to your Author pages on PoS you will find a link "Workarea". By clicking there and then on the link "template files and instructions" you will download a ZIP file which contains the following:
+
+1. Instructions (pdf),
+
+2. The MS Word template (CHARGED 2012.doc)
+
+3. The LaTeX class file (PoS.cls) with the PoS logo (PoSlogo.ps)
+
+For MS Word users: unzip the file and use the doc template to produce your contribution.
+
+For LaTeX users: unzip the file, save the class and the logo in a specific directory, then use the skeleton file below to create your contribution.
+
+In order to make your co-authors appear on the webpage of the proceedings, you need to click on the WORKAREA link and use the "ADD CO-AUTHORS" tool. If they have not been previously registered to the PoS database you will not be able to select them from the list of registered users. In that case, please contact the PoS Editorial Office and send all the information needed to register them (firstname, lastname, e-mail address and affiliation).
+
+The deadline for submission has been set to December 31, 2012.
+
+Contributions should not exceed for (contributed) talks shorter than 30 minutes: 6 pages; for (invited) talks over 30 minutes: 10 pages.
+
+For any questions, please contact the PoS Editorial Office at pos-eo@pos.sissa.it
+
+Best regards,
+
+Rikard Enberg and Arnaud Ferrari
+Editors of the proceedings
+
+
+                    __________SKELETON__________
+
+\documentclass{PoS}
+
+\title{Search for H+-> tau+nu with fully hadronic final state in CMS}
+
+\ShortTitle{Search for H+-> tau+nu with fully hadronic final state in CMS}
+
+\author{\speaker{Alexandros ATTIKIS}%
+         \thanks{A footnote may follow.}\\
+        University of Cyprus\\
+        E-mail: \email{attikis@cern.ch}}
+
+%\author{Another Author\\
+%        Affiliation\\
+%        E-mail: \email{...}}
+
+\abstract{..........................
+          ...........................}
+
+\FullConference{Prospects for Charged Higgs Discovery at Colliders\\
+		 October 8-11, 2012\\
+		 Uppsala University Sweden}
+
+\begin{document}
+
+\section{...}
+
+
+\begin{thebibliography}{99}
+  \bibitem{...} ....
+\end{thebibliography}
+
+\end{document}
+
+
+

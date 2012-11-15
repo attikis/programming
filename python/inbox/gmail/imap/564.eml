@@ -1,0 +1,190 @@
+Delivered-To: alexandros.attikis@gmail.com
+Received: by 10.58.165.40 with SMTP id yv8csp418662veb;
+        Mon, 12 Nov 2012 08:40:35 -0800 (PST)
+Received: by 10.216.132.142 with SMTP id o14mr8005838wei.12.1352738434662;
+        Mon, 12 Nov 2012 08:40:34 -0800 (PST)
+Return-Path: <noreply-475ba29f@plus.google.com>
+Received: from mail-wi0-f199.google.com (mail-wi0-f199.google.com [209.85.212.199])
+        by mx.google.com with ESMTPS id o3si6988936wie.19.2012.11.12.08.40.34
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Mon, 12 Nov 2012 08:40:34 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply-475ba29f@plus.google.com designates 209.85.212.199 as permitted sender) client-ip=209.85.212.199;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of noreply-475ba29f@plus.google.com designates 209.85.212.199 as permitted sender) smtp.mail=noreply-475ba29f@plus.google.com; dkim=pass header.i=@plus.google.com
+Received: by mail-wi0-f199.google.com with SMTP id hm9so2502898wib.10
+        for <alexandros.attikis@googlemail.com>; Mon, 12 Nov 2012 08:40:34 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=plus.google.com; s=20120806;
+        h=mime-version:x-notifications:x-ub:date:message-id:subject:from:to
+         :content-type;
+        bh=NDh9nw0GCbtrgOymUt6rgFVdVB7Oicp2vvXI3uayR54=;
+        b=owx874gxXkUqsBDcYMHB6GydTG+xnOsdxy4NA2799UYqe9fIECTSHRgkr222o0qF2M
+         UK7SbIkm3MZUQOU7UDUYDIf8YkEFI3N/86DPAbzRYdgKNh5AQvgjuAI+K3TgO5O4WTIa
+         JWp2IySfLG3RnMp8b50pIYV0fsag3bhmxOALeY7IB68G5poltjo81bAPR5E3R1+FkC8E
+         D6Xa7OvUew5LW/IH2VqODbZT1ROHzZKTFYxjw1kNabPfmBJfGYpkimXYuMKeQX8TRzmR
+         ep0zkKLYrCWFW28rArJZn/ZkPfcLr8pxQ52d8JcrkTiLQmczpp+wtHxf2V846RcE5QMI
+         06mg==
+MIME-Version: 1.0
+Received: by 10.180.104.38 with SMTP id gb6mr2761635wib.4.1352738433897; Mon,
+ 12 Nov 2012 08:40:33 -0800 (PST)
+X-Notifications: XEAAAAKXmAis9Ip2GxeXT7yT69bM
+X-UB: 37
+Date: Mon, 12 Nov 2012 08:40:33 -0800 (PST)
+Message-ID: <CJjWza7vybMCFcsy3godhhoAAA@plus.google.com>
+Subject: Top 3 posts for you on Google+ this week
+From: "Google+ team" <noreply-475ba29f@plus.google.com>
+To: alexandros.attikis@googlemail.com
+Content-Type: multipart/alternative; boundary=f46d041826f0d396b004ce4ef540
+
+--f46d041826f0d396b004ce4ef540
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed; delsp=yes
+
+Hi Alexandros
+Here's the week's top content.
+
+------------------------
+Change what email Google+ sends you:  
+https://plus.google.com/_/notifications/emlink?emrecipient=117157908579617333149&emid=CJjWza7vybMCFcsy3godhhoAAA&path=%2Fsettings%2Fplus&reexp=CONTROL&dt=1352738433889&ub=37
+Google Inc., 1600 Amphitheatre Pkwy, Mountain View, CA 94043 USA
+
+
+--f46d041826f0d396b004ce4ef540
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><body style=3D"color:#666;font:13px Arial;line-height:1.4em;"><div st=
+yle=3D"max-width:700px;"><table cellspacing=3D0 cellpadding=3D30px style=3D=
+"color:#666;font:13px Arial;line-height:1.4em;border:solid 1px #dfdfdf; wid=
+th:100%;"><tr><td><div style=3D"color:#d44b38;font-size:22px;padding-bottom=
+:10px;">Hi Alexandros!</div><div style=3D"color:#777;font-size:16px;">Here =
+are the top 3 posts for you on Google+ this week.</div></td><td style=3D"te=
+xt-align:right"><img src=3D"https://ssl.gstatic.com/s2/oz/images/notificati=
+ons/logo/google-plus-6617a72bb36cc548861652780c9e6ff1.png" alt=3D"Google+ t=
+eam" /></td></tr><tr><td style=3D"padding:15px 30px;color:#d44b38;font-size=
+:22px; background-color:#f2f2f2">The most popular content on Google+</td><t=
+d style=3D"padding:15px 30px;text-align:right; background-color:#f2f2f2"><a=
+ style=3D"display:inline-block;padding:7px 15px;background-color:#d44b38; c=
+olor:#fff;font-size:13px; font-weight:bold;border-radius:2px;-webkit-border=
+-radius:2px; -moz-border-radius:2px;border:solid 1px #c43b28; white-space:n=
+owrap;text-decoration:none" href=3D"https://plus.google.com/_/notifications=
+/emlink?emrecipient=3D117157908579617333149&emid=3DCJjWza7vybMCFcsy3godhhoA=
+AA&path=3D%2Fexplore&reexp=3DCONTROL&dt=3D1352738433889&ub=3D37" >View what=
+'s hot</a></td></tr><tr><td colspan=3D2><div style=3D"padding: 10px 0 20px =
+0;width:500px;"><table cellpadding=3D0 cellspacing=3D0><tr><td style=3D"pad=
+ding-right:15px;vertical-align:top"><a href=3D"https://plus.google.com/_/no=
+tifications/emlink?emrecipient=3D117157908579617333149&emid=3DCJjWza7vybMCF=
+csy3godhhoAAA&path=3D%2F104477202728652698005&reexp=3DCONTROL&dt=3D13527384=
+33889&ub=3D37"><img style=3D"border:solid 1px #cccccc;" width=3D"48" height=
+=3D"48" src=3D"https://lh4.googleusercontent.com/-4HySzCCBWpY/AAAAAAAAAAI/A=
+AAAAAAAux4/17DvpT-7xwQ/s75-c-k-a/photo.jpg" /></a></td><td style=3D"width:5=
+78px;color:#333;font:13px Arial;vertical-align:top"><div style=3D"padding-b=
+ottom: 10px;"><a href=3D"https://plus.google.com/_/notifications/emlink?emr=
+ecipient=3D117157908579617333149&emid=3DCJjWza7vybMCFcsy3godhhoAAA&path=3D%=
+2F104477202728652698005&reexp=3DCONTROL&dt=3D1352738433889&ub=3D37" style=
+=3D"color:#3366CC;text-decoration:none">Interesting Engineering =E2=96=BA .=
+</a></div><div style=3D"padding-bottom:10px"><br />=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0<wbr>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0 =C2=A0 =C2=A0 <b>Dubai Arch Bridge</b><br />=C2=A0In the=
+ Summer of 2008, the Dubai government announced the earmark of $817 million=
+ on building the world=E2=80=99s largest arch bridge.The bridge will be 670=
+ feet tall and one mile in length and is scheduled to be completed sometime=
+ in 2012.<br />Read More: <a href=3D"http://goo.gl/ZSz8b" class=3D"ot-ancho=
+r">http://goo.gl/ZSz8b</a></div><div style=3D"margin-bottom:10px;padding-le=
+ft:10px; border-left:2px solid #EAEAEA"><span style=3D"margin-right:5px"><a=
+ href=3D"https://plus.google.com/_/notifications/emlink?emrecipient=3D11715=
+7908579617333149&amp;emid=3DCJjWza7vybMCFcsy3godhhoAAA&amp;path=3D%2F104477=
+202728652698005%2Fposts%2Fg4g4Xo2Brnd&amp;reexp=3DCONTROL&amp;dt=3D13527384=
+33889&amp;ub=3D37" style=3D"color:#3366CC;text-decoration:none;"><img src=
+=3D"https://lh6.googleusercontent.com/-pgVfE7NnyeE/UKDL1IDJ40I/AAAAAAAAu5Q/=
+DY7dOwuY7bI/w160/5.jpg" border=3D0 style=3D"max-height:200px;max-width:275p=
+x" /></a></span></div><div style=3D"margin:15px 0;border-bottom:solid 1px #=
+dfdfdf"></div><table cellpadding=3D0 cellspacing=3D0 width=3D100%><tr><td s=
+tyle=3D"font:13px Arial"><a style=3D"color:#3366CC;text-decoration:none" hr=
+ef=3D"https://plus.google.com/_/notifications/emlink?emrecipient=3D11715790=
+8579617333149&emid=3DCJjWza7vybMCFcsy3godhhoAAA&path=3D%2F10447720272865269=
+8005%2Fposts%2Fg4g4Xo2Brnd&reexp=3DCONTROL&dt=3D1352738433889&ub=3D37"><spa=
+n style=3D"font-style:italic;font-weight:bold;">+927</span> - 215 comments =
+- 231 shares</a></td><td style=3D"font:13px Arial;text-align:right"><a styl=
+e=3D"color:#3366CC;text-decoration:none" href=3D"https://plus.google.com/_/=
+notifications/emlink?emrecipient=3D117157908579617333149&emid=3DCJjWza7vybM=
+CFcsy3godhhoAAA&path=3D%2F104477202728652698005%2Fposts%2Fg4g4Xo2Brnd&reexp=
+=3DCONTROL&dt=3D1352738433889&ub=3D37">View or comment on this post &raquo;=
+</a></td></tr></table></td></tr></table></div><div style=3D"padding: 10px 0=
+ 20px 0;width:500px;"><table cellpadding=3D0 cellspacing=3D0><tr><td style=
+=3D"padding-right:15px;vertical-align:top"><a href=3D"https://plus.google.c=
+om/_/notifications/emlink?emrecipient=3D117157908579617333149&emid=3DCJjWza=
+7vybMCFcsy3godhhoAAA&path=3D%2F114018232303831249060&reexp=3DCONTROL&dt=3D1=
+352738433889&ub=3D37"><img style=3D"border:solid 1px #cccccc;" width=3D"48"=
+ height=3D"48" src=3D"https://lh5.googleusercontent.com/-Rg6zCWFtPeI/AAAAAA=
+AAAAI/AAAAAAAAFP4/9woS9kt1Jcg/s75-c-k-a/photo.jpg" /></a></td><td style=3D"=
+width:578px;color:#333;font:13px Arial;vertical-align:top"><div style=3D"pa=
+dding-bottom: 10px;"><a href=3D"https://plus.google.com/_/notifications/eml=
+ink?emrecipient=3D117157908579617333149&emid=3DCJjWza7vybMCFcsy3godhhoAAA&p=
+ath=3D%2F114018232303831249060&reexp=3DCONTROL&dt=3D1352738433889&ub=3D37" =
+style=3D"color:#3366CC;text-decoration:none">Robert Llewellyn</a></div><div=
+ style=3D"padding-bottom:10px"><b>It&#39;s all very well you touting these =
+battery cars but everyone knows hydrogen is the future.</b><br><br>I take i=
+t you don&#39;t mean that literally.<br><br><b>You what?</b><br><br>You&#39=
+;re not suggesting that in the future every element in the universe will tu=
+rn into hydrogen.<br><br><b>Don&#39;t try and be clever, I mean cars, hydro=
+gen fuel cell cars.</b><br><br>Oh right. Yes indeed.<br><br><b>What, you ag=
+ree with me?</b><br><br>Well, I don&#39;t know exactly what technology the =
+human race will use in the future, but hydrogen fuel cells are a fairly goo=
+d bet.<br><br><b>Yeah, well it won&#39;t be a poxy ...</b></div><div style=
+=3D"margin:15px 0;border-bottom:solid 1px #dfdfdf"></div><table cellpadding=
+=3D0 cellspacing=3D0 width=3D100%><tr><td style=3D"font:13px Arial"><a styl=
+e=3D"color:#3366CC;text-decoration:none" href=3D"https://plus.google.com/_/=
+notifications/emlink?emrecipient=3D117157908579617333149&emid=3DCJjWza7vybM=
+CFcsy3godhhoAAA&path=3D%2F114018232303831249060%2Fposts%2FaWBw3uckwXC&reexp=
+=3DCONTROL&dt=3D1352738433889&ub=3D37"><span style=3D"font-style:italic;fon=
+t-weight:bold;">+378</span> - 167 comments - 70 shares</a></td><td style=3D=
+"font:13px Arial;text-align:right"><a style=3D"color:#3366CC;text-decoratio=
+n:none" href=3D"https://plus.google.com/_/notifications/emlink?emrecipient=
+=3D117157908579617333149&emid=3DCJjWza7vybMCFcsy3godhhoAAA&path=3D%2F114018=
+232303831249060%2Fposts%2FaWBw3uckwXC&reexp=3DCONTROL&dt=3D1352738433889&ub=
+=3D37">View or comment on this post &raquo;</a></td></tr></table></td></tr>=
+</table></div><div style=3D"padding: 10px 0 20px 0;width:500px;"><table cel=
+lpadding=3D0 cellspacing=3D0><tr><td style=3D"padding-right:15px;vertical-a=
+lign:top"><a href=3D"https://plus.google.com/_/notifications/emlink?emrecip=
+ient=3D117157908579617333149&emid=3DCJjWza7vybMCFcsy3godhhoAAA&path=3D%2F10=
+8516484863809927089&reexp=3DCONTROL&dt=3D1352738433889&ub=3D37"><img style=
+=3D"border:solid 1px #cccccc;" width=3D"48" height=3D"48" src=3D"https://lh=
+3.googleusercontent.com/-E1zv31BW808/AAAAAAAAAAI/AAAAAAACKlE/dIlqgYki74Q/s7=
+5-c-k-a/photo.jpg" /></a></td><td style=3D"width:578px;color:#333;font:13px=
+ Arial;vertical-align:top"><div style=3D"padding-bottom: 10px;"><a href=3D"=
+https://plus.google.com/_/notifications/emlink?emrecipient=3D11715790857961=
+7333149&emid=3DCJjWza7vybMCFcsy3godhhoAAA&path=3D%2F108516484863809927089&r=
+eexp=3DCONTROL&dt=3D1352738433889&ub=3D37" style=3D"color:#3366CC;text-deco=
+ration:none">Lolgle .</a></div><div style=3D"padding-bottom:10px"></div><di=
+v style=3D"margin-bottom:10px;padding-left:10px; border-left:2px solid #EAE=
+AEA"><span style=3D"margin-right:5px"><a href=3D"https://plus.google.com/_/=
+notifications/emlink?emrecipient=3D117157908579617333149&amp;emid=3DCJjWza7=
+vybMCFcsy3godhhoAAA&amp;path=3D%2F108516484863809927089%2Fposts%2FLPu18VBf7=
+Ax&amp;reexp=3DCONTROL&amp;dt=3D1352738433889&amp;ub=3D37" style=3D"color:#=
+3366CC;text-decoration:none;"><img src=3D"https://lh5.googleusercontent.com=
+/-PKKfVCsH4FM/UKBy5mIS-wI/AAAAAAACZ4U/oNJ1dO0NUrc/w160/12.jpg" border=3D0 s=
+tyle=3D"max-height:200px;max-width:275px" /></a></span></div><div style=3D"=
+margin:15px 0;border-bottom:solid 1px #dfdfdf"></div><table cellpadding=3D0=
+ cellspacing=3D0 width=3D100%><tr><td style=3D"font:13px Arial"><a style=3D=
+"color:#3366CC;text-decoration:none" href=3D"https://plus.google.com/_/noti=
+fications/emlink?emrecipient=3D117157908579617333149&emid=3DCJjWza7vybMCFcs=
+y3godhhoAAA&path=3D%2F108516484863809927089%2Fposts%2FLPu18VBf7Ax&reexp=3DC=
+ONTROL&dt=3D1352738433889&ub=3D37"><span style=3D"font-style:italic;font-we=
+ight:bold;">+1518</span> - 313 comments - 883 shares</a></td><td style=3D"f=
+ont:13px Arial;text-align:right"><a style=3D"color:#3366CC;text-decoration:=
+none" href=3D"https://plus.google.com/_/notifications/emlink?emrecipient=3D=
+117157908579617333149&emid=3DCJjWza7vybMCFcsy3godhhoAAA&path=3D%2F108516484=
+863809927089%2Fposts%2FLPu18VBf7Ax&reexp=3DCONTROL&dt=3D1352738433889&ub=3D=
+37">View or comment on this post &raquo;</a></td></tr></table></td></tr></t=
+able></div></td></tr><tr><td style=3D"padding:15px 20px;font-size:11px; bor=
+der-top:solid 1px #dfdfdf;">This notification was sent to alexandros.attiki=
+s@googlemail.com.Don't want occasional updates about Google+ activity and f=
+riend suggestions? <a style=3D"color:#3366CC;text-decoration:none" href=3D"=
+https://plus.google.com/_/notifications/emlink?emrecipient=3D11715790857961=
+7333149&emid=3DCJjWza7vybMCFcsy3godhhoAAA&path=3D%2Fsettings%2Fplus&reexp=
+=3DCONTROL&dt=3D1352738433889&ub=3D37">Change</a> what email Google+ sends =
+you.</td><td style=3D"padding:15px 20px;text-align:right; border-top:solid =
+1px #dfdfdf"><img src=3D"https://ssl.gstatic.com/s2/oz/images/notifications=
+/logo/google-plus-6617a72bb36cc548861652780c9e6ff1.png" alt=3D"Google+ team=
+" /></td></tr></table></div></body></html>
+--f46d041826f0d396b004ce4ef540--

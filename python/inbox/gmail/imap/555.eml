@@ -1,0 +1,72 @@
+Delivered-To: alexandros.attikis@gmail.com
+Received: by 10.58.165.40 with SMTP id yv8csp388164veb;
+        Mon, 12 Nov 2012 05:15:55 -0800 (PST)
+Received: by 10.14.193.136 with SMTP id k8mr62943025een.30.1352726155092;
+        Mon, 12 Nov 2012 05:15:55 -0800 (PST)
+Return-Path: <Alexandros.Attikis@cern.ch>
+Received: from CERNMX32.cern.ch (cernmx32.cern.ch. [137.138.144.178])
+        by mx.google.com with ESMTPS id l45si11918578eep.135.2012.11.12.05.15.54
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Mon, 12 Nov 2012 05:15:55 -0800 (PST)
+Received-SPF: pass (google.com: domain of Alexandros.Attikis@cern.ch designates 137.138.144.178 as permitted sender) client-ip=137.138.144.178;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of Alexandros.Attikis@cern.ch designates 137.138.144.178 as permitted sender) smtp.mail=Alexandros.Attikis@cern.ch
+Received: from CERNFE21.cern.ch (137.138.144.150) by cernmxgwlb2.cern.ch
+ (137.138.144.178) with Microsoft SMTP Server (TLS) id 14.2.318.1; Mon, 12 Nov
+ 2012 14:15:53 +0100
+Received: from [192.168.1.108] (62.12.75.180) by smtp.cern.ch
+ (137.138.144.172) with Microsoft SMTP Server (TLS) id 14.2.298.4; Mon, 12 Nov
+ 2012 14:15:52 +0100
+From: Alexandros Attikis <attikis@cern.ch>
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_45DCD4E1-17E6-46AB-BAB9-CE2A678D3A75"
+Date: Mon, 12 Nov 2012 15:15:49 +0200
+Subject: testing python
+To: Alexandros Attikis <alexandros.attikis@gmail.com>
+Message-ID: <F7D9ECC4-6BF0-45A2-9694-070DB30E90E4@cern.ch>
+MIME-Version: 1.0 (Mac OS X Mail 6.2 \(1499\))
+X-Mailer: Apple Mail (2.1499)
+Return-Path: attikis@cern.ch
+X-Originating-IP: [62.12.75.180]
+
+--Apple-Mail=_45DCD4E1-17E6-46AB-BAB9-CE2A678D3A75
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="us-ascii"
+
+
+
+
+Alexandros
+
+
+--Apple-Mail=_45DCD4E1-17E6-46AB-BAB9-CE2A678D3A75
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html =
+charset=3Dus-ascii"></head><body style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; -webkit-line-break: after-white-space; =
+"><br><div>
+<span class=3D"Apple-style-span" style=3D"border-collapse: separate; =
+color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; =
+font-variant: normal; font-weight: normal; letter-spacing: normal; =
+line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: =
+0px; text-transform: none; white-space: normal; widows: 2; word-spacing: =
+0px; -webkit-border-horizontal-spacing: 0px; =
+-webkit-border-vertical-spacing: 0px; =
+-webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: =
+auto; -webkit-text-stroke-width: 0px; font-size: medium; "><span =
+class=3D"Apple-style-span" style=3D"border-collapse: separate; color: =
+rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant: =
+normal; font-weight: normal; letter-spacing: normal; line-height: =
+normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: =
+normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: =
+0px; -webkit-border-vertical-spacing: 0px; =
+-webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: =
+auto; -webkit-text-stroke-width: 0px; font-size: medium; "><span =
+class=3D"Apple-style-span" style=3D"font-size: 12px; "><div><br =
+class=3D"Apple-interchange-newline"><br></div><div>Alexandros</div></span>=
+</span></span>
+</div>
+<br></body></html>=
+
+--Apple-Mail=_45DCD4E1-17E6-46AB-BAB9-CE2A678D3A75--

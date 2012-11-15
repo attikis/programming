@@ -1,0 +1,40 @@
+Received: from lxplus409.cern.ch (137.138.210.208) by smtp.cern.ch
+ (137.138.144.172) with Microsoft SMTP Server (TLS) id 14.2.298.4; Wed, 7 Nov
+ 2012 12:55:08 +0100
+Date: Wed, 7 Nov 2012 12:55:08 +0100
+From: slehti <slehti@mail.cern.ch>
+X-X-Sender: slehti@lxplus409.cern.ch
+To: Matti Kortelainen <matti.kortelainen@helsinki.fi>
+CC: "Lauri A. Wendland" <lauri.wendland@cern.ch>, Ritva Kinnunen
+	<Ritva.Kinnunen@cern.ch>, Cristina Ferro <Cristina.Ferro@cern.ch>,
+	"Alexandros Attikis" <Alexandros.Attikis@cern.ch>
+Subject: Re: 53X pattuples and code
+In-Reply-To: <201211071346.44210.matti.kortelainen@helsinki.fi>
+Message-ID: <alpine.LRH.2.02.1211071251180.24841@lxplus409.cern.ch>
+References: <201211071346.44210.matti.kortelainen@helsinki.fi>
+User-Agent: Alpine 2.02 (LRH 1266 2009-07-14)
+Content-Type: text/plain; charset="US-ASCII"; format=flowed
+Return-Path: slehti@mail.cern.ch
+X-MS-Exchange-Organization-AuthSource: CERNFE20.cern.ch
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-Originating-IP: [137.138.210.208]
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-Message-Flag: Follow up
+MIME-Version: 1.0
+
+
+
+
+On Wed, 7 Nov 2012, Matti Kortelainen wrote:
+
+> - Trigger efficiencies have been updated, with the following caveats
+>  * So far only for againstElectronMVA+againstMuonTight+byMediumCombinedIsolationDeltaBetaCorr
+Actually we do have the 2012 ones for the same combinations as for 2011:
+byMediumCombinedIsolationDeltaBetaCorr_againstElectronMedium 
+byMediumCombinedIsolationDeltaBetaCorr_againstElectronMVA 
+byLooseCombinedIsolationDeltaBetaCorr_againstElectronMVA 
+byLooseCombinedIsolationDeltaBetaCorr_againstElectronMedium
+
+Cheers,
+Sami

@@ -1,0 +1,76 @@
+Received: from lxplus405.cern.ch (137.138.210.204) by smtp.cern.ch
+ (137.138.144.172) with Microsoft SMTP Server (TLS) id 14.2.298.4; Mon, 3 Sep
+ 2012 16:23:12 +0200
+Date: Mon, 3 Sep 2012 16:23:09 +0200
+From: slehti <slehti@mail.cern.ch>
+X-X-Sender: slehti@lxplus405.cern.ch
+To: Alexandros Attikis <attikis@cern.ch>
+Subject: Re: Top2HPlus recipe
+In-Reply-To: <790C7FC6-31ED-4199-A00A-EEAD8C7BC300@cern.ch>
+Message-ID: <alpine.LRH.2.00.1209031617270.7546@lxplus405.cern.ch>
+References: <5024A47B.6070000@cern.ch> <B96B46662CA35C4E9C64DAA8EE9A5C54907E1B3A@CERNXCHG02.cern.ch> <78B00A35-74F4-4EEB-BE0F-1E7A44A0F921@cern.ch> <B96B46662CA35C4E9C64DAA8EE9A5C54907E1B52@CERNXCHG02.cern.ch> <50334C24.4000003@cern.ch>
+ <EF676FB3-8971-4FE2-ABB8-71372C98BA9E@cern.ch> <503351AB.6030100@cern.ch> <C1522115-7F7B-4BAF-8EA1-AECCAAB088B4@cern.ch> <alpine.LRH.2.00.1208211155040.18697@lxplus421.cern.ch> <6B5D7B16-C5C3-417C-8A9C-709C2AF8A0C5@cern.ch> <50337D78.9050901@cern.ch>
+ <92214F8C-42A4-455A-AC5C-67A7F8A442FA@cern.ch> <91F0B7AA-12B3-499D-954A-11444BEF364B@cern.ch> <B96B46662CA35C4E9C64DAA8EE9A5C54907E1BCF@CERNXCHG02.cern.ch> <D436CD46-6FD3-42B2-A7E8-5731EB38BF37@cern.ch> <alpine.LRH.2.00.1208221254090.21062@lxplus310.cern.ch>
+ <9631637E-FEAC-4201-BF72-A2E6EFE68C26@cern.ch> <alpine.LRH.2.00.1208221302030.21062@lxplus310.cern.ch> <alpine.LRH.2.00.1208221312430.21062@lxplus310.cern.ch> <790C7FC6-31ED-4199-A00A-EEAD8C7BC300@cern.ch>
+User-Agent: Alpine 2.00 (LRH 1167 2008-08-23)
+Content-Type: text/plain; charset="US-ASCII"; format=flowed
+Return-Path: slehti@mail.cern.ch
+X-MS-Exchange-Organization-AuthSource: CERNFE21.cern.ch
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-Originating-IP: [137.138.210.204]
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+MIME-Version: 1.0
+
+On Mon, 3 Sep 2012, Alexandros Attikis wrote:
+
+> Hi Sami,
+> I have found some time to get to run this code.
+> I would like to add to the tree branches of all 5 higgs bosons, not just Hpm.
+> Could you point me to the way of doing this?
+> Also, are SUSY decays saved to the tree?
+Hi,
+You can add more branches in file (Top2HPlus/src/)mainFH.cpp. No SUSY 
+decays are included. Anything FH produces in the output can be added. Here 
+is an example:
+  BR_Hp_enu = sfinder.getValue("FH",*file,"Hp-nu_e-e");
+Here the string "Hp-nu_e-e" is the same string as in the FH output.
+
+Cheers,
+Sami
+
+> 
+> Cheers,
+> Alexandros
+> 
+> On Aug 22, 2012, at 2:17 PM, slehti <slehti@mail.cern.ch> wrote:
+>
+>       On Wed, 22 Aug 2012, slehti wrote:
+>
+>             On Wed, 22 Aug 2012, Alexandros Attikis wrote:
+>
+>                   Hi Sami,
+>                   I am interested yes. Is it at the same location?
+>                   Can you give some pointers / instructions please?
+>
+>             I ran FH myself in order to see it works. The result is in a root TTree found here:
+>             http://cmsdoc.cern.ch/~slehti/FH_results_mhmax.root
+>
+>             The mass/tanb/whatever points can be easily increased or changed, and the plot can be made as a
+>             function of mH+ or tanb or..
+>
+>       In case you want to change something, here is the recipe
+>       git clone http://cmsdoc.cern.ch/~slehti/Top2HPlus.git
+>       cd Top2HPlus/workspace
+>       edit ../src/FH_inputMaker.py to select the masses and tanb's
+>       make FH (runs FH for all the points selected in FH_inputMaker.py)
+>       make FH_root (creates the root file from FH txt output created in the previous step))
+>
+>       The FH version is controlled by the first line of the Makefile.
+>
+>       Cheers,
+>       Sami
+> 
+> 
+> 
+>

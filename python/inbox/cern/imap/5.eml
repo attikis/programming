@@ -1,0 +1,44 @@
+Received: from lxplus405.cern.ch (137.138.210.204) by smtp.cern.ch
+ (137.138.144.172) with Microsoft SMTP Server (TLS) id 14.2.298.4; Mon, 3 Sep
+ 2012 16:38:10 +0200
+Date: Mon, 3 Sep 2012 16:38:10 +0200
+From: slehti <slehti@mail.cern.ch>
+X-X-Sender: slehti@lxplus405.cern.ch
+To: Alexandros Attikis <attikis@cern.ch>
+Subject: Re: Top2HPlus recipe
+In-Reply-To: <89D633D2-2258-4C2E-AAC1-04FD0D33F0DF@cern.ch>
+Message-ID: <alpine.LRH.2.00.1209031632350.7546@lxplus405.cern.ch>
+References: <5024A47B.6070000@cern.ch> <B96B46662CA35C4E9C64DAA8EE9A5C54907E1B52@CERNXCHG02.cern.ch> <50334C24.4000003@cern.ch> <EF676FB3-8971-4FE2-ABB8-71372C98BA9E@cern.ch> <503351AB.6030100@cern.ch> <C1522115-7F7B-4BAF-8EA1-AECCAAB088B4@cern.ch>
+ <alpine.LRH.2.00.1208211155040.18697@lxplus421.cern.ch> <6B5D7B16-C5C3-417C-8A9C-709C2AF8A0C5@cern.ch> <50337D78.9050901@cern.ch> <92214F8C-42A4-455A-AC5C-67A7F8A442FA@cern.ch> <91F0B7AA-12B3-499D-954A-11444BEF364B@cern.ch> <B96B46662CA35C4E9C64DAA8EE9A5C54907E1BCF@CERNXCHG02.cern.ch>
+ <D436CD46-6FD3-42B2-A7E8-5731EB38BF37@cern.ch> <alpine.LRH.2.00.1208221254090.21062@lxplus310.cern.ch> <9631637E-FEAC-4201-BF72-A2E6EFE68C26@cern.ch> <alpine.LRH.2.00.1208221302030.21062@lxplus310.cern.ch> <alpine.LRH.2.00.1208221312430.21062@lxplus310.cern.ch>
+ <790C7FC6-31ED-4199-A00A-EEAD8C7BC300@cern.ch> <alpine.LRH.2.00.1209031617270.7546@lxplus405.cern.ch> <89D633D2-2258-4C2E-AAC1-04FD0D33F0DF@cern.ch>
+User-Agent: Alpine 2.00 (LRH 1167 2008-08-23)
+Content-Type: text/plain; charset="US-ASCII"; format=flowed
+Return-Path: slehti@mail.cern.ch
+X-MS-Exchange-Organization-AuthSource: CERNFE21.cern.ch
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-Originating-IP: [137.138.210.204]
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+MIME-Version: 1.0
+
+On Mon, 3 Sep 2012, Alexandros Attikis wrote:
+
+> Ok great.two things.
+> 1) How do I compile the code?
+In workspace type
+make FH
+source setPAths.(c)sh
+make FH_root
+
+> 2) How do I know the FH variable output to match to the tree?
+> e.g. if mHc is mapped to MHp, how do i know what to match for mA?
+Take a look at files created in dir data/FH_outputFiles/mhmax/
+
+In FH outputs there is a line like
+| MA0           =      60.50887900
+The Finder class parses the value 60.50887900 if you make it search for 
+"MA0".
+
+Cheers,
+Sami

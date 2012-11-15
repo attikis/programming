@@ -1,0 +1,70 @@
+Received: from CERNMX33.cern.ch (137.138.144.181) by CERNFE23.cern.ch
+ (137.138.144.152) with Microsoft SMTP Server (TLS) id 14.2.298.4; Mon, 12 Nov
+ 2012 15:39:52 +0100
+Received: from vocms91.cern.ch (128.142.16.110) by cernmxlb2.cern.ch
+ (137.138.144.184) with Microsoft SMTP Server (TLS) id 14.2.318.1; Mon, 12 Nov
+ 2012 15:39:41 +0100
+Received: from vocms91.cern.ch (localhost.localdomain [127.0.0.1])	by
+ vocms91.cern.ch (8.13.8/8.13.8) with ESMTP id qACEdfTi029713;	Mon, 12 Nov
+ 2012 15:39:41 +0100
+Received: (from apache@localhost)	by vocms91.cern.ch (8.13.8/8.13.8/Submit) id
+ qACEdf5m029712;	Mon, 12 Nov 2012 15:39:41 +0100
+Date: Mon, 12 Nov 2012 15:39:41 +0100
+X-Authentication-Warning: vocms91.cern.ch: apache set sender to hn-cms-admin@cern.ch using -f
+To: <hn-cms-trigger-performance@cern.ch>
+From: Pablo Martinez Ruiz del Arbol <Pablo.Martinez@cern.ch>
+Errors-To: hn-cms-admin@cern.ch
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: Re: >MUON HLT FullSim< New release 6_1_0_pre5 added
+Message-ID: <50A10A20.6070207@cern.ch>
+X-Mailer: CMS 1.11-slac-70b
+X-Hn-Loop: https://hypernews.cern.ch/HyperNews/CMS/get/trigger-performance/427/1/1.html
+Precedence: list
+In-Reply-To: <50A0EC26.1060700@nd.edu>
+X-Hn-Forum: https://hypernews.cern.ch/HyperNews/CMS/get/trigger-performance.html
+Return-Path: hn-cms-admin@cern.ch
+X-MS-Exchange-Organization-AuthSource: CERNMX33.cern.ch
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 10
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-SCL: -1
+MIME-Version: 1.0
+
+
+*** Discussion title: Trigger Performance
+
+Hi Jason,
+
+I said that the two releases were similar within statistical 
+uncertainties. I meant that the level of disagreement between the two 
+releases (in this case due to HLT/RECO since the events were recycled) 
+was at the level of the statistical fluctuations you would expect given 
+the statistics in these samples.
+
+Pablo
+
+On 11/12/2012 01:31 PM, Jason Slaunwhite wrote:
+> Hi Pablo,
+>
+> Thanks for your report.
+>
+>> Comment: Both releases look very simmilar within statistical 
+>> uncertainties
+>> Links: CMSSW_6_1_0_pre5-to-CMSSW_6_1_0_pre4-FULLSIM.txt
+>
+> Can you say what you mean by statistical differences? According to 
+> Alan's report these samples were made using gen-sim recycling [1]. 
+> That means that in pre4 and pre5 you have exactly the same events. In 
+> that situation there aren't any statistical uncertainties - the 
+> differences in your plots are due to differences in the HLT/RECO. 
+> Would you agree with that? Or is there some other effect that would 
+> give you a statistical uncertainty?
+>
+> Jason
+>
+>
+> [1] https://hypernews.cern.ch/HyperNews/CMS/get/relval/2485.html
+
+-------------------------------------------------------------
+Visit this CMS message (to reply or unsubscribe) at: 
+https://hypernews.cern.ch/HyperNews/CMS/get/trigger-performance/427/1/1.html

@@ -1,0 +1,40 @@
+From: Pavel Jez <pavel.jez@cern.ch>
+Subject: Re: Current tauID recommendations
+Content: 
+*** Discussion title: Tau ID
+
+Hi Andrew,
+
+yes, it should work it you run in scheduled mode (i.e. 
+patDefaultSequence, which is actually commented in recent version of 
+patTuple_standard_cfg.py and not just selectedPatCandidates)
+
+Cheers,
+Pavel
+
+On 12/11/12 14:07, Andrew Melo wrote:
+> *** Discussion title: Tau ID
+>
+> Hey all,
+>
+> According to the SWGuidePFTauID,
+>
+> "The new discriminators will be run automatically by the updated PAT
+> sequence. The configuration has been tested to work with PF2PAT and
+> latest PAT recommendations as listed SWGuidePATReleaseNotes52X."
+>
+> Is this the case for 53x/are the recommendations with the twiki up to date?
+>
+> Thanks,
+> Andrew
+>
+
+-- 
+Dr. Pavel JEZ
+postdoctoral researcher
+Centre for Cosmology, Particle Physics and Phenomenology-CP3
+Université Catholique de Louvain
+
+-------------------------------------------------------------
+Visit this CMS message (to reply or unsubscribe) at: 
+https://hypernews.cern.ch/HyperNews/CMS/get/tauid/318/1.html

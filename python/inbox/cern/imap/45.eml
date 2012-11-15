@@ -1,0 +1,51 @@
+Received: from CERNMX33.cern.ch (137.138.144.181) by CERNFE21.cern.ch
+ (137.138.144.150) with Microsoft SMTP Server (TLS) id 14.2.298.4; Mon, 12 Nov
+ 2012 15:15:49 +0100
+Received: from vocms91.cern.ch (128.142.16.110) by cernmxlb2.cern.ch
+ (137.138.144.184) with Microsoft SMTP Server (TLS) id 14.2.318.1; Mon, 12 Nov
+ 2012 15:15:34 +0100
+Received: from vocms91.cern.ch (localhost.localdomain [127.0.0.1])	by
+ vocms91.cern.ch (8.13.8/8.13.8) with ESMTP id qACEFYL2028966;	Mon, 12 Nov
+ 2012 15:15:34 +0100
+Received: (from apache@localhost)	by vocms91.cern.ch (8.13.8/8.13.8/Submit) id
+ qACEFXSk028965;	Mon, 12 Nov 2012 15:15:33 +0100
+Date: Mon, 12 Nov 2012 15:15:33 +0100
+X-Authentication-Warning: vocms91.cern.ch: apache set sender to hn-cms-admin@cern.ch using -f
+To: <hn-cms-trigger-performance@cern.ch>
+From: Sarah Alam Malik <smalik@cern.ch>
+Errors-To: hn-cms-admin@cern.ch
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: good runs
+Message-ID: <50A1047D.9020802@cern.ch>
+X-Mailer: CMS 1.11-slac-70b
+X-Hn-Loop: https://hypernews.cern.ch/HyperNews/CMS/get/trigger-performance/429.html
+Precedence: list
+X-Hn-Forum: https://hypernews.cern.ch/HyperNews/CMS/get/trigger-performance.html
+Return-Path: hn-cms-admin@cern.ch
+X-MS-Exchange-Organization-AuthSource: CERNMX33.cern.ch
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 10
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-SCL: -1
+MIME-Version: 1.0
+
+
+*** Discussion title: Trigger Performance
+
+Hi All,
+
+Could I get a list of good runs from last week and their corresponding 
+integrated lumi?
+
+Thanks
+Sarah
+
+-- 
+Sarah Alam Malik
+Postdoctoral Associate
+The Rockefeller University
+http://www.sarahalammalik.com
+
+-------------------------------------------------------------
+Visit this CMS message (to reply or unsubscribe) at: 
+https://hypernews.cern.ch/HyperNews/CMS/get/trigger-performance/429.html

@@ -1,0 +1,106 @@
+Received: from CERNMX33.cern.ch (137.138.144.181) by CERNFE21.cern.ch
+ (137.138.144.150) with Microsoft SMTP Server (TLS) id 14.2.298.4; Thu, 8 Nov
+ 2012 13:04:09 +0100
+Received: from vocms91.cern.ch (128.142.16.110) by cernmxlb2.cern.ch
+ (137.138.144.184) with Microsoft SMTP Server (TLS) id 14.2.318.1; Thu, 8 Nov
+ 2012 13:03:53 +0100
+Received: from vocms91.cern.ch (localhost.localdomain [127.0.0.1])	by
+ vocms91.cern.ch (8.13.8/8.13.8) with ESMTP id qA8C3rde025223;	Thu, 8 Nov 2012
+ 13:03:53 +0100
+Received: (from apache@localhost)	by vocms91.cern.ch (8.13.8/8.13.8/Submit) id
+ qA8C3q6X025222;	Thu, 8 Nov 2012 13:03:52 +0100
+Date: Thu, 8 Nov 2012 13:03:52 +0100
+X-Authentication-Warning: vocms91.cern.ch: apache set sender to hn-cms-admin@cern.ch using -f
+To: <hn-cms-eflow@cern.ch>
+From: Michalis Bachtis <bachtis@cern.ch>
+Errors-To: hn-cms-admin@cern.ch
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: Re: Not-a-number PFCandidate momenta
+Message-ID: <509B9FA2.1090400@cern.ch>
+X-Mailer: CMS 1.11-slac-70b
+X-Hn-Loop: https://hypernews.cern.ch/HyperNews/CMS/get/eflow/887/2/1/1.html
+Precedence: list
+In-Reply-To: <"/eflow/887/2/1"@hypernews.cern.ch>
+X-Hn-Forum: https://hypernews.cern.ch/HyperNews/CMS/get/eflow.html
+Return-Path: hn-cms-admin@cern.ch
+X-MS-Exchange-Organization-AuthSource: CERNMX33.cern.ch
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 10
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-SCL: -1
+MIME-Version: 1.0
+
+
+*** Discussion title: Particle Flow 
+
+Hi Sue Ann,
+Sorry got confused .I thought that you were speaking
+about the muon with pdgId=13 (there is one!) instead of the
+13th particle in the collection
+
+Indeed the p4 is Nan.
+There seems to be a valid track of 3.9 GeV .
+Seems something with nuclear interactions/V0 to me
+but since it is not a muon I will let the other experts answer
+
+Cheers
+Michalis
+
+On 11/08/2012 12:51 PM, Sue Ann Koay wrote:
+> *** Discussion title: Particle Flow
+>
+> Hi Michalis,
+>
+> I am rather confused, because (1) particle 13 looks like a charged
+> hadron, not a muon; and (2) it's entire 4-momentum info is nan, so it
+> doesn't have a phi nor an eta. I get the following printout in a ROOT
+> session:
+>
+> root [4]
+> Events->Scan("recoPFCandidates_particleFlow__RECO.obj.pdgId_:recoPFCandidates_particleFlow__RECO.obj.pt_:recoPFCandidates_particleFlow__RECO.obj.phi_:recoPFCandidates_particleFlow__RECO.obj.eta_:recoPFCandidates_particleFlow__RECO.obj.mass_")
+>
+> ***********************************************************************************
+> *    Row   * Instance * recoPFCan * recoPFCan * recoPFCan * recoPFCan * recoPFCan *
+> ***********************************************************************************
+> *        0 *        0 *       -11 * 8.7321882 * -1.024815 * -0.499978 * -0.001488 *
+> *        0 *        1 *      -211 * 12.723151 * -0.999180 * -0.515640 * 0.1395699 *
+> *        0 *        2 *        22 * 0.3632195 * -0.937829 * -0.520703 * 5.890e-09 *
+> *        0 *        3 *      -211 * 5.2326335 * -1.083247 * -0.457483 * 0.1395699 *
+> *        0 *        4 *        22 * 1.0648546 * -1.061552 * -0.545942 * 1.290e-08 *
+> *        0 *        5 *       211 * 2.2518453 * -3.088575 * -1.079551 * 0.1395699 *
+> *        0 *        6 *       211 * 2.7609076 * -3.132419 * -1.080104 * 0.1395699 *
+> *        0 *        7 *      -211 * 4.0093560 * 2.6786875 * -1.111654 * 0.1395699 *
+> *        0 *        8 *      -211 * 5.5351252 * 2.9985747 * -1.173914 * 0.1395699 *
+> *        0 *        9 *        22 * 0.5971687 * -3.132238 * -1.055372 * 1.053e-08 *
+> *        0 *       10 *       -13 * 54.957126 * 0.0048267 * 1.2768610 * 0.1057000 *
+> *        0 *       11 *      -211 * 5.1704869 * 0.4093288 * -0.072976 * 0.1395699 *
+> *        0 *       12 *      -211 * 5.9705953 * 0.6314727 * -0.114214 * 0.1395699 *
+> *        0 *       13 *       211 *       nan *       nan *       nan *       nan *
+> *        0 *       14 *       130 * 2.8497104 * 0.4786600 * -0.061906 * 1.535e-08 *
+> *        0 *       15 *      -211 * 0.8455785 * -3.109941 * -0.318248 * 0.1395699 *
+> *        0 *       16 *      -211 * 1.0136550 * -3.057173 * -0.946388 * 0.1395699 *
+> *        0 *       17 *      -211 * 0.2478334 * 2.9179210 * -2.225463 * 0.1395699 *
+> *        0 *       18 *       211 * 0.2631827 * 0.0993235 * -1.211680 * 0.1395699 *
+> *        0 *       19 *        22 * 0.3597821 * -1.861409 * -2.866040 *         0 *
+> *        0 *       20 *        22 * 1.1472470 * -1.636213 * -2.838802 *         0 *
+> *        0 *       21 *      -211 * 0.2457941 * -0.307003 * -2.015926 * 0.1395699 *
+> *        0 *       22 *        22 * 0.4344104 * 1.4485468 * -2.915505 * -4.21e-08 *
+> *        0 *       23 *        22 * 0.4609792 * 1.5193676 * -2.731069 *         0 *
+> *        0 *       24 *       211 * 0.2920855 * 2.2564754 * -1.778460 * 0.1395699 *
+> ***********************************************************************************
+>
+> Maybe we're looking at different lines?
+>
+> Regards,
+>
+> Sue Ann Koay sakoay@cern.ch
+>
+> -------------------------------------------------------------
+> Visit this CMS message (to reply or unsubscribe) at:
+> https://hypernews.cern.ch/HyperNews/CMS/get/eflow/887/2/1.html
+
+ [ MIME part of type application/pkcs7-signature stripped ]
+
+-------------------------------------------------------------
+Visit this CMS message (to reply or unsubscribe) at: 
+https://hypernews.cern.ch/HyperNews/CMS/get/eflow/887/2/1/1.html

@@ -1,0 +1,81 @@
+Received: from CERNMX33.cern.ch (137.138.144.181) by CERNFE22.cern.ch
+ (137.138.144.151) with Microsoft SMTP Server (TLS) id 14.2.298.4; Mon, 12 Nov
+ 2012 16:56:26 +0100
+Received: from vocms91.cern.ch (128.142.16.110) by cernmxlb2.cern.ch
+ (137.138.144.184) with Microsoft SMTP Server (TLS) id 14.2.318.1; Mon, 12 Nov
+ 2012 16:56:25 +0100
+Received: from vocms91.cern.ch (localhost.localdomain [127.0.0.1])	by
+ vocms91.cern.ch (8.13.8/8.13.8) with ESMTP id qACFuPCi001431;	Mon, 12 Nov
+ 2012 16:56:25 +0100
+Received: (from apache@localhost)	by vocms91.cern.ch (8.13.8/8.13.8/Submit) id
+ qACFuOQX001430;	Mon, 12 Nov 2012 16:56:24 +0100
+Date: Mon, 12 Nov 2012 16:56:24 +0100
+X-Authentication-Warning: vocms91.cern.ch: apache set sender to hn-cms-admin@cern.ch using -f
+To: <hn-cms-dmDevelopment@cern.ch>
+From: Stefano Belforte <stefano.belforte@ts.infn.it>
+Errors-To: hn-cms-admin@cern.ch
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: Fwd: Re: EOS & Crab
+Message-ID: <50A11C27.2030703@cern.ch>
+X-Mailer: CMS 1.11-slac-70b
+X-Hn-Loop: https://hypernews.cern.ch/HyperNews/CMS/get/dmDevelopment/1470.html
+Precedence: list
+X-Hn-Forum: https://hypernews.cern.ch/HyperNews/CMS/get/dmDevelopment.html
+Return-Path: hn-cms-admin@cern.ch
+X-MS-Exchange-Organization-AuthSource: CERNMX33.cern.ch
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 10
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-SCL: -1
+MIME-Version: 1.0
+
+
+*** Discussion title: Dataset Bookkeeping System
+
+as suggested at CompOps moving I am moving this thread
+to WM list. This is likely too much work for me to slip
+it in myself as done with all bug fixes in last years.
+stefano
+
+-------- Original Message --------
+Subject: Re: EOS & Crab
+Date: Mon, 12 Nov 2012 15:53:57 +0100
+From: Stefano Belforte <stefano.belforte@cern.ch>
+To: Stephen J. Gowdy <gowdy@cern.ch>
+CC: Daniele Spiga <daniele.spiga@cern.ch>,  Federica Fanzago 
+<federica.fanzago@cern.ch>
+
+probably 1 week FTE including testing.
+Possibly even someone not very familiar with
+crab internals could do with a (very) crude hack.
+A crude hack may be better anyhow since I fear
+a clean solution would touch many parts and
+require a very extensive testing.
+What at least Federica and myself usually lack
+is the possibility to be full time on anything
+for that long, once you look into the 1 week FTE to be
+spread in 4 weeks or more schedules tend to slip.
+Which is why I resisted tackling this so far.
+Should we get DMWM involved ?
+stefano
+
+On 11/12/2012 03:21 PM, Stephen J. Gowdy wrote:
+> Hi All,
+>      Users are having lots of problems with staging files back to EOS at
+> CERN due to the SRM implementation sucking (technical term ;-) ). Is it
+> really difficult to get CRAB2 to use gridftp or root protocol for
+> transfers? Is SRM all that is supported?
+>
+>                          regards,
+>
+>                          Stephen.
+>
+
+-- 
+Stefano Belforte - I.N.F.N.     tel   : +39 040 375-6261 (fax: 375-6258)
+Area di Ricerca - Padriciano 99 tel mobile: +39 328 010 7327
+34012 TRIESTE TS  - Italy       AIM: stefanobelforte
+
+-------------------------------------------------------------
+Visit this CMS message (to reply or unsubscribe) at: 
+https://hypernews.cern.ch/HyperNews/CMS/get/dmDevelopment/1470.html

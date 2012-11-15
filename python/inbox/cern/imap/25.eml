@@ -1,0 +1,73 @@
+Received: from CERNMX33.cern.ch (137.138.144.181) by CERNFE23.cern.ch
+ (137.138.144.152) with Microsoft SMTP Server (TLS) id 14.2.298.4; Thu, 8 Nov
+ 2012 12:44:49 +0100
+Received: from vocms91.cern.ch (128.142.16.110) by cernmxlb2.cern.ch
+ (137.138.144.184) with Microsoft SMTP Server (TLS) id 14.2.318.1; Thu, 8 Nov
+ 2012 12:44:25 +0100
+Received: from vocms91.cern.ch (localhost.localdomain [127.0.0.1])	by
+ vocms91.cern.ch (8.13.8/8.13.8) with ESMTP id qA8BiPsk022428;	Thu, 8 Nov 2012
+ 12:44:25 +0100
+Received: (from apache@localhost)	by vocms91.cern.ch (8.13.8/8.13.8/Submit) id
+ qA8BiP6O022427;	Thu, 8 Nov 2012 12:44:25 +0100
+Date: Thu, 8 Nov 2012 12:44:25 +0100
+X-Authentication-Warning: vocms91.cern.ch: apache set sender to hn-cms-admin@cern.ch using -f
+To: <hn-cms-eflow@cern.ch>
+From: Michalis Bachtis <bachtis@cern.ch>
+Errors-To: hn-cms-admin@cern.ch
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: Re: Not-a-number PFCandidate momenta
+Message-ID: <509B9B13.3030300@cern.ch>
+X-Mailer: CMS 1.11-slac-70b
+X-Hn-Loop: https://hypernews.cern.ch/HyperNews/CMS/get/eflow/887/2.html
+Precedence: list
+In-Reply-To: <"/eflow/887"@hypernews.cern.ch>
+X-Hn-Forum: https://hypernews.cern.ch/HyperNews/CMS/get/eflow.html
+Return-Path: hn-cms-admin@cern.ch
+X-MS-Exchange-Organization-AuthSource: CERNMX33.cern.ch
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 10
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-SCL: -1
+MIME-Version: 1.0
+
+
+*** Discussion title: Particle Flow 
+
+Hi again,
+I confirm I read 54.9 GeV when looping through PFcands as well
+So there doesnt seem to be a problem for me for this one
+Cheers
+Michalis
+On 11/08/2012 12:23 PM, Sue Ann Koay wrote:
+> *** Discussion title: Particle Flow
+>
+> Hello,
+>
+> I find some events that contain PFCandidates in the particleFlow
+> collection with 4-momentum being "nan". For example the index=13
+> particle in run 1, lumi block 39594, event number 11875853 in the
+> following MC dataset:
+>
+>     /TT_CT10_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v2/AODSIM
+>
+> Here is a skim of this one event:
+>
+>     /afs/fnal.gov/files/home/room3/sakoay/public/TT_CT10_TuneZ2star_8TeV-powheg-tauola_1_39594_11875853w.root
+>
+> I'm not sure if this is to be expected, just that it seems rather odd to
+> me and I have to write guards in my code against it. Perhaps some expert
+> can comment?
+>
+> Regards,
+>
+> Sue Ann Koay sakoay@cern.ch
+>
+> -------------------------------------------------------------
+> Visit this CMS message (to reply or unsubscribe) at:
+> https://hypernews.cern.ch/HyperNews/CMS/get/eflow/887.html
+
+ [ MIME part of type application/pkcs7-signature stripped ]
+
+-------------------------------------------------------------
+Visit this CMS message (to reply or unsubscribe) at: 
+https://hypernews.cern.ch/HyperNews/CMS/get/eflow/887/2.html

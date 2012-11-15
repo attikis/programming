@@ -9,8 +9,14 @@ f = myFunctions.CreateObject()
 
 if __name__ == "__main__":
     
-    f.Cout("Testing the CERN pop server")
-    f.getEmail("cern")
-
+    #f.Cout("Testing the CERN pop server")
+    #f.getEmail("cern")
+    #print
     #f.Cout("Testing the Gmail pop server")
     #f.getEmail("gmail")
+    #print
+    f.Cout("Testing the CERN imap server")
+    f.getEmailImap("cern")
+    print
+    f.Cout("Testing the Gmail imap server")
+    f.getEmailImap("gmail")

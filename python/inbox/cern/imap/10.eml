@@ -1,0 +1,50 @@
+Received: from lxplus429.cern.ch (137.138.210.228) by smtp.cern.ch
+ (137.138.144.172) with Microsoft SMTP Server (TLS) id 14.2.298.4; Thu, 18 Oct
+ 2012 11:32:25 +0200
+Date: Thu, 18 Oct 2012 11:32:24 +0200
+From: slehti <slehti@mail.cern.ch>
+X-X-Sender: slehti@lxplus429.cern.ch
+To: "Lauri A. Wendland" <lauri.wendland@cern.ch>
+CC: Ritva Kinnunen <Ritva.Kinnunen@cern.ch>, Matti Kortelainen
+	<Matti.Kortelainen@helsinki.fi>, Alexandros Attikis <attikis@cern.ch>,
+	Cristina Ferro <Cristina.Ferro@cern.ch>
+Subject: script for cloning a git branch
+In-Reply-To: <507FA775.2040502@cern.ch>
+Message-ID: <alpine.LRH.2.00.1210181123120.24386@lxplus429.cern.ch>
+References: <507FA775.2040502@cern.ch>
+User-Agent: Alpine 2.00 (LRH 1167 2008-08-23)
+Content-Type: text/plain; charset="US-ASCII"; format=flowed
+Return-Path: slehti@mail.cern.ch
+X-MS-Exchange-Organization-AuthSource: CERNFE23.cern.ch
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-Originating-IP: [137.138.210.228]
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-Message-Flag: Follow up
+MIME-Version: 1.0
+
+Dear all,
+The script for cloning a branch is now available in
+http://cmsdoc.cern.ch/~slehti/Higgs
+and should be placed somewhere in path (like $HOME/bin/)
+
+The name is Higgs (short of HiggsAnalysis), but if you come up with a 
+better name let's rename it. There is now a security addition, if no 
+argument is set it will give usage+list of available branches.
+
+I'm going to clean up my public repo a bit, and delete the following 
+branches:
+   CMSSW_342
+   CMSSW_3X
+   cmssw311x
+   hpstanc
+   pattuplev26
+   pattuplev6
+   pattuplev7
+   rework
+   tctau
+   trigger
+Any objections?
+
+Cheers,
+Sami

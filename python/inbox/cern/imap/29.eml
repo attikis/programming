@@ -1,0 +1,46 @@
+Received: from CERNMX33.cern.ch (137.138.144.181) by CERNFE22.cern.ch
+ (137.138.144.151) with Microsoft SMTP Server (TLS) id 14.2.298.4; Thu, 8 Nov
+ 2012 17:07:52 +0100
+Received: from vocms91.cern.ch (128.142.16.110) by cernmxlb2.cern.ch
+ (137.138.144.184) with Microsoft SMTP Server (TLS) id 14.2.318.1; Thu, 8 Nov
+ 2012 17:07:39 +0100
+Received: from vocms91.cern.ch (localhost.localdomain [127.0.0.1])	by
+ vocms91.cern.ch (8.13.8/8.13.8) with ESMTP id qA8G7dcb010893;	Thu, 8 Nov 2012
+ 17:07:39 +0100
+Received: (from apache@localhost)	by vocms91.cern.ch (8.13.8/8.13.8/Submit) id
+ qA8G7cJV010890;	Thu, 8 Nov 2012 17:07:38 +0100
+Date: Thu, 8 Nov 2012 17:07:38 +0100
+X-Authentication-Warning: vocms91.cern.ch: apache set sender to hn-cms-admin@cern.ch using -f
+To: <hn-cms-higgs@cern.ch>
+From: Joseph David Lykken <Joseph.David.Lykken@cern.ch>
+Errors-To: hn-cms-admin@cern.ch
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: Re: Second Higgs 
+Message-ID: <"/higgs/1018/1/2/3/1/3/1/1"@hypernews.cern.ch>
+X-Mailer: CMS 1.11-slac-70b
+X-Hn-Loop: https://hypernews.cern.ch/HyperNews/CMS/get/higgs/1018/1/2/3/1/3/1/1.html
+Precedence: list
+In-Reply-To: <1AC67902-ED15-4D43-B543-B9AE9685151A@physics.ucdavis.edu>
+X-Hn-Forum: https://hypernews.cern.ch/HyperNews/CMS/get/higgs.html
+Return-Path: hn-cms-admin@cern.ch
+X-MS-Exchange-Organization-AuthSource: CERNMX33.cern.ch
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 10
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-SCL: -1
+MIME-Version: 1.0
+
+
+*** Discussion title: Higgs Physics
+
+Hi, reading this thread I want to reinforce Maurizio's main point. If
+there is a new resonance at 145 GeV, then it is not a SM Higgs.
+Therefore we know absolutely nothing a priori about its decays,
+production, or total width. So certainly we cannot start combining
+channels treating it like a SM Higgs. Just as for, e.g., a SUSY search,
+we should do single channel analyses and not get excited until we
+approach 5 sigma in a single channel. -Joe Lykken
+
+-------------------------------------------------------------
+Visit this CMS message (to reply or unsubscribe) at: 
+https://hypernews.cern.ch/HyperNews/CMS/get/higgs/1018/1/2/3/1/3/1/1.html

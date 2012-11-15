@@ -1,0 +1,49 @@
+Received: from CERNMX33.cern.ch (137.138.144.181) by CERNFE23.cern.ch
+ (137.138.144.152) with Microsoft SMTP Server (TLS) id 14.2.298.4; Mon, 12 Nov
+ 2012 16:33:09 +0100
+Received: from vocms91.cern.ch (128.142.16.110) by cernmxlb2.cern.ch
+ (137.138.144.184) with Microsoft SMTP Server (TLS) id 14.2.318.1; Mon, 12 Nov
+ 2012 16:33:09 +0100
+Received: from vocms91.cern.ch (localhost.localdomain [127.0.0.1])	by
+ vocms91.cern.ch (8.13.8/8.13.8) with ESMTP id qACFX9Ie000738;	Mon, 12 Nov
+ 2012 16:33:09 +0100
+Received: (from apache@localhost)	by vocms91.cern.ch (8.13.8/8.13.8/Submit) id
+ qACFX9fw000737;	Mon, 12 Nov 2012 16:33:09 +0100
+Date: Mon, 12 Nov 2012 16:33:09 +0100
+X-Authentication-Warning: vocms91.cern.ch: apache set sender to hn-cms-admin@cern.ch using -f
+To: <hn-cms-L1Trigger@cern.ch>
+From: =?UTF-8?Q?Jo=C3=A3o_Pela?= <pela@cern.ch>
+Errors-To: hn-cms-admin@cern.ch
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: Fwd: LHC Downtime chance for interventions
+Message-ID: <CAG5qdkZVN8q=0vcmVm0XGrftwF9UvKWdgrzNw4W=o0KVoAk-Nw@mail.gmail.com>
+X-Mailer: CMS 1.11-slac-70b
+X-Hn-Loop: https://hypernews.cern.ch/HyperNews/CMS/get/L1Trigger/578.html
+Precedence: list
+X-Hn-Forum: https://hypernews.cern.ch/HyperNews/CMS/get/L1Trigger.html
+Return-Path: hn-cms-admin@cern.ch
+X-MS-Exchange-Organization-AuthSource: CERNMX33.cern.ch
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 10
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-SCL: -1
+MIME-Version: 1.0
+
+
+*** Discussion title: L1 Trigger
+
+Dear L1 experts,
+
+The LHC is currently recovering from a Cryo problem and is expected to take
+around 10h for beams to be back.
+
+If you would like to do any intervention using this time, contact me.
+
+Cheers,
+Joao (L1 DoC)
+
+ [ MIME part of type text/html without a name stripped ]
+
+-------------------------------------------------------------
+Visit this CMS message (to reply or unsubscribe) at: 
+https://hypernews.cern.ch/HyperNews/CMS/get/L1Trigger/578.html

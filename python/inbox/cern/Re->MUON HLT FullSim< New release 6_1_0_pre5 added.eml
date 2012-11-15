@@ -1,0 +1,40 @@
+From: Pablo Martinez Ruiz del Arbol <Pablo.Martinez@cern.ch>
+Subject: Re: >MUON HLT FullSim< New release 6_1_0_pre5 added
+Content: 
+*** Discussion title: Trigger Performance
+
+Hi Jason,
+
+I said that the two releases were similar within statistical 
+uncertainties. I meant that the level of disagreement between the two 
+releases (in this case due to HLT/RECO since the events were recycled) 
+was at the level of the statistical fluctuations you would expect given 
+the statistics in these samples.
+
+Pablo
+
+On 11/12/2012 01:31 PM, Jason Slaunwhite wrote:
+> Hi Pablo,
+>
+> Thanks for your report.
+>
+>> Comment: Both releases look very simmilar within statistical 
+>> uncertainties
+>> Links: CMSSW_6_1_0_pre5-to-CMSSW_6_1_0_pre4-FULLSIM.txt
+>
+> Can you say what you mean by statistical differences? According to 
+> Alan's report these samples were made using gen-sim recycling [1]. 
+> That means that in pre4 and pre5 you have exactly the same events. In 
+> that situation there aren't any statistical uncertainties - the 
+> differences in your plots are due to differences in the HLT/RECO. 
+> Would you agree with that? Or is there some other effect that would 
+> give you a statistical uncertainty?
+>
+> Jason
+>
+>
+> [1] https://hypernews.cern.ch/HyperNews/CMS/get/relval/2485.html
+
+-------------------------------------------------------------
+Visit this CMS message (to reply or unsubscribe) at: 
+https://hypernews.cern.ch/HyperNews/CMS/get/trigger-performance/427/1/1.html

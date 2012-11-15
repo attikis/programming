@@ -1,0 +1,63 @@
+Received: from CERNMX30.cern.ch (137.138.144.177) by CERNFE20.cern.ch
+ (137.138.144.155) with Microsoft SMTP Server (TLS) id 14.2.298.4; Fri, 9 Nov
+ 2012 11:51:10 +0100
+Received: from mx2.lnf.infn.it (193.206.84.202) by cernmxgwlb2.cern.ch
+ (137.138.144.183) with Microsoft SMTP Server (TLS) id 14.2.318.1; Fri, 9 Nov
+ 2012 11:51:10 +0100
+Received: from smtp.lnf.infn.it (smtp1.lnf.infn.it [193.206.84.131])	by
+ mx2.lnf.infn.it (8.13.8/8.13.8) with ESMTP id qA9Ap8nf028618	for
+ <attikis@cern.ch>; Fri, 9 Nov 2012 11:51:09 +0100
+Received: from www2.lnf.infn.it (www2.lnf.infn.it [172.17.3.22])	by
+ smtp.lnf.infn.it (8.13.8/8.13.8) with ESMTP id qA9Ap75T030214
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)	for
+ <attikis@cern.ch>; Fri, 9 Nov 2012 11:51:08 +0100
+Received: from www2.lnf.infn.it (localhost.localdomain [127.0.0.1])	by
+ www2.lnf.infn.it (8.13.8/8.13.8) with ESMTP id qA9Ap7Re019414	for
+ <attikis@cern.ch>; Fri, 9 Nov 2012 11:51:07 +0100
+Received: (from apache@localhost)	by www2.lnf.infn.it (8.13.8/8.13.8/Submit)
+ id qA9Ap77M019411;	Fri, 9 Nov 2012 11:51:07 +0100
+Date: Fri, 9 Nov 2012 11:51:07 +0100
+Message-ID: <201211091051.qA9Ap77M019411@www2.lnf.infn.it>
+X-Authentication-Warning: www2.lnf.infn.it: apache set sender to turella@lnf.infn.it using -f
+To: <attikis@cern.ch>
+Subject: POST-DOCTORAL FELLOWSHIPS - a94175dabb258356331f
+From: <ufficio.fellowships@lnf.infn.it>
+Reply-To: <ufficio.fellowships@lnf.infn.it>
+X-Mailer: PHP/5.1.6
+X-Greylist: Sender passed SPF test, not delayed by milter-greylist-4.2.3 (mx2.lnf.infn.it [193.206.84.202]); Fri, 09 Nov 2012 11:51:09 +0100 (CET)
+X-PMX-Version: 5.6.1.2065439, Antispam-Engine: 2.7.2.376379, Antispam-Data: 2012.11.9.103916
+X-PMX-Sender-IP: 193.206.84.131
+Content-Type: text/plain
+Return-Path: Emanuele.Turella@lnf.infn.it
+X-MS-Exchange-Organization-PRD: lnf.infn.it
+Received-SPF: Pass (CERNMX30.cern.ch: domain of
+ ufficio.fellowships@lnf.infn.it designates 193.206.84.202 as permitted
+ sender) receiver=CERNMX30.cern.ch; client-ip=193.206.84.202;
+ helo=mx2.lnf.infn.it;
+X-MS-Exchange-Organization-Antispam-Report: v=1.1
+ cv=SBsM7yZNamBESHkdM9ANvLzEoWKVvpACMhlNggACcJs= c=1 sm=1 a=l58ESy9jcUwA:10
+ a=tAO63L5u3nXSTqVhGm7SlA==:17 a=EBE4RTNCAAAA:8 a=Nx-3fMe_xCGBSZbQDRAA:9
+ a=5OmnJqfp7wsA:10 a=tAO63L5u3nXSTqVhGm7SlA==:117;OrigIP:193.206.84.202;SCL:0
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-SCL: 0
+X-MS-Exchange-Organization-SenderIdResult: PASS
+X-MS-Exchange-Organization-AuthSource: CERNMX30.cern.ch
+X-MS-Exchange-Organization-AuthAs: Anonymous
+MIME-Version: 1.0
+
+Your request has just been processed.
+
+You can modify your request till November 15th 2009.
+We remind you that the PIN we have assigned to you is:   a94175dabb258356331f
+In case you need help, don't forget to comunicate us your PIN. 
+
+If you want to access directly, you can follow this link: 
+http://www.ac.infn.it/personale/exp_fellowships/priv/index.php?inf=modulo&myCode=a94175dabb258356331f
+
+We also remind you that all fields are mandatory, so if some of them are empty,
+you are requested to fill them in through the website.
+
+On the web page you can also check if your referents have sent letters.
+
+Best regards.
+Ufficio Borse di Studio INFN.

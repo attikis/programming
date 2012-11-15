@@ -1,0 +1,19 @@
+From: Florent Lacroix <lacroix@cern.ch>
+Subject: >JET HLT FullSim< New release 6_1_0_pre5 added
+Content: 
+*** Discussion title: Trigger Performance
+
+Release: 6_1_0_PRE5
+In category: HLT
+In subcategory: FULLSIM 
+validation for: JET
+Has Changed: From status: NOT YET DONE 
+             To status: OK
+By: FLORENT SYLVAIN LACROIX
+Comment: Results similar to pre4 => validated.
+
+Links: https://cmsweb.cern.ch/dqm/relval/start?runnr=1;dataset=/RelValTTbar/CMSSW_6_1_0_pre5-START61_V4-v1/DQM;sampletype=offline_relval;filter=all;referencepos=overlay;referenceshow=all;referenceobj1=other%3A1%3A/RelValTTbar/CMSSW_6_1_0_pre4-START61_V1-v1/DQM%3A;referenceobj2=none;referenceobj3=none;referenceobj4=none;search=;striptype=object;stripruns=;stripaxis=run;stripomit=none;workspace=Everything;size=M;root=HLT/HLTJETMET/HLT_PFJet80_v9;focus=;zoom=no;
+
+-------------------------------------------------------------
+Visit this CMS message (to reply or unsubscribe) at: 
+https://hypernews.cern.ch/HyperNews/CMS/get/trigger-performance/430.html

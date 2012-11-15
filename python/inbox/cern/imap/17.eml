@@ -1,0 +1,165 @@
+Received: from CERNMX30.cern.ch (137.138.144.177) by CERNFE20.cern.ch
+ (137.138.144.155) with Microsoft SMTP Server (TLS) id 14.2.298.4; Wed, 7 Nov
+ 2012 12:46:48 +0100
+Received: from smtp-rs1-vallila2.fe.helsinki.fi (128.214.173.75) by
+ cernmxgwlb2.cern.ch (137.138.144.183) with Microsoft SMTP Server (TLS) id
+ 14.2.318.1; Wed, 7 Nov 2012 12:46:47 +0100
+Received: from pc140.localnet (pc140.hip.helsinki.fi [128.214.56.93])	by
+ smtp-rs1.it.helsinki.fi (8.14.4/8.14.4) with ESMTP id qA7BkkQg010626
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT);	Wed, 7
+ Nov 2012 13:46:46 +0200
+From: Matti Kortelainen <matti.kortelainen@helsinki.fi>
+Organization: Helsinki Institute of Physics
+To: "Lauri A. Wendland" <lauri.wendland@cern.ch>, Ritva Kinnunen
+	<Ritva.Kinnunen@cern.ch>, Sami Lehti <Sami.Lehti@cern.ch>, Cristina Ferro
+	<Cristina.Ferro@cern.ch>, Alexandros Attikis <Alexandros.Attikis@cern.ch>
+Subject: 53X pattuples and code
+Date: Wed, 7 Nov 2012 13:46:43 +0200
+User-Agent: KMail/1.13.6 (Linux/2.6.38-16-generic; KDE/4.6.5; x86_64; ; )
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Message-ID: <201211071346.44210.matti.kortelainen@helsinki.fi>
+Return-Path: matti.kortelainen@helsinki.fi
+X-MS-Exchange-Organization-PRD: helsinki.fi
+Received-SPF: None (CERNMX30.cern.ch: matti.kortelainen@helsinki.fi does not
+ designate permitted sender hosts)
+X-MS-Exchange-Organization-Antispam-Report: v=1.1
+ cv=SBsM7yZNamBESHkdM9ANvLzEoWKVvpACMhlNggACcJs= c=1 sm=1 a=522ZAKym0HcA:10
+ a=kj9zAlcOel0A:10 a=KX5x4S1/pGxY98EFUcCALg==:17 a=EuvBnV-pAAAA:8
+ a=1jZAsGrWU3F2Sfdhvf4A:9 a=CjuIK1q_8ugA:10
+ a=KX5x4S1/pGxY98EFUcCALg==:117;OrigIP:128.214.173.75;SCL:0
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+X-MS-Exchange-Organization-SCL: 0
+X-MS-Exchange-Organization-SenderIdResult: NONE
+X-MS-Exchange-Organization-AuthSource: CERNMX30.cern.ch
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-Message-Flag: Follow up
+MIME-Version: 1.0
+
+Dear all,
+
+We have finally the first 53X 2012 pattuples ready. They and the
+relevant code updates are in the 2012 branch in Sami's repository.
+There is also an update on the 2011 branch (more details below).
+
+Instructions have been updated
+https://twiki.cern.ch/twiki/bin/view/CMS/HiggsChToTauNuFullyHadronic#Examples_of_running
+
+Please especially pay attention to my suggestion for git workflow when
+operating with the two branches
+https://twiki.cern.ch/twiki/bin/view/CMS/HiggsChToTauNuFullyHadronic#Suggestion_for_git_workflow_with
+(comments/improvements welcome!)
+The intention is to make all our lives easier in the end.
+
+
+I've collected below various notes of the code update (mainly related
+53X; updates relevant to 2011 too, mainly in the end of the list, are
+noted):
+
+- 53X and 44X require different $SCRAM_ARCH
+
+- v53_1 Pattuples contain CHS jets in addition to the usual jets
+  (nothing else from PF2PAT is not used)
+  * CHS jets can be activated with "useCHSJets=True" parameter to
+    ConfigBuilder() constructor in the analysis job configuration file
+    (e.g. signalAnalysis_cfg.py)
+  * Changes to type 1/2-corrected MET and JES variations should
+    propagate automatically
+
+- There are following multicrab.cfg's defined, one for tau+MET,
+  QuadJet, and QuadJetBTagIP set of triggers. For QuadPFJetBTagCSV,
+  tasks can be created with test/multicrabSignalAnalysis.py script
+  (which I also used to generate the ones below)
+  * multicrab_analysis_taumet_v53_1.cfg
+  * multicrab_analysis_quadjet_v53_1.cfg
+  * multicrab_analysis_quadjetbtag_v53_1.cfg
+  * All of these have W+jets weighting enabled (see more below). It
+    can be easily disabled if one creates the multicrab task with
+    test/multicrabSignalAnalysis.py. I didn't want to generate
+    "standalone" multicrab.cfg just for fun.
+
+- One signal sample (HH M90) has AODSIM still missing
+
+- There are no default cross sections for 8 TeV heavy H+
+  * Just to remind, in 2011 branch the default 7 TeV cross sections of
+    heavy H+ have been set to sigma(ttbar)=165 (while waiting for
+    better numbers)
+
+- We have signal samples for single top -> H+ decay, although so far with s-channel only
+  * For the moment this is *not* included in the WH+HH signal (by plots.mergeWHandHH)
+  * t-channel, tW-channel AODSIMs are missing
+
+- So far data has been processed for eras 2012A, 2012B, and 2012C,
+  corresponding to an integrated luminosity of ~12/fb. The ongoing
+  2012D is not included yet, as I think A-C should be enough to get us
+  started.
+  * I have one piece of MultiJet running, as I realized the run period
+    (200961-202504) which I though would be fully invalid because of
+    0T field, is in fact partly valid (and golden JSON seems to be
+    properly set). For Tau this piece of data is already included.
+    Thanks to Sami who inspired me to double-check this. I'll send an
+    update when these are finished.
+
+- The following data eras have been defined
+  * Run2012A, Run2012B, Run2012C
+  * Run2011AB (corresponds to the ICHEP dataset)
+  * Run2011ABC
+
+- Luminosity calculation: pixel luminosity is available only for
+  Run2012AB, for C and D only HF lumi is available
+  * hplusLumiCalc.py knows this now, and uses
+    - pixelLumiCalc.py for luminosity for A and B (and for Run2011)
+    - lumiCalc2.py for luminosity for C (and D)
+  * The pileup reweighting distributions are done accordingly, i.e.
+    using pixel luminosity corrections for A and B
+
+- Trigger efficiencies have been updated, with the following caveats
+  * So far only for againstElectronMVA+againstMuonTight+byMediumCombinedIsolationDeltaBetaCorr
+  * MC numbers might be somewhat off because of some normalization issue
+  * Data efficiencies are calculated up to run 202585 in Run2012C,
+    after which the high-pT-tau bug was fixed. The efficiency for the
+    last 0.28/fb of Run2012C has not been calculated yet, although it
+    is included in the pattuples.
+  * For QuadJet triggers the application of the tau trigger scale
+    factor is automatically disabled
+  
+- Trigger object matching is currently enabled only for Tau+MET
+  trigger (as before)
+  * Can be done in the analysis jobs for QuadJet trigger(s) too, I
+    just didn't know (and didn't want to cast to stone) what to do
+  * Preferably someone else would write the code, I can of course help
+
+- The W+jets inclusive and W+Njets exclusive samples are combined with
+  the same recipe as in Htautau analysis
+  * Use all events in all W+jets samples, weight W+Njets (N=1,2,3,4)
+    events correctly
+  * I've done a basic testing that the results of the weighting look sensible
+    - Further checks wouldn't hurt
+    - At first look, the statistical uncertainty of W+jets after all
+      selections goes down from ~40 % (inclusive) to ~9 %
+      (inclusive+exclusive)
+  * As noted above, this can be easily disabled when using multicrabSignalAnalysis
+    - Or by removing "wjetsWeighting=1" from pycfg_params in multicrab.cfg
+  * If somebody wants to take a look, the implementation is in plugins/HPlusWJetsWeightProducer.cc
+
+- Centre-of-mass energy is stored in histograms.root files, so it can
+  be handled automatically in plot scripts
+  * I've updated plotSignalAnalysis.py script and plots.drawPlot()
+    function to use the automated feature
+  * This holds for 2011 branch too
+
+- hplusMultiCrabStatus.py (2011 too)
+  * Just to note that I rewrote the way the crab output is read
+    (otherwise it just blocked when using'remoteGlidein' scheduler).
+    It might still have some glitches, so let me know if you encounter
+    any problems with it.
+
+- Small updates to other hplusMultiCrab* scripts too (2011 too)
+
+- Support for standalone plotting etc (test/setupStandalone.(c)sh) is
+  slightly improved (by using some other environment variable than
+  $CMSSW_BASE to find the location of HiggsAnalysis) (2011 too)
+
+
+Cheers,
+Matti

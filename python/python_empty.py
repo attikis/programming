@@ -1,4 +1,19 @@
 #!/usr/bin/env python
 # Permissions : chmod +x fileName.py
-# To launch   : python fileName.py    OR    ./fileName.py 
-# Definition  : 
+
+'''
+Usage:
+./python_.
+
+Description:
+This is a ...
+'''
+
+# All required modules here
+import python_myFunctions as myFunctions
+
+# Object and variable declarations here
+mf = myFunctions.CreateObject()
+
+if __name__ == "__main__":
+

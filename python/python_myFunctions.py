@@ -84,10 +84,12 @@ class CreateObject:
         # Return the asterisk-obscured string
         return outputString
     
-    def sendEmail(self, server):
+    def sendEmailNoAttachment(self, server):
         ''' sendEmail(host_server):
         This module is a simple interface to send emails using the gmail or cern SMTP servers. When calling the module the only thing that needs to be specified is 
-        which server is to be used (cern or gmail). Just follow the prompt commands once launced.
+        which server is to be used (cern or gmail). Just follow the prompt commands once launched. The "smtplib" is a low-level package interface for the Simple Mail
+        Transfer Protocol (SMTP) protocol. The "email" package assists with parsing (analyzing a sentence into its parts and describe their syntactic roles) and
+        generating emails.
         '''
 
         # Import modules here
@@ -147,7 +149,7 @@ class CreateObject:
             msg['cc']   = ", ".join(Cc)
             msg['Bcc']  = ", ".join(Bcc)
             msg['Subject'] = subject
-            
+
             # Connect to host using specified port
             self.Cout("Attempting to connect to:\n\thost = %s\n\tport = %s" % (smtpHost, smtpPort))
             connection = SMTP(host=smtpHost, port=smtpPort)
@@ -192,7 +194,6 @@ class CreateObject:
         ''' getEmail(host_server):
         This module is a simple interface to check for new emails in the inbox of Gmail or CERN pop servers. In a nutshell the module retrieves all of the email that is stored on the specified server (Gmail or CERN) and wrties it to a set of files on disk. If new emails are present they will be opened before the script exits the shell. All new emails will be written as .eml files to dedicated paths. A time-stamp text file provides information of the last check for email. When calling the module the only thing that needs to be specified is which server is to be used (cern or gmail). Just follow the prompt commands once launced. Only thing the script does not do is to delete each email from the server after retrieving it. This is however possible by calling the connection.dele(i) after the connection.retr(i) command.
         '''
-        messages = [connection.retr(i) for i in range(1, numMessages + 1)]
         # Import modules here
         import poplib
         from email import parser as eParser
@@ -286,7 +287,7 @@ class CreateObject:
             sender = str(message['From'])
             subject = str(message['subject'])
             content = str(message.get_payload())
-            fileName = "%s.eml" % (subject.replace(": ", "-") ) #.replace(" ", "_")
+            fileName = "%s.eml" % (subject.replace(": ", "-").replace("/", "-") ) #.replace(" ", "_")
             
             # Check if email has already been saved 
             if os.path.isfile(myPath + fileName):
@@ -328,3 +329,220 @@ class CreateObject:
                 pydoc.pager(myNewMail.read()) # similar to | less in shell. Press "q" to move to next email
         self.Cout('Done. Exiting python shell.')
         connection.quit()
+
+
+    def getEmailImap(self, server):
+        ''' getEmail(host_server):
+        This module is a simple interface to check for new emails in the inbox of Gmail or CERN imap servers. 
+        This is a simple example of how to use the IMAP protocol to receive emails. As I understand, the IMAP protocol is more involved in the python libraries 
+        than the POP3 analogue, with more complicated/obscure modules. It does however offer a mean of accessing unread email, unlike the POP3 protocol for which I had to 
+        create a time-stamp support to know when it was the last time I checked my inbox. Nevertheless, at present I prefer POP3.
+        '''
+        # Import modules here
+        import python_myFunctions as myFunctions
+        import imaplib
+        import email
+        import traceback
+        import sys
+        import getpass 
+        import time 
+        from datetime import datetime
+        from dateutil import parser 
+        import os
+        import pydoc
+        
+        # Declaration here
+        f = myFunctions.CreateObject()
+        newMailFiles = []
+        myPath = "/Users/administrator/my_work/programming/python/inbox/" + server + "/imap/"
+        
+        # Decide which of the two servers to use
+        if server == "cern":
+            imapHost = "imap.cern.ch"
+            emailAddress = "@cern.ch"
+            imapUsername = "attikis@cern.ch"
+        elif server == "gmail":
+            imapHost = "imap.gmail.com"
+            emailAddress = "@gmail.com"
+            imapUsername = "alexandros.attikis@gmail.com"
+        else:
+            self.Cout('ERROR! The server argument %s is invalid. Please select between "cern" and "gmail". Exiting python shell.')
+            print __doc__
+            sys.exit(1)
+            
+        # Prompt user to provide his login password
+        self.Cout("Please provide your login password for %s to continue:" % (imapUsername))
+        imapPassword = getpass.getpass("\tPassword = ")
+
+        # Connect to IMAP host server over SSL using login credentials
+        self.Cout("Attempting to connect to:\n\thost = %s." % (imapHost))
+        connection = imaplib.IMAP4_SSL(imapHost)
+        connection.login(imapUsername, imapPassword)
+        self.Cout("Connecting to INBOX.")
+        print connection.select("INBOX", readonly=True) # connect to inbox.
+        self.Cout(connection.welcome)
+
+        # Search messages on server "INBOX" [search(self, charset, *criteria)] and get total number of messages in mailbox (both seen and unseen)
+        AllMail = connection.search(None, "ALL")[1][0].split()  # returns a nice list of messages
+        UnseenMail = connection.search(None, "UNSEEN")[1][0].split()  # returns a nice list of messages
+        numAllMail = len(AllMail)
+        numUnseenMail = len(UnseenMail)
+        self.Cout( "You have %s messages (%s NEW) in your inbox." % (numAllMail, numUnseenMail) )
+
+        # Loop over all messages and write them down to files
+        self.Cout('Saving NEW mail to "%s":' % (myPath))
+        for mailId in UnseenMail:
+            try:
+                fileName = "%s.eml" % (mailId)
+                newMailFiles.append(fileName)
+                saveFile = open(myPath + fileName, "w")
+                mailBody = connection.fetch(mailId, '(RFC822)')[1][0][1]
+                saveFile.write(mailBody)
+            finally:
+                saveFile.close()
+        self.Cout("\t%s" % ([item for item in newMailFiles]) )
+
+        # Before closing program ask user if he wants to open the new emails for the user
+        openMail = self.Cin('To open NEW mail press "y"')
+        if openMail == "y":
+            self.Cout('Paging NEW emails. Press "q" to read the next email.')
+            for mail in newMailFiles:
+                myNewMail = open(myPath + mail, "r")
+                pydoc.pager(myNewMail.read()) # similar to | less in shell. Press "q" to move to next email
+        self.Cout('Done. Exiting python shell.')
+        connection.logout()
+
+
+    def sendEmail(self, server):
+        ''' sendEmail(host_server):
+        This module is a simple interface to send emails (with attachments) using the gmail or cern SMTP servers. When calling the module the only thing that needs 
+        to be specified is which server is to be used (cern or gmail). Just follow the prompt commands once launched. The "smtplib" is a low-level package interface 
+        for the Simple Mail Transfer Protocol (SMTP) protocol. The "email" package assists with parsing (analyzing a sentence into its parts and describe their 
+        syntactic roles) and  generating emails.
+        '''
+
+        # Import modules here
+        import traceback
+        import email
+        from smtplib import SMTP
+        from email.MIMEText import MIMEText
+        from email.MIMEMultipart import MIMEMultipart
+        from email.MIMEBase import MIMEBase
+        from email import encoders
+        import mimetypes
+        import sys
+        import datetime
+        import getpass 
+        
+        # Define SMTP port to use and decide which of the two servers to use
+        smtpPort = 587 #or 25
+        if server == "cern":
+            smtpHost = "smtp.cern.ch"
+            emailAddress = "@cern.ch"
+            smtpUsername = "attikis@cern.ch"
+        elif server == "gmail":
+            smtpHost = "smtp.gmail.com"
+            emailAddress = "@gmail.com"
+            smtpUsername = "alexandros.attikis@gmail.com"
+        else:
+            self.Cout('ERROR! The server argument %s is invalid. Please select between "cern" and "gmail". Exiting python shell.')
+            print __doc__
+            sys.exit(1)
+        
+        # Get SMTP authorisation details
+        self.Cout("Please provide your login credentials for %s to continue:" % (smtpUsername) )
+        sender = smtpUsername
+        smtpPassword = getpass.getpass("\tPassword = ")
+
+        # Connect to host using specified port
+        self.Cout("Attempting to connect to:\n\thost = %s\n\tport = %s" % (smtpHost, smtpPort))
+        connection = SMTP(host=smtpHost, port=smtpPort)
+        connection.set_debuglevel(False) #True
+        if smtpUsername is not False:
+            connection.ehlo()
+            if smtpPort != 25:
+                connection.starttls()
+                connection.ehlo()
+                if smtpUsername and smtpPassword:
+                    connection.login(smtpUsername, smtpPassword)
+                    self.Cout("Succesfully logged on to:\n\tusername = %s\n\tpassword = %s" % (smtpUsername, self.obscureString(smtpPassword)))
+                else:
+                    self.Cout("Unsuccesfull login. False credentials provided:\n\tusername = %s\n\tpassword = %s" % (smtpUsername, self.obscureString(smtpPassword)))
+                    print __doc__
+                    sys.exit(1)
+
+        # Get user input regarding email details
+        self.Cout("Please provide the email details:")
+        recipients = raw_input("\tTo: ")
+        Cc = raw_input("\tCc: ")
+        Bcc = raw_input("\tBcc (self excluded): ")
+        subject = raw_input("\tSubject: ")
+        content = raw_input("\tContent: ")
+        attachment = raw_input("\tAttachment: ")
+        if attachment == "":
+            self.Cout("Nothing to attach.")
+            bAttach = False
+        else:
+            self.Cout("Attachment file:\n\t%s" % (attachment) )
+            bAttach = True
+    
+        # Define return value as success == 0,  failure == 1
+        returnValue = 1
+        # Take care of recipient lists
+        if not(hasattr(recipients, "__iter__")):
+            recipients = [recipients]
+        if not(hasattr(Cc, "__iter__")):
+            Cc = [Cc]
+        if not(hasattr(Bcc, "__iter__")):
+            Bcc = [Bcc]
+            Bcc.append(smtpUsername)
+            
+        # Define message details, including attachments
+        try:
+            if bAttach == False:
+                text_subtype = 'plain'
+                mainMsg = MIMEText(content, text_subtype)
+            else:
+                mainMsg = MIMEMultipart()
+                # Guess the type of a file based on its filename or URL, given by url. 
+                ctype, encoding = mimetypes.guess_type(attachment)
+                print "ctype, encoding = %s, %s" % (ctype, encoding)
+                maintype, subtype = ctype.split("/", 1)
+                print "maintype, subtype = %s, %s" % (maintype, subtype)
+
+            # The following do not depend on attachment
+            mainMsg['From'] = sender # Some SMTP servers will do this automatically, but not all
+            mainMsg['To']   = ", ".join(recipients)
+            mainMsg['cc']   = ", ".join(Cc)
+            mainMsg['Bcc']  = ", ".join(Bcc)
+            mainMsg['Subject'] = subject
+        
+            # Send emails body and attachments
+            self.Cout("Sending email to %s" % (recipients) )
+            try:
+                if bAttach:
+                    mainMsg.attach(subMsg)
+                    fp = open(attachment, "rb") # open attachment in read/binary mode
+                    subMsg = MIMEBase(maintype, subtype)
+                    subMsg.set_payload(fp.read())
+                    fp.close()
+                    encoders.encode_base64(subMsg)
+                    subMsg.add_header("Content-Disposition", "attachment", filename=attachment)
+                    mainMsg.attach(MIMEText(content))
+                # Connect to server and send complete email
+                connection.sendmail( sender, recipients+Cc+Bcc, mainMsg.as_string() )
+                returnValue = 0 # (success)
+            except Exception, e:
+                self.Cout("Got %s %s.\n\tShowing traceback:\n%s" % (type(e), e, traceback.format_exc()))
+                returnValue = 1 # (failure)
+                print __doc__
+            finally:
+                self.Cout("Closing connection.")
+                connection.close()
+        
+        except Exception, e:
+            self.Cout("Got %s %s.\n\tShowing traceback:\n%s" % (type(e), e, traceback.format_exc()))
+            returnValue = 1 # (failure)
+            print __doc__
+            
+        return returnValue

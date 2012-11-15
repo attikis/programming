@@ -1,0 +1,146 @@
+Received: from lxplus409.cern.ch (137.138.210.208) by smtp.cern.ch
+ (137.138.144.172) with Microsoft SMTP Server (TLS) id 14.2.298.4; Sat, 8 Sep
+ 2012 11:10:34 +0200
+Date: Sat, 8 Sep 2012 11:10:34 +0200
+From: slehti <slehti@mail.cern.ch>
+X-X-Sender: slehti@lxplus409.cern.ch
+To: Alexandros Attikis <attikis@cern.ch>
+Subject: Re: Top2HPlus recipe
+In-Reply-To: <E46328F4-F510-47A1-95B0-A46C2E0E4885@cern.ch>
+Message-ID: <alpine.LRH.2.00.1209081109550.1684@lxplus409.cern.ch>
+References: <5024A47B.6070000@cern.ch> <503351AB.6030100@cern.ch> <C1522115-7F7B-4BAF-8EA1-AECCAAB088B4@cern.ch> <alpine.LRH.2.00.1208211155040.18697@lxplus421.cern.ch> <6B5D7B16-C5C3-417C-8A9C-709C2AF8A0C5@cern.ch> <50337D78.9050901@cern.ch>
+ <92214F8C-42A4-455A-AC5C-67A7F8A442FA@cern.ch> <91F0B7AA-12B3-499D-954A-11444BEF364B@cern.ch> <B96B46662CA35C4E9C64DAA8EE9A5C54907E1BCF@CERNXCHG02.cern.ch> <D436CD46-6FD3-42B2-A7E8-5731EB38BF37@cern.ch> <alpine.LRH.2.00.1208221254090.21062@lxplus310.cern.ch>
+ <9631637E-FEAC-4201-BF72-A2E6EFE68C26@cern.ch> <alpine.LRH.2.00.1208221302030.21062@lxplus310.cern.ch> <alpine.LRH.2.00.1208221312430.21062@lxplus310.cern.ch> <790C7FC6-31ED-4199-A00A-EEAD8C7BC300@cern.ch> <alpine.LRH.2.00.1209031617270.7546@lxplus405.cern.ch>
+ <89D633D2-2258-4C2E-AAC1-04FD0D33F0DF@cern.ch> <AD5B6B7F-609B-4D17-92CB-778854A93A8C@cern.ch> <613191EE-70C8-44AE-91B9-8A939EDFF5A2@cern.ch> <E46328F4-F510-47A1-95B0-A46C2E0E4885@cern.ch>
+User-Agent: Alpine 2.00 (LRH 1167 2008-08-23)
+Content-Type: multipart/mixed;
+	boundary="-1970679598-1511507870-1347095434=:1684"
+Return-Path: slehti@mail.cern.ch
+X-MS-Exchange-Organization-AuthSource: CERNFE20.cern.ch
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-Originating-IP: [137.138.210.208]
+X-MS-Exchange-Organization-AVStamp-Mailbox: MSFTFF;1;0;0 0 0
+MIME-Version: 1.0
+
+---1970679598-1511507870-1347095434=:1684
+Content-Type: text/plain; charset="ISO-8859-15"; format=flowed
+Content-Transfer-Encoding: quoted-printable
+
+
+
+On Fri, 7 Sep 2012, Alexandros Attikis wrote:
+
+> it must be the neutralino, right?
+Neutralino 1 (there are 4 of them).
+
+Cheers,
+Sami
+
+>=20
+>=20
+> Alexandros
+>=20
+> On Sep 7, 2012, at 5:02 PM, Alexandros Attikis <attikis@cern.ch> wrote:
+>
+>       Hi Sami,=A0
+> do you by any chance now what particle the
+> Neu1 is?
+> For example, in the decay=A0H0->Neu1 Neu1
+>=20
+> written as HH-Neu1Neu1 in FH.
+>=20
+> Cheers.
+> Alexandros
+>=20
+> On Sep 3, 2012, at 5:41 PM, Alexandros Attikis <attikis@cern.ch> wrote:
+>
+>       great, that should do it.
+> thanx.
+>=20
+> Cheers,
+> Alexandros
+>=20
+> On Sep 3, 2012, at 5:29 PM, Alexandros Attikis <attikis@cern.ch> wrote:
+>
+>       Ok great.two things.
+> 1) How do I compile the code?
+> 2) How do I know the FH variable output to match to the tree?
+> e.g. if mHc is mapped to MHp, how do i know what to match for mA?
+>=20
+>=20
+> Alexandros
+>=20
+> On Sep 3, 2012, at 5:23 PM, slehti <slehti@mail.cern.ch> wrote:
+>
+>       On Mon, 3 Sep 2012, Alexandros Attikis wrote:
+>
+>             Hi Sami,
+>             I have found some time to get to run this code.
+>             I would like to add to the tree branches of all 5 higgs boson=
+s, not just Hpm.
+>             Could you point me to the way of doing this?
+>             Also, are SUSY decays saved to the tree?
+>
+>       Hi,
+>       You can add more branches in file (Top2HPlus/src/)mainFH.cpp. No SU=
+SY decays are included. Anything FH produces in
+>       the output can be added. Here is an example:
+>       BR_Hp_enu =3D sfinder.getValue("FH",*file,"Hp-nu_e-e");
+>       Here the string "Hp-nu_e-e" is the same string as in the FH output.
+>
+>       Cheers,
+>       Sami
+>
+>             Cheers,
+>             Alexandros
+>             On Aug 22, 2012, at 2:17 PM, slehti <slehti@mail.cern.ch> wro=
+te:
+>
+>             =A0=A0=A0=A0=A0On Wed, 22 Aug 2012, slehti wrote:
+>
+>             =A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0On Wed, 22 Aug 2012, Alexand=
+ros Attikis wrote:
+>
+>             =A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0Hi Sami,
+>             =A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0I am inter=
+ested yes. Is it at the same location?
+>             =A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0Can you gi=
+ve some pointers / instructions please?
+>
+>             =A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0I ran FH myself in order to =
+see it works. The result is in a root TTree found here:
+>             =A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0http://cmsdoc.cern.ch/~sleht=
+i/FH_results_mhmax.root
+>
+>             =A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0The mass/tanb/whatever point=
+s can be easily increased or changed, and the plot can be made
+>             as a
+>             =A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0function of mH+ or tanb or..
+>
+>             =A0=A0=A0=A0=A0In case you want to change something, here is =
+the recipe
+>             =A0=A0=A0=A0=A0git clone http://cmsdoc.cern.ch/~slehti/Top2HP=
+lus.git
+>             =A0=A0=A0=A0=A0cd Top2HPlus/workspace
+>             =A0=A0=A0=A0=A0edit ../src/FH_inputMaker.py to select the mas=
+ses and tanb's
+>             =A0=A0=A0=A0=A0make FH (runs FH for all the points selected i=
+n FH_inputMaker.py)
+>             =A0=A0=A0=A0=A0make FH_root (creates the root file from FH tx=
+t output created in the previous step))
+>
+>             =A0=A0=A0=A0=A0The FH version is controlled by the first line=
+ of the Makefile.
+>
+>             =A0=A0=A0=A0=A0Cheers,
+>             =A0=A0=A0=A0=A0Sami
+>=20
+>=20
+>=20
+>=20
+>=20
+>=20
+>=
+
+---1970679598-1511507870-1347095434=:1684--
