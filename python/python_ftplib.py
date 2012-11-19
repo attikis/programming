@@ -65,11 +65,15 @@ parser.add_option("-p", "--password", dest = "password", help = "PASSWORD for ft
 (options, args) = parser.parse_args()
 
 if not (options.remote_file and options.local_file and options.remote_host_address):
+    print __doc__
     parser.error("REMOTE HOST, LOCAL FILE NAME, and REMOTE FILE NAME are mandatory")
 
 if options.username and not options.password:
+    print __doc__
     parser.error("PASSWORD is mandatory if USERNAME is present")
 
+mf.StopWatchStart()
+        
 # Define the FTP server object; pass the desired FTP address to the constructor
 #mf.Cout("Creating FTP client class with remote host address:\n\t%s" % (options.remote_host_address))
 #ftp = FTP(options.remote_host_address) # also works
@@ -108,3 +112,5 @@ finally:
     local_file.close()
     mf.Cout("Closing FTP connection with remote host address:\n\t%s." % (options.remote_host_address))
     ftp.close()
+
+mf.StopWatchStop()

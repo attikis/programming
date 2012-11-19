@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # Permissions : chmod +x fileName.py
 
+# docstrings here
 '''
 Usage:
 ./python_.

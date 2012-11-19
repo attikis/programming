@@ -12,13 +12,16 @@ In this python module I define some generic functions that can be used in many e
 The list of functions defined here will grow significantly over time, at which stage I should perhaps
 consider its further break-down to more classes and functions.
 ''' 
+from datetime import datetime
+import time 
 
 class CreateObject:
-    
     def __init__(self):
         self.OutCounter = 0
         self.InCounter = 0
-
+        self.TimeStart = datetime.now()
+        self.TimeStop = datetime.now()
+        
     def DisplayMatchObject(self, match):
         ''' DisplayMatchObject(self, match):
         A function to display match objects
@@ -546,3 +549,16 @@ class CreateObject:
             print __doc__
             
         return returnValue
+
+    def StopWatchStart(self):
+        self.TimeStart = datetime.now()
+
+    def StopWatchStop(self):
+        self.TimeStop = datetime.now()
+        elapsedTime = self.TimeStop - self.TimeStart
+        days = elapsedTime.days
+        hours   = int((elapsedTime.seconds - elapsedTime.seconds%3600.0) / 3600)
+        minutes = int((elapsedTime.seconds - hours*3600) / 60)
+        seconds = elapsedTime.seconds - hours*3600 - minutes*60.0
+        self.Cout("Script Execution time:\n\t%s days, %s hours, %s minutes, %s seconds." % (days, hours, minutes, seconds) )
+    
