@@ -80,7 +80,7 @@ mf.StopWatchStart()
 mf.Cout("Creating FTP client class")
 ftp = FTP()
 # Connect to FTP server
-mf.Cout("Connectiong to remote host address:\n\t%s" % (options.remote_host_address))
+mf.Cout("Connecting to remote host address:\n\t%s" % (options.remote_host_address))
 ftp.connect(options.remote_host_address)
 
 # Now login onto the FTP server

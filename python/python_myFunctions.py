@@ -14,6 +14,7 @@ consider its further break-down to more classes and functions.
 ''' 
 from datetime import datetime
 import time 
+import os
 
 class CreateObject:
     def __init__(self):
@@ -562,3 +563,48 @@ class CreateObject:
         seconds = elapsedTime.seconds - hours*3600 - minutes*60.0
         self.Cout("Script Execution time:\n\t%s days, %s hours, %s minutes, %s seconds." % (days, hours, minutes, seconds) )
     
+# This function check if a local path is a directory.
+    def EnsureIsDir(self, path):
+        d = os.path.dirname(path)
+        if not os.path.exists(d):
+            os.makedirs(d)
+        
+# This function checks if a remote path is a directory.
+    def IsDir(self, sftp, remotePath):
+        from stat import S_ISDIR
+        try:
+            return S_ISDIR(sftp.stat(remotePath).st_mode)
+        except IOError:
+            # Path does not exist, so by definition not a directory
+            return False
+
+# This function checks if a remote path is a directory.
+    def IsDir(self, path):
+        if os.path.isdir(path):
+            return True
+        else:
+            return False
+
+# This function checks if a remote path is a directory.
+    def IsFile(self, path):
+        if os.path.isfile(path):
+            return True
+        else:
+            return False
+
+# This function creates a progress bar and continuously updates it. Call this function before executing a potentially long function/module.
+    def StartProgressBar(self, maxValue):
+        import progressbar
+        widgets = [progressbar.FormatLabel(''), ' ', progressbar.Percentage(), ' ', progressbar.Bar('/'), ' ', progressbar.RotatingMarker()]
+        pBar = progressbar.ProgressBar(widgets=widgets, maxval=maxValue)
+        def CallBack(transferred, total):
+            if pBar.start_time is None:
+                pBar.start()
+            pBar.update(transferred)
+            return
+        return pBar, CallBack
+
+# This function tells the progress bar when to stop. Call this function right after executing the potentially long function/module.
+    def StopProgressBar(self, pBar):
+        pBar.finish()
+

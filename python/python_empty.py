@@ -1,10 +1,12 @@
 #!/usr/bin/env python
-# Permissions : chmod +x fileName.py
 
-# docstrings here
+# Script docstrings
 '''
 Usage:
-./python_.
+./fileName.py
+
+Permissions: 
+chmod +x fileName.py
 
 Description:
 This is a ...
@@ -17,4 +19,6 @@ import python_myFunctions as myFunctions
 mf = myFunctions.CreateObject()
 
 if __name__ == "__main__":
+    mf.StopWatchStart()
 
+    mf.StopWatchStop()
