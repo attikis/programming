@@ -9,15 +9,14 @@ Permissions:
 chmod +x fileName.py
 
 Description:
-This is a 
+This is a ...
 '''
 
-# Import my own modules here
+# All required modules here
 import python_myFunctions as myFunctions
+
+# Object and variable declarations here
 mf = myFunctions.CreateObject()
-
-# All other required modules here
-
 
 if __name__ == "__main__":
     mf.StopWatchStart()
