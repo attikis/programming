@@ -2,6 +2,16 @@
 # Permissions : chmod +x fileName.py
 # To launch   : python fileName.py    OR    ./fileName.py 
 # Definition  : Regular expressions in python
+'''
+Usage:
+./fileName.py
+
+Permissions: 
+chmod +x fileName.py
+
+Description:
+This is an example of performing reObject.findall(string) on given a sentence or string. In particular, raw string patterns are used to search for words beginning with the letter "t" (\bt) and end with the letter "e" (e\b), with anything in-between (.*?)
+'''
 
 # First import the regular expressions module
 import re

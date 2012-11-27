@@ -5,7 +5,7 @@
 
 ''' 
 Usage:
-python_logFileParser.py arg1 arg2 arg3
+python_myGrep.py arg1 arg2 arg3
 
 Description:
 This script takes 3 command line arguments (arg1 = grep option, arg2 = string to grep on, arg3 = file extension),

@@ -570,7 +570,7 @@ class CreateObject:
             os.makedirs(d)
         
 # This function checks if a remote path is a directory.
-    def IsDir(self, sftp, remotePath):
+    def IsRemoteDir(self, sftp, remotePath):
         from stat import S_ISDIR
         try:
             return S_ISDIR(sftp.stat(remotePath).st_mode)
@@ -578,7 +578,14 @@ class CreateObject:
             # Path does not exist, so by definition not a directory
             return False
 
-# This function checks if a remote path is a directory.
+# This function checks if a local path is a directory.
+    def IsLocalDir(self, path):
+        if os.path.isdir(path):
+            return True
+        else:
+            return False
+
+# This function checks if a local path is a directory.
     def IsDir(self, path):
         if os.path.isdir(path):
             return True
@@ -617,12 +624,13 @@ class CreateObject:
         path_collection = []
         # For each directory in the tree rooted at directory "path" (including "path" itself), the os.walk(path) yields a 3-tuple (dirpath, dirnames, filenames).
         for dir_path, dir_names, file_names in os.walk(path):
-            self.Cout( 'Files found in path "%s":' % (dir_path) )
+            #self.Cout( 'Files found in path "%s":' % (dir_path) )
             if len(file_names) == 0:
-                print "\tNo file found."
+                 #print "\tNo file found."
+                continue
             else:
                 for file in file_names:
-                    print "\t%s" % (file)
+                    #print "\t%s" % (file)
                     full_path = os.path.join(dir_path, file)
                     path_collection.append(full_path)
                     
@@ -638,12 +646,13 @@ class CreateObject:
         file_collection = []
         # For each directory in the tree rooted at directory "path" (including "path" itself), the os.walk(path) yields a 3-tuple (dirpath, dirnames, filenames).
         for dir_path, dir_names, file_names in os.walk(path):
-            self.Cout( 'Files found in path "%s":' % (dir_path) )
+            #self.Cout( 'Files found in path "%s":' % (dir_path) )
             if len(file_names) == 0:
-                print "\tNo file found."
+                #print "\tNo file found."
+                continue
             else:
                 for file in file_names:
-                    print "\t%s" % (file)
+                    #print "\t%s" % (file)
                     file_collection.append(file)
                 
         return file_collection
@@ -657,12 +666,107 @@ class CreateObject:
         dir_collection = []
         # For each directory in the tree rooted at directory "path" (including "path" itself), the os.walk(path) yields a 3-tuple (dirpath, dirnames, filenames).
         for dir_path, dir_names, file_names in os.walk(path):
-            self.Cout( 'Directories found in path "%s":' % (dir_path) )
+            #self.Cout( 'Directories found in path "%s":' % (dir_path) )
             if len(dir_names) == 0:
                 continue #print "\tNo dir found."
             else:
                 for dir in dir_names:
-                    print "\t%s" % (dir)
+                    #print "\t%s" % (dir)
                     dir_collection.append(dir)
                     
         return dir_collection
+
+
+    def md5Checksum(self, path):
+        '''
+        Reads in file and creates checksum of file, line by line. Returns a complete checksum total for file.
+        '''
+        import hashlib
+        file = open(path)
+        checksum = hashlib.md5()
+        while True:
+            # Read the files in 8192 byte chunks. Thus, at any given time this function is using little more than 8 kilobytes of memory.
+            buffer = file.read(8192)
+            # Break if there is nothing left to read from the file
+            if not buffer:
+                break
+            # Update the hash object with the string argument. Repeated calls are equivalent to a single call with the concatenation of all the arguments.
+            checksum.update(buffer)
+        file.close()
+        # Return the digest of the strings passed to the update() method so far.
+        checksum = checksum.digest()
+        return checksum
+
+
+    def CompareFiles(self, fileName1, fileName2):
+        '''
+        Uses CreateChecksum(self, path) function to see whether two files are identical or not. Returns boolean.
+        '''
+        bFilesAreSame = False
+        # Open files to enable reading them
+        file1 = open(fileName1)
+        file2 = open(fileName2)
+        
+        # Create checksum objects
+        checksum1 = self.md5Checksum(fileName1)
+        checksum2 = self.md5Checksum(fileName2)
+        if checksum1 == checksum2:
+            bFilesAreSame = True
+            #self.Cout("Files %s and %s are identical." % (fileName1, fileName2) )
+        else:
+            bFilesAreSame = False
+            #self.Cout("Files %s and %s are different." % (fileName1, fileName2) )
+            
+        return bFilesAreSame
+
+
+    def FindDuplicateFiles(self, path):
+        ''' 
+        This function performs an md5 checksum on a directory tree to find file duplicates. It returns two lists of files that were found to be duplicated, 
+        containing their full path.
+        '''
+        # Create empty lists and dictionaries here
+        dupList = []
+        dupListMatch = []
+        record = {}
+        
+        # Perform walk on input "path" to get the list paths for the directory tree
+        pathList = self.WalkPaths(path)
+        
+        # Use progress bar to know how much time is left to finish
+        maxValue = len(pathList)
+        pBar, CallBack = self.StartProgressBar(maxValue)
+        
+        # Loop over all paths and create a dictionary, mapping a unique key to the fileName
+        for index, fileName in enumerate(pathList):
+            # Create a compound key (size, checksum) for file under investigation
+            key = ( os.path.getsize(fileName), self.md5Checksum(fileName) )
+            
+            # Check if the generate key(size, checksum )is found in the record. If yes add file into the duplicate list and matching duplicate file in the mathcing duplicate list
+            if key in record:
+                dupList.append(fileName)
+                dupListMatch.append(record[key])
+            else: # If key is not found in record add it to it
+                record[key] = fileName
+            # Update progress bar
+            CallBack(index, maxValue)
+
+        self.StopProgressBar(pBar)
+        return dupList, dupListMatch
+
+    
+    def DeleteFile(self, path):
+        '''
+        This very simple function delete the input parameter file. Warning! This is silent and permanent, so use with great caution!
+        '''
+        import os
+
+        rawInput = self.Cin('Delete file:\n\t"%s"?' % (path) )
+        if rawInput == "y":
+            os.remove(path)
+            self.Cout('Deleted "%s".' % (path) )
+        else:
+            self.Cout("Deleting file:\n\t%s" % (path) )
+
+        
+

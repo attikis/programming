@@ -195,7 +195,7 @@ if __name__ == "__main__":
     mf.EnsureIsDir(localDir)
     for file in files:
         fileName = os.path.join(remoteDir, file)
-        if mf.IsDir(sftp, fileName):
+        if mf.IsRemoteDir(sftp, fileName):
             mf.Cout("Skipping directory: %s" % (fileName))
             continue
         else:
