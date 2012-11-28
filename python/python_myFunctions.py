@@ -117,7 +117,7 @@ class CreateObject:
             smtpUsername = "alexandros.attikis@gmail.com"
         else:
             self.Cout('ERROR! The server argument %s is invalid. Please select between "cern" and "gmail". Exiting python shell.')
-            print __doc__
+            print self.sendEmailNoAttachment.__doc__
             sys.exit(1)
         smtpPort = 587 #or 25
 
@@ -169,7 +169,7 @@ class CreateObject:
                         self.Cout("Succesfully logged on to:\n\tusername = %s\n\tpassword = %s" % (smtpUsername, self.obscureString(smtpPassword)))
                     else:
                         self.Cout("Unsuccesfull login. False credentials provided:\n\tusername = %s\n\tpassword = %s" % (smtpUsername, self.obscureString(smtpPassword)))
-                        print __doc__
+                        print self.sendEmailNoAttachment.__doc__
                         sys.exit(1)
                 # Send emails
                 self.Cout("Sending email to %s" % (recipients) )
@@ -180,7 +180,7 @@ class CreateObject:
                 self.Cout("Got %s %s.\n\tShowing traceback:\n%s" % (type(e), e, traceback.format_exc()))
                 # Set return value to 1 (failure)
                 retval = 1
-                print __doc__
+                print self.sendEmailNoAttachment.__doc__
             finally:
                 self.Cout("Closing connection.")
                 connection.close()
@@ -189,7 +189,7 @@ class CreateObject:
             self.Cout("Got %s %s.\n\tShowing traceback:\n%s" % (type(e), e, traceback.format_exc()))
             # Set return value to 1 (failure)        
             retval = 1
-            print __doc__
+            print self.sendEmailNoAttachment.__doc__
             
         return retval
 
@@ -252,7 +252,7 @@ class CreateObject:
             popUsername = "alexandros.attikis@gmail.com"
         else:
             self.Cout('ERROR! The server argument %s is invalid. Please select between "cern" and "gmail". Exiting python shell.')
-            print __doc__
+            print self.getEmail.__doc__
             sys.exit(1)
 
         # Prompt user to provide his login password
@@ -371,7 +371,7 @@ class CreateObject:
             imapUsername = "alexandros.attikis@gmail.com"
         else:
             self.Cout('ERROR! The server argument %s is invalid. Please select between "cern" and "gmail". Exiting python shell.')
-            print __doc__
+            print self.getEmail.__doc__
             sys.exit(1)
             
         # Prompt user to provide his login password
@@ -450,7 +450,7 @@ class CreateObject:
             smtpUsername = "alexandros.attikis@gmail.com"
         else:
             self.Cout('ERROR! The server argument %s is invalid. Please select between "cern" and "gmail". Exiting python shell.')
-            print __doc__
+            print self.getEmail.__doc__
             sys.exit(1)
         
         # Get SMTP authorisation details
@@ -491,7 +491,7 @@ class CreateObject:
             bAttach = True
     
         # Define return value as success == 0,  failure == 1
-        returnValue = 1
+        retVal = 1
         # Take care of recipient lists
         if not(hasattr(recipients, "__iter__")):
             recipients = [recipients]
@@ -535,24 +535,26 @@ class CreateObject:
                     mainMsg.attach(MIMEText(content))
                 # Connect to server and send complete email
                 connection.sendmail( sender, recipients+Cc+Bcc, mainMsg.as_string() )
-                returnValue = 0 # (success)
+                retVal = 0 # (success)
             except Exception, e:
                 self.Cout("Got %s %s.\n\tShowing traceback:\n%s" % (type(e), e, traceback.format_exc()))
-                returnValue = 1 # (failure)
-                print __doc__
+                retVal = 1 # (failure)
+                print self.sendEmail.__doc__
             finally:
                 self.Cout("Closing connection.")
                 connection.close()
         
         except Exception, e:
             self.Cout("Got %s %s.\n\tShowing traceback:\n%s" % (type(e), e, traceback.format_exc()))
-            returnValue = 1 # (failure)
-            print __doc__
+            retVal = 1 # (failure)
+            print self.sendEmail.__doc__
             
-        return returnValue
+        return retVal
+
 
     def StopWatchStart(self):
         self.TimeStart = datetime.now()
+
 
     def StopWatchStop(self):
         self.TimeStop = datetime.now()
@@ -561,15 +563,15 @@ class CreateObject:
         hours   = int((elapsedTime.seconds - elapsedTime.seconds%3600.0) / 3600)
         minutes = int((elapsedTime.seconds - hours*3600) / 60)
         seconds = elapsedTime.seconds - hours*3600 - minutes*60.0
-        self.Cout("DONE!\nScript Execution time:\n\t%s days, %s hours, %s minutes, %s seconds." % (days, hours, minutes, seconds) )
+        self.Cout("DONE! Script Execution time:\n\t%s days, %s hours, %s minutes, %s seconds." % (days, hours, minutes, seconds) )
     
-# This function check if a local path is a directory.
+    # This function check if a local path is a directory.
     def EnsureIsDir(self, path):
         d = os.path.dirname(path)
         if not os.path.exists(d):
             os.makedirs(d)
         
-# This function checks if a remote path is a directory.
+    # This function checks if a remote path is a directory.
     def IsRemoteDir(self, sftp, remotePath):
         from stat import S_ISDIR
         try:
@@ -578,7 +580,7 @@ class CreateObject:
             # Path does not exist, so by definition not a directory
             return False
 
-# This function checks if a local path is a directory.
+    # This function checks if a local path is a directory.
     def IsLocalDir(self, path):
         if os.path.isdir(path):
             return True
@@ -769,4 +771,130 @@ class CreateObject:
             self.Cout("Deleting file:\n\t%s" % (path) )
 
         
+    def CreateFile(self, path, fileName):
+	'''
+        Create a dumbie text file. For educational purposes.
+        '''      
+        # First check that dir exists. If not, create it.
+        self.EnsureIsDir(path)
 
+        # Then create fileName on the specified path
+	fullPath = path + fileName
+        try:
+            file = open(fullPath, "w")
+            # For loop here to write a few number of lines on the text file.
+            for i in range(1, 100):
+                string = "Line %s. This is a dumbie txt file.\n" % (i)
+                file.write(string)
+        finally:
+            file.close()
+        self.Cout("Created file %s." % (fullPath))
+
+        
+    def FindFiles(self, path, fileName):
+        ''' 
+        Looks for a file in a specified dir tree. Returns a list containing all the matching paths!
+        '''
+        from fnmatch import fnmatch
+        
+        # First Walk the dir tree of the specified path and create list of all files
+        fileList = self.WalkFiles(path)
+        pathList = self.WalkPaths(path)
+        matchList = []
+
+        # Loop over the file list 
+        for index, file in enumerate(fileList):
+            if fnmatch(file, fileName):
+                #self.Cout("Found file:\n\t%s" % (pathList[index]) )
+                matchList.append(pathList[index])
+                
+        return matchList
+
+
+    def RenameFiles(self, path, fileExt, fileExtNew):
+        ''' 
+        Looks for a certain file extension in a specified dir tree. Renames all files to a new file extension.
+        '''
+        import shutil
+
+        # Get the list of files matching the specified extension
+        findList = self.FindFiles(path, "*"+fileExt)
+        
+        # Rename all matching files to the new file extension
+        for file in findList:
+            self.Cout( "Moving file %s to %s." % (file, file.replace(fileExt, fileExtNew)))
+            shutil.move( file, file.replace(fileExt, fileExtNew) )
+            
+    def Rsync(self, source, target):
+        '''
+        This module can be used to "rsync" target directory tree with a source directory tree. In case of failure it prints out a failure message.
+        '''
+        import subprocess
+        import sys
+        import os
+        
+        # Declarations here
+        rsync = "rsync"
+        argument = "-av"
+        cmd = "%s %s %s %s" % (rsync, argument, source, target)
+
+        # Before executing command, check if the target and source directories exist
+        if self.IsDir(source) == False:
+            self.Cout("ERROR! The source directory %s does not exist. Please read docstrings. Exiting python shell." % (source))
+            print self.rsync.__doc__
+            sys.exit(1)
+        if self.IsDir(target) == False:
+            self.Cout("ERROR! The target directory %s does not exist. Please read docstrings. Exiting python shell." % (target))
+            print self.rsync.__doc__
+            sys.exit(1)
+
+        # Execute rsync shell command
+        retVal = subprocess.call(cmd, shell=True)
+
+        # Make sure you handle errors
+        if retVal !=0:
+            self.Cout("Rsyncing of target %s with source %s failed. Please read docstrings. Exiting python shell.")
+            print self.rsync.__doc__
+            sys.exit(1)
+        else:
+            self.Cout("Rsync of target %s with source %s was succesful." % (target, source))
+
+            
+    def Rsync2(self, source, target):
+        '''
+        This module can be used to "rsync" target directory tree with a source directory tree. It will not quite until it is finished. 
+        In case of failure it prints out a failure message. 
+        '''
+        import subprocess
+        import sys
+        import os
+        import time 
+        
+        # Declarations here
+        rsync = "rsync"
+        argument = "-av"
+        cmd = "%s %s %s %s" % (rsync, argument, source, target)
+
+        # Before executing command, check if the target and source directories exist
+        if self.IsDir(source) == False:
+            self.Cout("ERROR! The source directory %s does not exist. Please read docstrings. Exiting python shell." % (source))
+            print self.rsync.__doc__
+            sys.exit(1)
+        if self.IsDir(target) == False:
+            self.Cout("ERROR! The target directory %s does not exist. Please read docstrings. Exiting python shell." % (target))
+            print self.rsync.__doc__
+            sys.exit(1)
+
+        # Execute rsync shell command
+        while True:
+            retVal = subprocess.call(cmd, shell=True)
+            # Make sure you handle errors
+            if retVal !=0:
+                self.Cout("Rsyncing of target %s with source %s failed. Resubmitting rsync command.")
+                time.sleep(30)
+            else:
+                message = "Rsync of target %s with source %s was succesful." % (target, source)
+                self.Cout(message)
+                self.sendEmail("cern")
+                #subprocess.call("mail -s '%s' %s" % (message, email), shell = True) %doesn't work. it hungs. why?
+                sys.exit(0)                

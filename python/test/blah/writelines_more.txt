@@ -1,0 +1,5 @@
+*** Loop index = 0. File = /Users/administrator/my_work/programming/python/writelines_more.txt.
+*** Loop index = 1. File = /Users/administrator/my_work/programming/python/writelines_more.txt.
+*** Loop index = 2. File = /Users/administrator/my_work/programming/python/writelines_more.txt.
+*** Loop index = 3. File = /Users/administrator/my_work/programming/python/writelines_more.txt.
+*** Loop index = 4. File = /Users/administrator/my_work/programming/python/writelines_more.txt.
