@@ -771,7 +771,7 @@ class CreateObject:
             self.Cout("Deleting file:\n\t%s" % (path) )
 
         
-    def CreateFile(self, path, fileName):
+    def CreateFile(self, path, fileName, nLines):
 	'''
         Create a dumbie text file. For educational purposes.
         '''      
@@ -783,7 +783,7 @@ class CreateObject:
         try:
             file = open(fullPath, "w")
             # For loop here to write a few number of lines on the text file.
-            for i in range(1, 100):
+            for i in range(1, nLines):
                 string = "Line %s. This is a dumbie txt file.\n" % (i)
                 file.write(string)
         finally:
@@ -898,3 +898,33 @@ class CreateObject:
                 self.sendEmail("cern")
                 #subprocess.call("mail -s '%s' %s" % (message, email), shell = True) %doesn't work. it hungs. why?
                 sys.exit(0)                
+
+                
+    def CreateTarball(self, myPath, fileName, tarballName):
+        '''
+        This module can be used to create a tarball of a given directory tree.
+        '''
+        import tarfile
+        import os
+        
+        # Chck that target directory in fact exists
+        if self.IsDir(myPath) == False:
+            self.Cout("ERROR! The path %s does not exist. Please read docstrings. Exiting python shell." % (myPath))
+            print self.CreateTarball.__doc__
+            sys.exit(1)
+            
+        # Create tarball    
+        tarball = tarfile.open(myPath+tarballName, "w")
+
+        # Check that file exists and then add to tarball. Otherwise exit
+        try:
+            if self.IsFile(myPath + fileName) == True:
+                self.Cout("Adding file %s to tarball %s." % (myPath+fileName, tarballName) )
+                tarball.add(myPath + fileName)
+            else:
+                self.Cout("ERROR! The file %s does not exist. Please read docstrings. Exiting python shell." % (myPath+fileName))
+                print self.CreateTarball.__doc__
+                sys.exit(1)
+        finally:
+            tarball.close()
+            

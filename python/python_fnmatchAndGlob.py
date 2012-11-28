@@ -28,7 +28,7 @@ if __name__ == "__main__":
     path = os.getcwd() + "/fnmatchAndGlob/"
     nFiles = 10+1
     for i in range (1, nFiles):
-        mf.CreateFile(path, "dumbie" + str(i) + ".txt")
+        mf.CreateFile(path, "dumbie" + str(i) + ".txt", nLines=100)
         
     # Now look for txt files in the user specified directory. Use mf.WalkPaths(path) to get the full paths
     pathList = mf.WalkPaths(path)
