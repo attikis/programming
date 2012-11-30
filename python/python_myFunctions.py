@@ -900,31 +900,158 @@ class CreateObject:
                 sys.exit(0)                
 
                 
-    def CreateTarball(self, myPath, fileName, tarballName):
+    def CreateTarball(self, myPath, tarballName, cType = "tar"):
         '''
-        This module can be used to create a tarball of a given directory tree.
+        This module can be used to create a tarball of a given directory tree. 
+        The compression type (cType) can either be default "w", or the powerful (yet slow and cpu-demanding bzip2.
+        Available compression types (extensions): w (.tar), w|bz2 (.tar.bzip2), w|gz (.tar.gzip)
         '''
         import tarfile
         import os
-        
-        # Chck that target directory in fact exists
+        import subprocess
+        import sys
+
+        # Make a list of available compression types (extensions): w (.tar), w|bz2 (.tar.bzip2), w|gz (.tar.gzip)
+        cTypeList = {}
+        cTypeList["tar"] = "w"
+        cTypeList["bzip2"] = "w|bz2"
+        cTypeList["gzip"] = "w|gz"
+
+        # First check that cType is valid, by looping over dictionary
+        if not cTypeList.has_key(cType):
+            self.Cout("ERROR! Unknown TAR archive type. Printing available formats:")
+            for key in cTypeList:
+                print "\t" + key + " (" + cTypeList[key] + ")"
+            sys.exit(1)
+
+        # Make sure path ends with a "/" symbol
+        if not myPath.endswith("/"):
+            myPath = myPath + "/"
+
+        # Chck that target directory in fact exists. If yes create a path list of all files in the directory tree
         if self.IsDir(myPath) == False:
             self.Cout("ERROR! The path %s does not exist. Please read docstrings. Exiting python shell." % (myPath))
             print self.CreateTarball.__doc__
             sys.exit(1)
-            
+        else:
+            pathList = self.WalkPaths(myPath)
+    
         # Create tarball    
-        tarball = tarfile.open(myPath+tarballName, "w")
+        fullTarballName = myPath+tarballName+"."+cType
+        self.Cout("Creating tarball %s." % (fullTarballName) )            
+        tarball = tarfile.open(fullTarballName,  cTypeList[cType])
 
-        # Check that file exists and then add to tarball. Otherwise exit
-        try:
-            if self.IsFile(myPath + fileName) == True:
-                self.Cout("Adding file %s to tarball %s." % (myPath+fileName, tarballName) )
-                tarball.add(myPath + fileName)
-            else:
-                self.Cout("ERROR! The file %s does not exist. Please read docstrings. Exiting python shell." % (myPath+fileName))
-                print self.CreateTarball.__doc__
-                sys.exit(1)
-        finally:
-            tarball.close()
+        # Loop over all files and add them to the tarball
+        for file in pathList:
+            self.Cout("Adding file %s" % (file) )
+            tarball.add(file)
+
+        self.Cout("Tarball succesfully created:")
+        subprocess.call("du -csh %s" % (fullTarballName), shell=True)
+        tarball.close()
+        
+
+    def UnpackTarball(self, source, destination):
+        '''
+        This module can be used to untar a tarball to a given directory tree.
+        '''
+        import tarfile
+        import os
+        import subprocess
+        
+        # Check if myPath is in fact a tarball. Returns True if name is a tar archive file, that the tarfile module can read.
+        if not tarfile.is_tarfile(source):
+            self.Cout("ERROR! The specified path %s is either not a tar archive file, or one that the python tarfile module cannot read. Please read docstings. Exiting python shell." % (myPath))
+            print self.UnpackTarball.__doc__
+            sys.exit(1)            
+        else:
+            self.Cout("Attempting to unpack:\n\t %s\nto:\n\t %s" % (source, destination))
+            try:
+                myTarFile  = tarfile.open(source, "r")
+
+                # Get dir listing of destination before extracting
+                prevDirList = os.listdir(destination)
+
+                # Extrall all files to destination
+                myTarFile.extractall(destination)
+
+                # Get dir listing of destination after extracting
+                newDirList = os.listdir(destination)
+
+                # Cast lists as sets in order to be able to subtract them (to find differences). Use the extracted folder for the "du -csh" command later
+                diff = set(newDirList) - set(prevDirList)
+                diffDirList = list(diff)
+                if not diff:
+                    newDir = ""
+                else:
+                    newDir = diffDirList[len(diffDirList)-1]
+                
+                # Get name of tarball file by stripping the source from the remaining path. Not needed but keep for infromative reasons
+                tmpList = source.rsplit("/")
+                tarballName = tmpList[len(tmpList)-1] 
+                self.Cout("Tarball %s succesfully unpacked:" % (tarballName))
+                subprocess.call("du -csh %s" % (destination + newDir), shell=True)
+
+            finally:
+                myTarFile.close()
+    
+                
+    def ExamineTarball(self, source, tarballName):
+        '''
+        This module can be used to examine the contents of a tarball.
+        '''
+        import tarfile
+        import os
+        
+        # Check if myPath is in fact a tarball. Returns True if name is a tar archive file, that the tarfile module can read.
+        if not source.endswith("/"):
+            source  = source + "/"
+        else:
+            self.Cout("Attempting to read:\n\t%s" % (source+tarballName))
+            
+        if not tarfile.is_tarfile(source+tarballName):
+            self.Cout("ERROR! The specified path %s is either not a tar archive file, or one that the python tarfile module cannot read. Please read docstings. Exiting python shell." % (source+tarballName))
+            print self.ExamineTarball.__doc__
+            sys.exit(1)            
+        else:
+            try:
+                myTarFile  = tarfile.open(source+tarballName, "r")
+                self.Cout("Examining tarball:\n\t%s" % ( myTarFile.name ) )
+                # Print tarball contents 
+                myTarFile.list()
+                self.Cout("Printing list of names:\n\t%s" % ( myTarFile.getnames() ) )
+                
+            finally:
+                myTarFile.close()
+
+    def SysReport(self):
+        '''
+        This module can be used to print a system report on any platform. Returns a dictionary object.
+        '''
+        import platform
+
+        # Define a dictionary mapping command string with actual python command to perform
+        profile = {
+            "architecture":platform.architecture(),
+            "dist":platform.dist(),
+            "libc_ver":platform.libc_ver(),
+            "mac_ver":platform.mac_ver(),
+            "machine":platform.machine(),
+            "node":platform.node(),
+            "platform":platform.platform(),
+            "processor":platform.processor(),
+            "python_build":platform.python_build(),
+            "python_compiler":platform.python_compiler(),
+            "python_version":platform.python_version(),
+            "system":platform.system(),
+            "uname":platform.uname(),
+            "version":platform.version(),
+            }
+
+        # Loop over all dictionary and print dictionary key and corresponding value
+        self.Cout( "Printing system report:")
+        for key in profile:
+            print "\t%s = %s" % (key, profile[key] )
+
+        return profile
             
