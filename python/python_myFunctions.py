@@ -22,6 +22,8 @@ class CreateObject:
         self.InCounter = 0
         self.TimeStart = datetime.now()
         self.TimeStop = datetime.now()
+        self.Delay = -1
+        self.Verbose = False
         
     def DisplayMatchObject(self, match):
         ''' DisplayMatchObject(self, match):
@@ -1059,6 +1061,7 @@ class CreateObject:
         ''' 
         This is a simple function that prints informative statements to the user relating to the exit code of a command execution.
         '''
+
         # Create empty exit-code - meaning dictionary
         exitCodeDict = {
             0:"Success",
@@ -1081,5 +1084,53 @@ class CreateObject:
             self.Cout("Success")
         
         return exitCodeDict[exitCode]
+
+    
+    def CmdPipe(self, *args):
+        '''
+        This module is an example of using subprocess as a piping factory. It will execute a given number of shell commands in a loop, will capture stdout and returns it.
+        System administrators frequently need to run a sequence of commands, so this module enables the use of such a barrage of commands with the use of a simple code.
+        '''
+        import subprocess
         
+        # Loop over all commands
+        for cmd in args:
+            self.Cout("Executing command: %s" % (cmd) )
+            p = subprocess.Popen(cmd, shell = True, stdout = subprocess.PIPE)
+            out =  p.stdout.read()
+            print out
+            
+        return out
+
+    
+    def Runner(self, *args, **kwargs):
+        '''
+        This module is closely related to the python built-in subprocess module. It sequentially executes a list of commands in a simplified and automatic way, 
+        while supporting verbose and delay options.
+        '''
+        import time
+        import subprocess
+        import sys
+        
+        # Take care of the delay argument (in seconds)
+        if kwargs.has_key("delay"):
+            self.Delay = kwargs["delay"]
+        else:
+            self.Delay = 0
+
+        # Check whether to use verbose option or silend-mode instead
+        if kwargs.has_key("verbose"):
+            self.Cout("Verbose = %s" % (kwargs["verbose"]))
+            self.Verbose = kwargs["verbose"]
+        else:
+            self.Verbose = False
+                    
+        # Loop over all commands and execute them
+        for cmd in args:
+            # Print informative message only if verbose is enabled
+            if self.Verbose:
+                self.Cout("Running command:\n\t%s (delay = %s)" % (cmd, self.Delay))
+            
+            time.sleep(self.Delay)
+            subprocess.call(cmd, shell = True)
         
