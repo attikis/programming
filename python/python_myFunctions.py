@@ -1053,5 +1053,33 @@ class CreateObject:
         for key in profile:
             print "\t%s = %s" % (key, profile[key] )
 
-        return profile
-            
+        return profile        
+
+    def checkExitCode(self, exitCode):
+        ''' 
+        This is a simple function that prints informative statements to the user relating to the exit code of a command execution.
+        '''
+        # Create empty exit-code - meaning dictionary
+        exitCodeDict = {
+            0:"Success",
+            1:"General Error",
+            2:"Misuse of shell built-ins",
+            126:"Command invoked cannon execute",
+            #127:"Command not found",
+            128:"Invalid argument to exit",
+            130:"Script terminated by Ctrl-C",
+            225:"Exit status out of range",
+            }
+
+        if not exitCodeDict.has_key(exitCode):
+            retVal = "Failure (%s): Unknown exit code" % (exitCode)
+            self.Cout(retVal)
+            return retVal
+        elif exitCode !=0:
+            self.Cout("Failure (%s): %s" % (exitCode, exitCodeDict[exitCode]) )
+        else:
+            self.Cout("Success")
+        
+        return exitCodeDict[exitCode]
+        
+        
