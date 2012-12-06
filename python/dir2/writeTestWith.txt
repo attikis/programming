@@ -1,0 +1,1 @@
++++ This is another simple string to be written on /Users/administrator/my_work/programming/python/writeTestWith.txt

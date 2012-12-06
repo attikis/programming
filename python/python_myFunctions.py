@@ -837,7 +837,11 @@ class CreateObject:
         
         # Declarations here
         rsync = "rsync"
-        argument = "-av"
+        # Option definition:
+        # -a = archive mode; a shortcut to skip having to enter a bunch of switches that you'll normally use if you're using rsync to make backups (a common task).
+        # -v = increase verbosity
+        # --delete = delete extraneous (unrelated) files from destination directories
+        argument = "-av --delete"
         cmd = "%s %s %s %s" % (rsync, argument, source, target)
 
         # Before executing command, check if the target and source directories exist
@@ -861,6 +865,7 @@ class CreateObject:
         else:
             self.Cout("Rsync of target %s with source %s was succesful." % (target, source))
 
+        return retVal
             
     def Rsync2(self, source, target):
         '''
@@ -900,6 +905,7 @@ class CreateObject:
                 self.sendEmail("cern")
                 #subprocess.call("mail -s '%s' %s" % (message, email), shell = True) %doesn't work. it hungs. why?
                 sys.exit(0)                
+        return retVal
 
                 
     def CreateTarball(self, myPath, tarballName, cType = "tar"):

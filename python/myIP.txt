@@ -1,1 +1,1 @@
-attikis.local 192.168.1.108
+attikis.wr.ucy.ac.cy 172.20.43.175

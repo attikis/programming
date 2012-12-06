@@ -75,7 +75,7 @@ if __name__ == "__main__":
     print
     mf.Cout("Main Thread Waiting:")
 
-    # Block thread until all items in the Queue have been gotten and processed.
+    # Block thread until all items in the Queue have been gotten and processed.    # Block thread until all items in the Queue have been gotten and processed.
     queue.join()
 
     # Inform users about the results
