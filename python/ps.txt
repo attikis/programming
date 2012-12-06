@@ -1,0 +1,53 @@
+  PID CMD
+10022 /usr/bin/SCREEN
+10034 /usr/bin/SCREEN
+10050 /usr/bin/SCREEN
+10105 /usr/bin/SCREEN
+10106 /usr/bin/SCREEN
+10108 SCREEN
+10120 /usr/bin/SCREEN
+10121 /usr/bin/SCREEN
+10128 /usr/bin/SCREEN
+10129 /usr/bin/SCREEN
+10135 /usr/bin/SCREEN
+10140 /usr/bin/SCREEN
+10164 /usr/bin/SCREEN
+10170 /usr/bin/SCREEN
+10175 SCREEN
+10173 python ./python_screen.py
+10174 screen
+ 9764 login -pflq administrator /bin/bash
+ 9770 bash
+ 9772 top
+10040 login -pflq administrator /bin/bash
+10041 bash
+10028 login -pflq administrator /bin/bash
+10029 bash
+10191 ps -u attikis
+10061 login -pflq administrator /bin/bash
+10062 bash
+10113 login -pflq administrator /bin/bash
+10114 bash
+10149 login -pflq administrator /bin/bash
+10150 bash
+10109 login -pflq administrator /bin/bash
+10110 bash
+10112 login -pflq administrator /bin/bash
+10115 bash
+10153 login -pflq administrator /bin/bash
+10154 bash
+10122 login -pflq administrator /bin/bash
+10123 bash
+10130 login -pflq administrator /bin/bash
+10131 bash
+10155 login -pflq administrator /bin/bash
+10156 bash
+10159 login -pflq administrator /bin/bash
+10160 bash
+10165 login -pflq administrator /bin/bash
+10166 bash
+10171 login -pflq administrator /bin/bash
+10172 bash
+10176 login -pflq administrator /bin/bash
+10177 bash
+10184 screen -r 10022

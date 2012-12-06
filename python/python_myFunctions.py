@@ -333,7 +333,7 @@ class CreateObject:
             for mail in newMailFiles:
                 myNewMail = open(myPath + mail, "r")
                 pydoc.pager(myNewMail.read()) # similar to | less in shell. Press "q" to move to next email
-        self.Cout('Done. Exiting python shell.')
+        self.Cout('Done! Exiting python shell.')
         connection.quit()
 
 
@@ -415,7 +415,7 @@ class CreateObject:
             for mail in newMailFiles:
                 myNewMail = open(myPath + mail, "r")
                 pydoc.pager(myNewMail.read()) # similar to | less in shell. Press "q" to move to next email
-        self.Cout('Done. Exiting python shell.')
+        self.Cout('Done! Exiting python shell.')
         connection.logout()
 
 
@@ -565,7 +565,7 @@ class CreateObject:
         hours   = int((elapsedTime.seconds - elapsedTime.seconds%3600.0) / 3600)
         minutes = int((elapsedTime.seconds - hours*3600) / 60)
         seconds = elapsedTime.seconds - hours*3600 - minutes*60.0
-        self.Cout("DONE! Script Execution time:\n\t%s days, %s hours, %s minutes, %s seconds." % (days, hours, minutes, seconds) )
+        self.Cout("Done! Script Execution time:\n\t%s days, %s hours, %s minutes, %s seconds." % (days, hours, minutes, seconds) )
     
     # This function check if a local path is a directory.
     def EnsureIsDir(self, path):
@@ -1095,7 +1095,7 @@ class CreateObject:
         
         # Loop over all commands
         for cmd in args:
-            self.Cout("Executing command: %s" % (cmd) )
+            self.Cout('Executing command:\n\t"%s"' % (cmd) )
             p = subprocess.Popen(cmd, shell = True, stdout = subprocess.PIPE)
             out =  p.stdout.read()
             print out
@@ -1134,3 +1134,70 @@ class CreateObject:
             time.sleep(self.Delay)
             subprocess.call(cmd, shell = True)
         
+
+    def RunScreenCmd(self, cmd, pName, detach = False):
+        '''
+        This module is dedicated for executing shell commands with GNU screen. The screen application allows you to detach from a long-running process and come back to it at 
+        any point in time. By default the process is run detached with a user-defined session name (pName), although there is an option (boolean) to run attached from which 
+        one can detach at any time by pressing "Ctrl-a" "Ctrl-d". Here's some info on GNU's screen options:
+        
+        1. "screen -d CommandToLaunch" does not start screen, but detaches the elsewhere running screen session. It has the same effect as typing  "C-a d" from 
+        
+        2. "screen -d CommandToLaunch" causes  screen  to ignore the $STY environment variable. With "screen -m" creation of a new session is 
+        enforced, regardless whether screen is called from within another screen session or not. This flag has a special meaning in connection with the `-d' option 
+        (i.e. screen -d -m)  which starts screen in "detached" mode. This creates a new session but doesn't attach to it. This is useful for system startup scripts.
+        
+        3 "screen -S CommandName CommandToLaunch" means the CommandName (-S) can be used  for creating  a  new  session. This option can be used to specify a meaningful name for 
+        the session. This name identifies the session for "screen -list" and "screen -r" actions. It substitutes the default [tty.host] suffix.
+        '''
+        import subprocess
+        import os
+        import time
+        import sys
+        
+        fullCmd = "screen -dmS " + pName + " " + cmd
+        reAttachCmd = "screen -r " + pName
+        # Launch command 
+        self.CmdPipe(fullCmd)
+        
+        # Ask user if he wants to re-attach session immediately. Unless he explicitly chose to detach
+        if detach == False:
+            # Inform user
+            self.Cout('Re-attaching session %s:\n\t"%s"' % (pName, reAttachCmd))
+            self.Cout('Press "Ctr-A" "Ctrl-D" at any point to detach session')
+            # Delay launch for 3 seconds as "screen" will erase all stdout
+            self.CountDown(3)
+            # Re-attach command
+            self.CmdPipe(reAttachCmd)
+        else:
+            self.Cout('To re-attach at any time type:\n\t"screen -r %s"' % (pName))
+
+
+    def CountDown(self, seconds):
+        '''
+        Simple module that prints a countdown in seconds.
+        '''
+        import sys
+
+        overwrite = 0        
+        # Delay launch for 3 seconds as "screen" will erase all stdout
+        for sec in range(seconds,0,-1):
+            sys.stdout.write("Starting in: %s seconds%s\r" % (sec, " "*overwrite ))
+            sys.stdout.flush()
+            time.sleep(1)
+            overwrite = len("seconds")
+
+    def CountDown(self, string, seconds):
+        '''
+        Simple module that prints a countdown in seconds.
+        '''
+        import sys
+
+        overwrite = 0        
+        # Delay launch for 3 seconds as "screen" will erase all stdout
+        for sec in range(seconds,0,-1):
+            sys.stdout.write(string + " %s seconds%s\r" % (sec, " "*overwrite ))
+            sys.stdout.flush()
+            time.sleep(1)
+            overwrite = len("seconds")
+        print
