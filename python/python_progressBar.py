@@ -10,7 +10,7 @@ chmod +x fileName.py
 
 Description:
 The Secure SHell (SSH) protocol allows one to securely connect to a remote server, execute shell commands, transfer files and forward ports in both directions (local<->remote).
-It is incredibly powerful and widely used. Using the ssh command in parallel with the full power of python can be extremely useful. The dedicated library is called "paramkio". 
+It is incredibly powerful and widely used. Using the ssh command in parallel with the full power of python can be extremely useful. The dedicated library is called "paramkio". 
 In this example we present how to put (copy) local files to an SSH server.
 
 Help:
