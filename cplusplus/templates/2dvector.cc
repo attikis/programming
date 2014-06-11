@@ -13,7 +13,7 @@ int main() {
   vector< vector <int> > my2dvector;
 
   // fill vector with ints
-  for (int i=1; i<=5; i++){
+  for (int i=0; i<=5; i++){
     my2dvector.push_back( vector<int>(i*i) );
   }
   
@@ -24,14 +24,13 @@ int main() {
   it = innerList.begin(); // initialize iterator (column zero)
 
   cout << "my2dvector contains:" << endl;
-  
   for ( it = innerList.end() ; it < innerList.end(); it++ ){
-    // for ( it=my2dvector.begin() ; it < my2dvector.end(); it++ )
+    // for ( it=my2dvector.begin() ; it < my2dvector.end(); it++ ){
     cout << " (*it) = " << (*it) << endl;
     cout << endl;
-  }
-    
-  cout << "\n Program Termination! " << endl;
+    }
+
+  cout << "\nDone!" << endl;
   return 0;
 
 } //end of: int main() {
