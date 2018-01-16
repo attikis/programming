@@ -26,8 +26,8 @@ int main() {
   cout << "my2dvector contains:" << endl;
   for ( it = innerList.end() ; it < innerList.end(); it++ ){
     // for ( it=my2dvector.begin() ; it < my2dvector.end(); it++ ){
-    cout << " (*it) = " << (*it) << endl;
-    cout << endl;
+    //cout << " (*it) = " << (*it) << endl;
+    //cout << endl;
     }
 
   cout << "\nDone!" << endl;
