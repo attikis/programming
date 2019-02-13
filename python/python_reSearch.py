@@ -20,8 +20,9 @@ for iString in myStringList:
     search = reObject.search(iString)
     gf.DisplayMatchObject(search)
     print
-
-
+    import sys
+    sys.exit()
+    
 # A nice poker-program example
 gf.Cout("Example 2: Poker program")
 
